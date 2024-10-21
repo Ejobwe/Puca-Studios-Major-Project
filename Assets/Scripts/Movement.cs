@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
 
             input = new Vector3(horizontalInput, 0, verticalInput).normalized;
 
-            rb.linearVelocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
+            rb.velocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
         }
         if (Input.GetKeyDown(KeyCode.Space) && !isDashing)
         {
@@ -45,7 +45,7 @@ public class Movement : MonoBehaviour
     private IEnumerator Dash()
     {
         isDashing = true;
-        rb.linearVelocity = new Vector3(input.x * dashSpeed, 0, input.z * dashSpeed);
+        rb.velocity = new Vector3(input.x * dashSpeed, 0, input.z * dashSpeed);
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
     }

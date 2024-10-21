@@ -30,7 +30,7 @@ public class Enviroment_Effects : MonoBehaviour
             slideX = player_move.input.x;
             slideZ = player_move.input.z;
             slide = new Vector3 (slideX * 10, 0 , slideZ * 10);
-            player_move.rb.linearVelocity = slide;
+            player_move.rb.velocity = slide;
             player_move.sliding = true;
         }
     }
