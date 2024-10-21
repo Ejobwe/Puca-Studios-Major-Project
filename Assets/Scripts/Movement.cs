@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Movement : MonoBehaviour
 {
-    Rigidbody rb;
+    public Rigidbody rb;
 
     public float playerSpeed;
     private float horizontalInput;
@@ -13,7 +13,9 @@ public class Movement : MonoBehaviour
     public float dashSpeed;
     public bool isDashing;
 
-    private Vector3 input;
+    public Vector3 input;
+
+    public bool sliding;
 
     private void Start()
     {
@@ -23,19 +25,21 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-     
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        if (!sliding)
+        {
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
 
-        input = new Vector3(horizontalInput, 0, verticalInput).normalized;
+            input = new Vector3(horizontalInput, 0, verticalInput).normalized;
 
-        rb.linearVelocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
+            rb.linearVelocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
+        }
         if (Input.GetKeyDown(KeyCode.Space) && !isDashing)
         {
             StartCoroutine(Dash());
         }
 
-        //   Debug.Log(rb.velocity);
+          // Debug.Log(input.x);
     }
 
     private IEnumerator Dash()
