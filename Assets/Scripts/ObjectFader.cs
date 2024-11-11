@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ObjectFader : MonoBehaviour
 {
+    private CameraEffect camEff;
+
     public float fadeSpeed;
     public float fadeAmount;
     private float originalOpacity;
 
-    public bool doFade;
+    public bool doFade = false;
+
 
    // Renderer rend;
     Material mat;
@@ -16,6 +19,7 @@ public class ObjectFader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        camEff = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraEffect>();
         mat = GetComponent<Renderer>().material;
         originalOpacity = mat.color.a;
     }
@@ -23,6 +27,7 @@ public class ObjectFader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(doFade)
         {
             FadeNow();
