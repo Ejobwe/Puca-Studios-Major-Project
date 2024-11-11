@@ -37,6 +37,8 @@ public class CameraEffect : MonoBehaviour
                 blocked[i] = hits[i].collider.gameObject;
             }
 
+            
+
             for (int i = 0; i < hits.Length; i++)
             {
                 RaycastHit hit = hits[i];
@@ -45,56 +47,58 @@ public class CameraEffect : MonoBehaviour
 
                 if (hit.collider.gameObject != player)
                 {
-                    
-                    noblocked.Add(hit.collider.gameObject);
+                    if (!noblocked.Contains(hit.collider.gameObject))
+                    {
+                        noblocked.Add(hit.collider.gameObject);
+                    }
                 }
                 if(hit.collider.gameObject == player)
                 {
-                    for(int j = 0; j < hits.Length; j++)
-                    {
-                        if (!blocked.Contains(noblocked[j]))
-                        {
-                            noblocked[j].GetComponent<ObjectFader>().doFade = false;
-                            noblocked.Remove(noblocked[j]);
-                        }
-                    }
+                    
                 }
-                    if (blocked.Contains(hit.collider.gameObject))
+                    if (blocked.Contains(hit.collider.gameObject) && blocked[i].GetComponent<ObjectFader>() != false)
                     {
                         blocked[i].GetComponent<ObjectFader>().doFade = true;
                     
                     }
-                    
                 }
 
             }
-
-            //Ray ray = new Ray(transform.position, dir);
-            //RaycastHit hit;
-
-            //if (Physics.Raycast(ray, out hit))
-            //{
-            //    if (hit.collider == null)
-            //    {
-            //        return;
-            //    }
-
-            //    if (hit.collider.gameObject == player)
-            //    {
-            //        if (fader != null)
-            //        {
-            //            fader.doFade = false;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        fader = hit.collider.gameObject.GetComponent<ObjectFader>();
-            //        if (fader != null)
-            //        {
-            //            fader.doFade = true;
-            //        }
-            //    }
-            //}
+        for (int j = 0; j < blocked.Count; j++)
+        {
+            if (!blocked.Contains(noblocked[j]))
+            {
+                noblocked[j].GetComponent<ObjectFader>().doFade = false;
+                noblocked.Remove(noblocked[j]);
+            }
         }
+
+        //Ray ray = new Ray(transform.position, dir);
+        //RaycastHit hit;
+
+        //if (Physics.Raycast(ray, out hit))
+        //{
+        //    if (hit.collider == null)
+        //    {
+        //        return;
+        //    }
+
+        //    if (hit.collider.gameObject == player)
+        //    {
+        //        if (fader != null)
+        //        {
+        //            fader.doFade = false;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        fader = hit.collider.gameObject.GetComponent<ObjectFader>();
+        //        if (fader != null)
+        //        {
+        //            fader.doFade = true;
+        //        }
+        //    }
+        //}
+    }
     }
 
