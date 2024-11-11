@@ -6,6 +6,7 @@ public class Wall_Generator : MonoBehaviour
 {
 
     public GameObject normalWall;
+    public GameObject entranceWall;
 
     public Transform leftWall;
     public Transform rightWall;
@@ -22,37 +23,51 @@ public class Wall_Generator : MonoBehaviour
 
         RaycastHit hit;
 
-        if(Physics.Raycast(leftRay,out hit))
+        if(Physics.Raycast(leftRay,out hit,100f))
         {
             if(hit.collider.gameObject.tag == "Normal" )
-            {
-                Vector3 midpoint = (transform.position - hit.collider.transform.position);
-                Instantiate(normalWall,leftWall.position,leftWall.rotation);
+            {    
+                Instantiate(entranceWall,leftWall.position,leftWall.rotation);
             }
+            
         }
-        if (Physics.Raycast(rightRay, out hit))
+        else
+        {
+            Debug.Log("hELLo");
+            Instantiate(normalWall, leftWall.position, leftWall.rotation);
+        }
+        if (Physics.Raycast(rightRay, out hit,100f))
         {
             if (hit.collider.gameObject.tag == "Normal")
-            {
-                Vector3 midpoint = (transform.position - hit.collider.transform.position);
-                Instantiate(normalWall, rightWall.position, rightWall.rotation);
+            {               
+                Instantiate(entranceWall, rightWall.position, rightWall.rotation);
             }
         }
-        if (Physics.Raycast(forwardRay, out hit))
+        else
+        {
+            Instantiate(normalWall, rightWall.position, rightWall.rotation);
+        }
+        if (Physics.Raycast(forwardRay, out hit, 100f))
         {
             if (hit.collider.gameObject.tag == "Normal")
-            {
-                Vector3 midpoint = (transform.position - hit.collider.transform.position);
-                Instantiate(normalWall, frontWall.position, frontWall.rotation);
+            {              
+                Instantiate(entranceWall, frontWall.position, frontWall.rotation);
             }
         }
-        if (Physics.Raycast(backRay, out hit))
+        else
+        {
+            Instantiate(normalWall, frontWall.position, frontWall.rotation);
+        }
+        if (Physics.Raycast(backRay, out hit,100f))
         {
             if (hit.collider.gameObject.tag == "Normal")
-            {
-                Vector3 midpoint = (transform.position - hit.collider.transform.position);
-                Instantiate(normalWall, backWall.position, backWall.rotation);
+            {             
+                Instantiate(entranceWall, backWall.position, backWall.rotation);
             }
+        }
+        else
+        {
+            Instantiate(normalWall, backWall.position, backWall.rotation);
         }
     }
 
