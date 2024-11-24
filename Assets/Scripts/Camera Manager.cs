@@ -18,30 +18,66 @@ public class CameraManager : MonoBehaviour
     {
         currentCamera.Priority = 1;
     }
-    public void SwapCamera(CinemachineCamera cameraFromLeft, CinemachineCamera cameraFromRight, Vector3 triggerExitDirection)
+    public void SwapCamera(CinemachineCamera leftCam, CinemachineCamera rightCam, CinemachineCamera frontCam, CinemachineCamera backCam, Vector3 triggerExitDirection)
     {
-        
-        if (currentCamera == cameraFromLeft && triggerExitDirection.x > 0f)
+        if (leftCam != null)
         {
-            currentCamera.Priority -= 1;
+            if (currentCamera == leftCam && triggerExitDirection.x < 0f)
+            {
+                currentCamera.Priority -= 1;
 
-            cameraFromRight.enabled = true;
+                rightCam.enabled = true;
 
-            cameraFromLeft.enabled = false;
+                leftCam.enabled = false;
 
-            currentCamera = cameraFromRight;
+                currentCamera = rightCam;
+            }
         }
 
-        if (currentCamera == cameraFromRight && triggerExitDirection.x < 0f)
+        if (rightCam != null)
         {
-            print("HELLO");
-            currentCamera.Priority -= 1;
+            if (currentCamera == rightCam && triggerExitDirection.x > 0f)
+            {
+                print("HELLO");
+                currentCamera.Priority -= 1;
 
-            cameraFromLeft.enabled = true;
+                leftCam.enabled = true;
 
-            cameraFromRight.enabled = false;
+                rightCam.enabled = false;
 
-            currentCamera = cameraFromLeft;
+                currentCamera = leftCam;
+            }
+        }
+
+        if (frontCam != null)
+        {
+            if (currentCamera == frontCam && triggerExitDirection.z > 0f)
+            {
+                print("HELLO");
+                currentCamera.Priority -= 1;
+
+                backCam.enabled = true;
+
+                frontCam.enabled = false;
+
+                currentCamera = backCam;
+            }
+        }
+
+        if (backCam != null)
+        {
+            if (currentCamera == backCam && triggerExitDirection.z < 0f)
+            {
+                currentCamera.Priority -= 1;
+
+                frontCam.enabled = true;
+
+                backCam.enabled = false;
+
+                currentCamera = frontCam;
+            }
+
+
         }
     }
 }
