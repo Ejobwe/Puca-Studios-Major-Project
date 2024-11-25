@@ -19,6 +19,7 @@ public class Load : MonoBehaviour
 
         yield return new WaitForSeconds(7);
         GetComponent<Image>().color = new Color(0, 0, 0, 0);
+        gameObject.SetActive(false);
         player.canMove = true;
 
     }
