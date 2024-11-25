@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.Cinemachine;
+using UnityEngine.SceneManagement;
 
 
 public class CameraManager : MonoBehaviour
@@ -16,6 +17,11 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+
         currentCamera.Priority = 1;
     }
     public void SwapCamera(CinemachineCamera leftCam, CinemachineCamera rightCam, CinemachineCamera frontCam, CinemachineCamera backCam, Vector3 triggerExitDirection)

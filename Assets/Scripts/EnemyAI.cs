@@ -14,10 +14,13 @@ public class EnemyAI : MonoBehaviour
     public int damage;
     public bool stop;
 
+    int number;
+
     private GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
+        number = 20;
         enemy = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");  
     }
@@ -33,13 +36,14 @@ public class EnemyAI : MonoBehaviour
         if(Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
         {
             stop = true;
+            number = 200;
         }
         else
         {
             stop = false;
         }
 
-        if (DistanceToPlayer > 3 && !stop && DistanceToPlayer < 20)
+        if (DistanceToPlayer > number && !stop)
         {
             enemy.speed = 6;
             follow();
@@ -63,6 +67,10 @@ public class EnemyAI : MonoBehaviour
     IEnumerator attack()
     {
         yield return new WaitForSeconds(2.5f);
-        Player.GetComponent<Player_Health>().takeDamage(damage);
+        if (DistanceToPlayer <= 3 && !stop)
+        {
+            Player.GetComponent<Player_Health>().takeDamage(damage);
+        }
+        
     }
 }

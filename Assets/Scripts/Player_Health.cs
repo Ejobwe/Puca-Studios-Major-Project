@@ -16,6 +16,8 @@ using UnityEngine.UI;
         public Sprite full;
         public Sprite empty;
 
+    private bool invincible;
+
     void Start()
         {
             currentHealth = maxHealth;
@@ -54,10 +56,22 @@ using UnityEngine.UI;
 
         public void takeDamage(int damage)
         {
+        if (invincible) return;
+
             if (currentHealth > 0)
             {
                 currentHealth -= damage;
             }
+        StartCoroutine(InvincibilityFrames());
         }
+
+    IEnumerator InvincibilityFrames()
+    {
+        invincible = true;
+
+        yield return new WaitForSeconds(1);
+
+        invincible = false;
+    }
     }
 
