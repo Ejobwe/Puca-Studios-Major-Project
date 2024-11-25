@@ -5,6 +5,8 @@ public class Movement : MonoBehaviour
 {
     public Rigidbody rb;
 
+    public bool camTran;
+
     public float playerSpeed;
     private float horizontalInput;
     private float verticalInput;
@@ -32,7 +34,7 @@ public class Movement : MonoBehaviour
 
             input = new Vector3(horizontalInput, 0, verticalInput).normalized;
 
-            rb.velocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
+            rb.velocity = new Vector3(input.z * playerSpeed, 0, -input.x * playerSpeed);
         }
         if (Input.GetKeyDown(KeyCode.Space) && !isDashing)
         {
@@ -50,5 +52,8 @@ public class Movement : MonoBehaviour
         isDashing = false;
     }
 
-    
+    private void OnTriggerExit(Collider other)
+    {
+        camTran = false;
+    }
 }
