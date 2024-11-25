@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 265768492850899299}
   - component: {fileID: 982566970756543487}
   - component: {fileID: 6904492443696957206}
+  - component: {fileID: 7250845430719770082}
   m_Layer: 7
   m_Name: EntranceWall
   m_TagString: Border
@@ -121,6 +122,21 @@ MonoBehaviour:
   fadeSpeed: 10
   fadeAmount: 0.3
   doFade: 0
+--- !u!114 &7250845430719770082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128805723128087151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddb95e746d91a24ab3cbc5601f3ceeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSpeed: 10
+  fadeAmount: 0.3
+  doFade: 0
 --- !u!1 &4166929109147256026
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +150,7 @@ GameObject:
   - component: {fileID: 5573548551059266298}
   - component: {fileID: 4565134780221685861}
   - component: {fileID: 8518840015953055536}
+  - component: {fileID: 2326167604232844753}
   m_Layer: 7
   m_Name: EntranceWall (1)
   m_TagString: Border
@@ -242,6 +259,21 @@ MonoBehaviour:
   fadeSpeed: 10
   fadeAmount: 0.3
   doFade: 0
+--- !u!114 &2326167604232844753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166929109147256026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddb95e746d91a24ab3cbc5601f3ceeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSpeed: 10
+  fadeAmount: 0.3
+  doFade: 0
 --- !u!1 &6588675620713975516
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +287,7 @@ GameObject:
   - component: {fileID: 7753674813645937539}
   - component: {fileID: 7208620740272297216}
   - component: {fileID: 8026957122709404373}
+  - component: {fileID: 8032175666032790214}
   m_Layer: 7
   m_Name: CameraTrigger
   m_TagString: Border
@@ -365,6 +398,21 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+--- !u!114 &8032175666032790214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6588675620713975516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddb95e746d91a24ab3cbc5601f3ceeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSpeed: 10
+  fadeAmount: 0.3
+  doFade: 0
 --- !u!1 &6872499233416506810
 GameObject:
   m_ObjectHideFlags: 0
