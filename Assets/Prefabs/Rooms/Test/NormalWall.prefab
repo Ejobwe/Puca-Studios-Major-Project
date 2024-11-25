@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3614536309351271710}
   - component: {fileID: 5335952674257497286}
   - component: {fileID: 2146823069580015141}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: NormalWall
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -178.85992, y: -0.8327637, z: 28.26898}
-  m_LocalScale: {x: 1, y: 1, z: 66.18929}
+  m_LocalScale: {x: 1, y: 7.8233, z: 66.18929}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

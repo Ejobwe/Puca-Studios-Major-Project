@@ -69,8 +69,5 @@ public class Wall_Checker : MonoBehaviour
 
     }
 
-    public void SpawnWalls()
-    {
-
-    }
+    
 }

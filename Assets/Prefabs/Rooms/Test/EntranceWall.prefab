@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 265768492850899299}
   - component: {fileID: 982566970756543487}
   - component: {fileID: 6904492443696957206}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: EntranceWall
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -14.77}
-  m_LocalScale: {x: 1, y: 1, z: 21.233282}
+  m_LocalScale: {x: 1, y: 7.8233, z: 21.233282}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 146954388120571529}
@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 5573548551059266298}
   - component: {fileID: 4565134780221685861}
   - component: {fileID: 8518840015953055536}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: EntranceWall (1)
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 15.37}
-  m_LocalScale: {x: 1, y: 1, z: 22.26113}
+  m_LocalScale: {x: 1, y: 7.8233, z: 22.26113}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 146954388120571529}
@@ -255,9 +255,9 @@ GameObject:
   - component: {fileID: 7753674813645937539}
   - component: {fileID: 7208620740272297216}
   - component: {fileID: 8026957122709404373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CameraTrigger
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,7 +272,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 8.2632}
+  m_LocalScale: {x: 1, y: 7.6817, z: 8.2632}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 146954388120571529}
@@ -361,6 +361,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraBrain: {fileID: 0}
+  frontCam: {fileID: 0}
+  backCam: {fileID: 0}
+  leftCam: {fileID: 0}
+  rightCam: {fileID: 0}
 --- !u!1 &6872499233416506810
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,9 +377,9 @@ GameObject:
   - component: {fileID: 5088110415972500424}
   - component: {fileID: 269846356149549302}
   - component: {fileID: 5871013721802726837}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EntranceWall
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
