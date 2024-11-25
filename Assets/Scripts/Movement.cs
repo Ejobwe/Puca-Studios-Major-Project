@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     public Vector3 input;
 
     public bool sliding;
+    public bool canMove;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (!sliding)
+        if (!sliding && canMove)
         {
             horizontalInput = Input.GetAxisRaw("Horizontal");
             verticalInput = Input.GetAxisRaw("Vertical");

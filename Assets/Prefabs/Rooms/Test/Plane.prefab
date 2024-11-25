@@ -330,7 +330,11 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
+<<<<<<< Updated upstream
   m_StaticEditorFlags: 0
+=======
+  m_StaticEditorFlags: 8
+>>>>>>> Stashed changes
   m_IsActive: 1
 --- !u!4 &6381401809238473710
 Transform:
