@@ -43,7 +43,7 @@ public class EnemyAI : MonoBehaviour
             stop = false;
         }
 
-        if (DistanceToPlayer > number && !stop)
+        if (DistanceToPlayer > 3 && !stop && number > 30)
         {
             enemy.speed = 6;
             follow();
@@ -52,7 +52,7 @@ public class EnemyAI : MonoBehaviour
         {
             enemy.speed = 0;
         }
-        if(DistanceToPlayer <= 3 && !stop)
+        if(DistanceToPlayer <= 3)
         {
             StartCoroutine(attack());
         }
@@ -67,7 +67,7 @@ public class EnemyAI : MonoBehaviour
     IEnumerator attack()
     {
         yield return new WaitForSeconds(2.5f);
-        if (DistanceToPlayer <= 3 && !stop)
+        if (DistanceToPlayer <= 3)
         {
             Player.GetComponent<Player_Health>().takeDamage(damage);
         }
