@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 17783027}
   - component: {fileID: 17783026}
   - component: {fileID: 17783029}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,8 +644,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraBrain: {fileID: 1785389634}
-  cameraOnLeft: {fileID: 70532730}
-  cameraOnRight: {fileID: 1571575820}
+  frontCam: {fileID: 0}
+  backCam: {fileID: 0}
+  leftCam: {fileID: 0}
+  rightCam: {fileID: 0}
 --- !u!65 &101209510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2312,7 +2314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blocker:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 128
   blocked:
   - {fileID: 0}
   - {fileID: 0}
@@ -3676,8 +3678,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraBrain: {fileID: 1785389634}
-  cameraOnLeft: {fileID: 1571575820}
-  cameraOnRight: {fileID: 1397890752}
+  frontCam: {fileID: 0}
+  backCam: {fileID: 0}
+  leftCam: {fileID: 0}
+  rightCam: {fileID: 0}
 --- !u!54 &2010894573
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -35,8 +35,15 @@ public class EnemyAI : MonoBehaviour
         
         if(Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
         {
-            stop = true;
-            number = 200;
+            if (!borderHit.collider.gameObject.CompareTag("Player"))
+            {
+                stop = true;
+                number = 200;
+            }
+            else
+            {
+                stop = false;
+            }
         }
         else
         {
