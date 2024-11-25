@@ -33,7 +33,11 @@ public class Movement : MonoBehaviour
             input = new Vector3(horizontalInput, 0, verticalInput).normalized;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             rb.linearVelocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
+=======
+            rb.velocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
+>>>>>>> parent of 076a66e (Merge branch 'main' of https://github.com/Ejobwe/Puca-Studios-Major-Project)
 =======
             rb.velocity = new Vector3(input.x * playerSpeed, 0, input.z * playerSpeed);
 >>>>>>> parent of 076a66e (Merge branch 'main' of https://github.com/Ejobwe/Puca-Studios-Major-Project)
