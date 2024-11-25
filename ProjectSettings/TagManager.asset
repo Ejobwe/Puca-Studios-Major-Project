@@ -3,18 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - Normal
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 076a66e (Merge branch 'main' of https://github.com/Ejobwe/Puca-Studios-Major-Project)
-=======
->>>>>>> parent of 076a66e (Merge branch 'main' of https://github.com/Ejobwe/Puca-Studios-Major-Project)
-=======
->>>>>>> parent of 076a66e (Merge branch 'main' of https://github.com/Ejobwe/Puca-Studios-Major-Project)
   layers:
   - Default
   - TransparentFX
@@ -52,36 +41,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  m_RenderingLayers:
-  - Default
-  - Light Layer 1
-  - Light Layer 2
-  - Light Layer 3
-  - Light Layer 4
-  - Light Layer 5
-  - Light Layer 6
-  - Light Layer 7
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
