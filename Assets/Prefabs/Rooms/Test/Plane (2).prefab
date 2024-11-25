@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1317794780220124818
@@ -56,6 +57,8 @@ BoxCollider:
   m_Size: {x: 0.65769947, y: 1, z: 0.84320897}
   m_Center: {x: -0.026343165, y: 0, z: -0.29981446}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 076a66e (Merge branch 'main' of https://github.com/Ejobwe/Puca-Studios-Major-Project)
 --- !u!1 &5542053657182172653
 GameObject:
   m_ObjectHideFlags: 0
