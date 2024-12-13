@@ -20,23 +20,33 @@ public class Room_Spawner : MonoBehaviour
     private bool frontRay = true;
     private bool backRay = true;
 
-    private bool chainSpawn;
+    public bool longRoom;
+    public bool longRoomSpawnDown;
+    public bool chainSpawn;
+    public bool detected;
+
+    public int rayDirection = 0;
+    public int check;
+
+    private Vector3 longRoomDown;
     // Start is called before the first frame update
 
     private void Start()
     {
         if(spawn)
         {
-            spawnRoom();
+            StartCoroutine(spawnRoom());
         }
-       
+        longRoomDown = transform.position;
     }
     private void Update()
     {
-        if (rs && !chainSpawn)
+        if (rs && !chainSpawn && !longRoom)
         {
-            spawnRoom();
+            StartCoroutine(spawnRoom());
+            chainSpawn = true;
         }
+
     }
 
     void roomCheck()
@@ -48,58 +58,140 @@ public class Room_Spawner : MonoBehaviour
 
         RaycastHit leftHit;
         RaycastHit rightHit;
-        RaycastHit frontHit;
         RaycastHit backHit;
 
-        if (Physics.Raycast(roomCheckLeft, out leftHit, 200f, roomLayer) && leftRay)
+        if (Physics.Raycast(roomCheckBack, out backHit, 200f, roomLayer) && longRoomSpawnDown)
         {
-            if (room)
-            {
-                leftHit.collider.GetComponent<Room_Spawner>().conection += 1;
-            }
-            leftHit.collider.GetComponent<Room_Spawner>().rs = true;
-            leftRay = false;
+            backHit.collider.GetComponent<Room_Spawner>().longRoom = true;
+
         }
-        if (Physics.Raycast(roomCheckRight, out rightHit, 200f, roomLayer) && rightRay)
+        if(check < 3 || !detected)
         {
-            if (room)
+
+            switch (rayDirection)
             {
-                rightHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                case 0:
+                    if (Physics.Raycast(roomCheckLeft, out leftHit, 200f, roomLayer))
+                    {
+                        if (leftHit.collider.GetComponent<Room_Spawner>().chainSpawn == true)
+                        {
+                            rayDirection = 1;
+                            check += 1;
+                            roomCheck();
+                        }
+                        if (room || longRoom)
+                        {
+                            leftHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                        }
+                        if (leftHit.collider.GetComponent<Room_Spawner>().longRoom)
+                        {
+                            roomCheck();
+                        }
+                        leftHit.collider.GetComponent<Room_Spawner>().rs = true;
+                        leftRay = false;
+                        detected = true;
+                    }
+                    if (leftHit.collider == null)
+                    {
+                        check += 1;
+                        rayDirection = 1;
+                        roomCheck();
+                        Debug.Log("ChangeLeft");
+                    }
+
+                    break;
+                case 2:
+                    if (Physics.Raycast(roomCheckBack, out backHit, 200f, roomLayer))
+                    {
+                        if (backHit.collider.GetComponent<Room_Spawner>().chainSpawn == true)
+                        {
+                            rayDirection = 0;
+                            check += 1;
+                            roomCheck();
+                        }
+                        if (room || longRoom)
+                        {
+                            backHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                        }
+                        if (longRoomSpawnDown)
+                        {
+                            backHit.collider.GetComponent<Room_Spawner>().longRoom = true;
+                            backHit.collider.GetComponent<Room_Spawner>().roomCheck();
+                        }
+                        
+                        backHit.collider.GetComponent<Room_Spawner>().rs = true;
+                        backRay = false;
+                        detected = true;
+                    }
+                    if (backHit.collider == null)
+                    {
+                        rayDirection = 0;
+                        check += 1;
+                        roomCheck();
+                        Debug.Log("ChangeBack");
+                    }
+
+                    break;
+                case 1:
+                    if (Physics.Raycast(roomCheckRight, out rightHit, 200f, roomLayer))
+                    {
+                        if (rightHit.collider.GetComponent<Room_Spawner>().chainSpawn == true)
+                        {
+                            rayDirection = 2;
+                            check += 1;
+                            roomCheck();
+                        }
+                        if (room || longRoom)
+                        {
+                            rightHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                        }
+                        if (rightHit.collider.GetComponent<Room_Spawner>().longRoom)
+                        {
+                            roomCheck();
+                        }
+                        rightHit.collider.GetComponent<Room_Spawner>().rs = true;
+                        rightRay = false;
+                        detected = true;
+                    }
+
+                    if (rightHit.collider == null)
+                    {
+                        rayDirection = 2;
+                        check += 1;
+                        roomCheck();
+                        Debug.Log("ChangeRight");
+                    }
+
+                    break;
+
             }
-            rightHit.collider.GetComponent<Room_Spawner>().rs = true;
-            rightRay = false;
         }
-        if (Physics.Raycast(roomCheckFront, out frontHit, 200f, roomLayer) && frontRay)
-        {
-            if (room)
-            {
-                frontHit.collider.GetComponent<Room_Spawner>().conection += 1;
-            }
-            frontHit.collider.GetComponent<Room_Spawner>().rs = true;
-            frontRay = false;
-        }
-        if (Physics.Raycast(roomCheckBack, out backHit, 200f, roomLayer) && backRay)
-        {
-            if (room)
-            {
-                backHit.collider.GetComponent<Room_Spawner>().conection += 1;
-            }
-            backHit.collider.GetComponent<Room_Spawner>().rs = true;
-            backRay = false;
-        }
+
+        
+        
+        //if (Physics.Raycast(roomCheckFront, out frontHit, 200f, roomLayer) && frontRay)
+        //{
+        //    if (room)
+        //    {
+        //        frontHit.collider.GetComponent<Room_Spawner>().conection += 1;
+        //    }
+        //    frontHit.collider.GetComponent<Room_Spawner>().rs = true;
+        //    frontRay = false;
+        //}
+
     }
 
-    void spawnRoom()
+    IEnumerator spawnRoom()
     {
         
-        
+        yield return new WaitForSeconds(2);
         if (conection == 0 && !spawn)
         {
             roomSpawn = 0;
         }
         if (conection == 1 && !spawn)
         {
-            if(Random.value > 0.2)
+            if(Random.value > 0)
             {
                 roomSpawn = 1;
             }
@@ -110,7 +202,7 @@ public class Room_Spawner : MonoBehaviour
         }
         if (conection > 1 && !spawn)
         {
-            if(Random.value > 0.3)
+            if(Random.value > 0)
             {
                 roomSpawn = 1;
             }
@@ -132,31 +224,33 @@ public class Room_Spawner : MonoBehaviour
             case 1:
                 
                 rng = Random.Range(0, rooms.Length);
-                if(rng != 3)
+                if(rng != 2)
                 {
                     Instantiate(rooms[rng], transform.position, Quaternion.identity);
                     room = true;
                     rs = false;
+                    roomCheck();
                 }
 
 
-                if (rng == 3)
+                if (rng == 2)
                 {
                     Instantiate(rooms[rng], transform.position, Quaternion.identity);
-                    room = true;
+                    longRoom = true;
+                    longRoomSpawnDown = true;
                     rs = false;
+                    roomCheck();
                 }
                 break;
 
             case 0:
                 
                 rs = false;
-                
+                roomCheck();
                 break;
         }
-        chainSpawn = true;
         
-        roomCheck();
+       
         
     }
 }

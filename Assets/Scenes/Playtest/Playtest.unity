@@ -141,7 +141,7 @@ GameObject:
   m_TagString: Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &3949105
 MonoBehaviour:
@@ -158,12 +158,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 1
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &3949106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -245,8 +253,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 101.18542, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -819,10 +827,17 @@ MonoBehaviour:
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 0
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &127585164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1295,12 +1310,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &351080158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1382,8 +1405,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1530,10 +1553,17 @@ MonoBehaviour:
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &370063006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1615,8 +1645,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1655,12 +1685,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &379723875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1742,8 +1780,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 101.18542, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2263,12 +2301,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &658162851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2350,8 +2396,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -50.59268, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2835,10 +2881,17 @@ MonoBehaviour:
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &742305633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2920,8 +2973,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 101.18542, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3422,12 +3475,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &800080317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3509,8 +3570,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5556,10 +5617,17 @@ MonoBehaviour:
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1192878960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5641,8 +5709,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -50.59268, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6696,10 +6764,17 @@ MonoBehaviour:
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1356455916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6781,8 +6856,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.59272, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7514,12 +7589,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1503744321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7601,8 +7684,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.59272, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7741,18 +7824,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 800080320}
-  - {fileID: 658162854}
+  - {fileID: 3949109}
   - {fileID: 1958824884}
+  - {fileID: 351080161}
+  - {fileID: 1795654262}
+  - {fileID: 658162854}
+  - {fileID: 800080320}
+  - {fileID: 1503744324}
+  - {fileID: 379723878}
+  - {fileID: 742305636}
+  - {fileID: 1356455919}
   - {fileID: 370063009}
   - {fileID: 1192878963}
-  - {fileID: 1503744324}
-  - {fileID: 3949109}
-  - {fileID: 1356455919}
-  - {fileID: 742305636}
-  - {fileID: 379723878}
-  - {fileID: 1795654262}
-  - {fileID: 351080161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1647092580
@@ -8944,12 +9027,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1795654259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9031,8 +9122,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -50.59268, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9381,12 +9472,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
   spawn: 0
   room: 0
+  rs: 0
   conection: 0
   roomLayer:
     serializedVersion: 2
     m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1958824881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9468,8 +9567,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.59272, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10001,7 +10100,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065480006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cfb7b3ce7cb9914e93fc90d0f0b277d, type: 3}
   m_Name: 
