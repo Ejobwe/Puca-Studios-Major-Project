@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,12 +136,12 @@ GameObject:
   - component: {fileID: 3949107}
   - component: {fileID: 3949106}
   - component: {fileID: 3949105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &3949105
 MonoBehaviour:
@@ -158,6 +158,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 1
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &3949106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -186,7 +200,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3949104}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -239,8 +253,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 101.18542, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -443,7 +457,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40840160}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -608,7 +622,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112415744}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -811,6 +825,19 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &127585164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -963,7 +990,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152858118}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1069,7 +1096,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156852117}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1261,7 +1288,7 @@ GameObject:
   - component: {fileID: 351080159}
   - component: {fileID: 351080158}
   - component: {fileID: 351080157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -1283,6 +1310,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &351080158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1311,7 +1352,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351080156}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1364,8 +1405,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1432,7 +1473,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369467810}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1488,7 +1529,7 @@ GameObject:
   - component: {fileID: 370063007}
   - component: {fileID: 370063006}
   - component: {fileID: 370063005}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -1510,6 +1551,19 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &370063006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1538,7 +1592,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370063004}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1591,8 +1645,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1609,7 +1663,7 @@ GameObject:
   - component: {fileID: 379723876}
   - component: {fileID: 379723875}
   - component: {fileID: 379723874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -1631,6 +1685,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &379723875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1659,7 +1727,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379723873}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1712,8 +1780,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 101.18542, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2030,7 +2098,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565223825}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2211,7 +2279,7 @@ GameObject:
   - component: {fileID: 658162852}
   - component: {fileID: 658162851}
   - component: {fileID: 658162850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -2233,6 +2301,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &658162851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2261,7 +2343,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658162849}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2314,8 +2396,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -50.59268, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2382,7 +2464,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715530420}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2613,7 +2695,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741510249}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2719,7 +2801,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741878661}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2775,7 +2857,7 @@ GameObject:
   - component: {fileID: 742305634}
   - component: {fileID: 742305633}
   - component: {fileID: 742305632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -2797,6 +2879,19 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &742305633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2825,7 +2920,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742305631}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2878,8 +2973,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 101.18542, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2946,7 +3041,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748952280}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3302,7 +3397,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800048269}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3358,7 +3453,7 @@ GameObject:
   - component: {fileID: 800080318}
   - component: {fileID: 800080317}
   - component: {fileID: 800080316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -3380,6 +3475,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &800080317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3408,7 +3517,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800080315}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3461,8 +3570,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3663,7 +3772,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802194829}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3894,7 +4003,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844231415}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4000,7 +4109,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851172221}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4200,7 +4309,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921424447}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4311,7 +4420,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948794941}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4428,7 +4537,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952650434}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4534,7 +4643,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977727738}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4830,7 +4939,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064509976}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5061,7 +5170,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154229383}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5303,7 +5412,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177768738}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5484,7 +5593,7 @@ GameObject:
   - component: {fileID: 1192878961}
   - component: {fileID: 1192878960}
   - component: {fileID: 1192878959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -5506,6 +5615,19 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1192878960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5534,7 +5656,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192878958}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5587,8 +5709,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -50.59268, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5744,7 +5866,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211711123}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5975,7 +6097,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246061364}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6456,7 +6578,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313977661}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6562,7 +6684,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341833141}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6618,7 +6740,7 @@ GameObject:
   - component: {fileID: 1356455917}
   - component: {fileID: 1356455916}
   - component: {fileID: 1356455915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -6640,6 +6762,19 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1356455916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6668,7 +6803,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356455914}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6721,8 +6856,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.59272, y: 0, z: -50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6789,7 +6924,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356897191}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7145,7 +7280,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462640850}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7251,7 +7386,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473553562}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7432,7 +7567,7 @@ GameObject:
   - component: {fileID: 1503744322}
   - component: {fileID: 1503744321}
   - component: {fileID: 1503744320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -7454,6 +7589,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1503744321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7482,7 +7631,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503744319}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7535,8 +7684,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.59272, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7603,7 +7752,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529182774}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7675,20 +7824,125 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 800080320}
-  - {fileID: 658162854}
+  - {fileID: 3949109}
   - {fileID: 1958824884}
+  - {fileID: 351080161}
+  - {fileID: 1795654262}
+  - {fileID: 658162854}
+  - {fileID: 800080320}
+  - {fileID: 1503744324}
+  - {fileID: 379723878}
+  - {fileID: 742305636}
+  - {fileID: 1356455919}
   - {fileID: 370063009}
   - {fileID: 1192878963}
-  - {fileID: 1503744324}
-  - {fileID: 3949109}
-  - {fileID: 1356455919}
-  - {fileID: 742305636}
-  - {fileID: 379723878}
-  - {fileID: 1795654262}
-  - {fileID: 351080161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1647092580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647092581}
+  - component: {fileID: 1647092584}
+  - component: {fileID: 1647092583}
+  - component: {fileID: 1647092582}
+  m_Layer: 6
+  m_Name: Spawn
+  m_TagString: Normal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647092581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647092580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8868026594509955098}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1647092582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647092580}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1647092583
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647092580}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1647092584
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647092580}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1684266198
 GameObject:
   m_ObjectHideFlags: 0
@@ -7752,7 +8006,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684266198}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8233,7 +8487,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702417895}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8339,7 +8593,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754836959}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8695,7 +8949,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795539167}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8751,7 +9005,7 @@ GameObject:
   - component: {fileID: 1795654260}
   - component: {fileID: 1795654259}
   - component: {fileID: 1795654258}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -8773,6 +9027,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1795654259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8801,7 +9069,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795654257}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8854,8 +9122,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -50.59268, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9182,7 +9450,7 @@ GameObject:
   - component: {fileID: 1958824882}
   - component: {fileID: 1958824881}
   - component: {fileID: 1958824880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoomSpawner
   m_TagString: Normal
   m_Icon: {fileID: 0}
@@ -9204,6 +9472,20 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
+  - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
+  spawn: 0
+  room: 0
+  rs: 0
+  conection: 0
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  longRoom: 0
+  longRoomSpawnDown: 0
+  chainSpawn: 0
+  detected: 0
+  rayDirection: 0
+  check: 0
 --- !u!65 &1958824881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9232,7 +9514,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958824879}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9285,8 +9567,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.59272, y: 0, z: 50.592686}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1576321128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9518,6 +9800,10 @@ PrefabInstance:
     - target: {fileID: 4045322977445114439, guid: 040053d27e7c44d46ba18562030daf5b, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045322977445114439, guid: 040053d27e7c44d46ba18562030daf5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4294442891668443390, guid: 040053d27e7c44d46ba18562030daf5b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9814,7 +10100,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065480006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cfb7b3ce7cb9914e93fc90d0f0b277d, type: 3}
   m_Name: 
@@ -10149,7 +10435,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113565977}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11005,7 +11291,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2982389260920173656}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11075,7 +11361,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4949a6d98f560804f9ce15ebab285443, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11494,6 +11780,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1574204178674087746}
+  - {fileID: 1647092581}
   - {fileID: 1766467984106566604}
   - {fileID: 2366700374900325032}
   - {fileID: 8194115071688827259}
