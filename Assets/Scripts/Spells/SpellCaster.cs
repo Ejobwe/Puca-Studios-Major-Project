@@ -10,7 +10,7 @@ public class SpellCaster : MonoBehaviour
     [SerializeField]private GameObject Manager;
     [SerializeField] private List<GameObject> Spells = new List<GameObject>();
     private Inventory inventory;
-    private int order;
+    public int order;
     private Item CurrentSpell;
     [SerializeField] private GameObject SPObj;
     private Vector3 SpawnPoint;
@@ -32,47 +32,45 @@ public class SpellCaster : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetMouseButtonDown(0) && order <= inventory.items.Count)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (inventory.items != null)
+            if (inventory.items.Count == 0)
+            {
+                Debug.Log("AAAAAAAAAAAAAAAAAA");
+            }
+            else
             {
                 CurrentSpell = inventory.items[order];
-            }
-            else if(inventory.items == null)
-            {
-             Debug.Log("nothing to cast");   
-            }
-            
-            switch (CurrentSpell.Index)
-            
-            {
-                case 0:
-                    Debug.Log(" firing a" + CurrentSpell.name);
-                    Fireball();
-                    break;
-                case 1:
-                    Debug.Log(" firing a" + CurrentSpell.name);
-                    SummonPuddle();
-                    break;
-                case 2:
-                    SummonIceWall();
-                    break;
-            }
 
+
+                switch (CurrentSpell.Index)
+
+                {
+                    case 0:
+                        Fireball();
+                        break;
+                    case 1:
+                        SummonPuddle();
+                        break;
+                    case 2:
+                        SummonIceWall();
+                        break;
+                }
+            }
             order++;
-            if (order >= inventory.items.Count)
-            {
-                order = 0;
-            }
-            else if (order > inventory.items.Count())
-            {
-                Debug.Log("Resetting spells");
-                order = 0;
-            }
-            else if (inventory.items == null)
-            {
-                Debug.Log("Spells empty");
-            }
+        }
+        if (order >= inventory.items.Count)
+        {
+            order = 0;
+        }
+        else if (order > inventory.items.Count())
+        {
+            Debug.Log("Resetting spells");
+            order = 0;
+        }
+        else if (inventory.items == null)
+        {
+            Debug.Log("Spells empty");
         }
 
     }
