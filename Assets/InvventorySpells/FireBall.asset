@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fireball
   icon: {fileID: 21300000, guid: db0a6d9f32023b7469a349a079890a2a, type: 3}
-  isDefault: 0
+  Index: 0
