@@ -6,7 +6,6 @@ public class Item: ScriptableObject
 {
     new public string name = "new item";
     public Sprite icon = null;
-    //public bool isDefault = false;
     public int Index;
 
     public virtual void Use()
