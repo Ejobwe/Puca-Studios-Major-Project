@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -713,6 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -1198,6 +1200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -1833,6 +1836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -1958,6 +1962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -2189,6 +2194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -2555,6 +2561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -3132,6 +3139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -3257,6 +3265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -3863,6 +3872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -4799,6 +4809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -5030,6 +5041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -5272,6 +5284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -5503,6 +5516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -5957,6 +5971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -6188,6 +6203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -6313,6 +6329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -6438,6 +6455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -7015,6 +7033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -7140,6 +7159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -7477,6 +7497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -8097,6 +8118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -8222,6 +8244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -8347,6 +8370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -8684,6 +8708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -8809,6 +8834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -9175,6 +9201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -9300,6 +9327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -9620,6 +9648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -9890,6 +9919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -10159,6 +10189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -10284,6 +10315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -10526,6 +10558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -10651,6 +10684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomCount: 0
+  isLongRoom: 0
   normalWall: {fileID: 6312954684834474019, guid: c2f0ae5b510633c4ca78f4817bff5057, type: 3}
   entranceWall: {fileID: 6872499233416506810, guid: 60334ae430bc39e47b098201e425f7b4, type: 3}
   frontCam: {fileID: 0}
@@ -10750,7 +10784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1947318381022631344, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9984554
       objectReference: {fileID: 0}
     - target: {fileID: 1947318381022631344, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10758,7 +10792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1947318381022631344, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.05556011
       objectReference: {fileID: 0}
     - target: {fileID: 1947318381022631344, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10770,7 +10804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1947318381022631344, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 6.37
       objectReference: {fileID: 0}
     - target: {fileID: 1947318381022631344, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -11492,10 +11526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56171b9d74afc814d84580fb6bbdeb59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftWall: {fileID: 0}
-  rightWall: {fileID: 0}
-  backWall: {fileID: 0}
-  frontWall: {fileID: 0}
   wallCheck:
     serializedVersion: 2
     m_Bits: 64
@@ -11805,6 +11835,7 @@ MonoBehaviour:
   rightCam: {fileID: 0}
   frontCam: {fileID: 0}
   backCam: {fileID: 0}
+  isLongRoom: 0
 --- !u!65 &9163833670055364098
 BoxCollider:
   m_ObjectHideFlags: 0

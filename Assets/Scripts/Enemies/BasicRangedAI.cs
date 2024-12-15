@@ -59,9 +59,7 @@ public class BasicRangedAI : MonoBehaviour
         else if (distance < awayDistance && !stop)
         {
             MoveAway();
-        }
-
-        if (Time.time > nextShotTime && !stop)
+        }else if (Time.time > nextShotTime && !stop)
         {
             Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
             nextShotTime = Time.time + timeBetweenShots;
