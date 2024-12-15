@@ -17,10 +17,7 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-        }
+        
 
         currentCamera.Priority = 1;
     }
