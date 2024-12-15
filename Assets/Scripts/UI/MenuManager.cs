@@ -54,6 +54,10 @@ public class MenuManager : MonoBehaviour
         pause.SetActive(false);
         paused = false;
     }
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     public void NewRun()
     {
