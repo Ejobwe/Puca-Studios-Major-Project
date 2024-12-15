@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject MusicMenu;
     [SerializeField] private GameObject pause;
     [SerializeField] private bool paused;
+
     void Awake()
     {
         pause.SetActive(false);
@@ -22,7 +23,7 @@ public class MenuManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && pause != null)
         {
             Pause();
         }
@@ -30,14 +31,14 @@ public class MenuManager : MonoBehaviour
 
     public void Pause()
     {
-        if (!paused)
+        if (!paused && pause != null)
         {
             //canvas.SetActive(true);
             pause.SetActive(true);
             settings.SetActive(false);
             paused = true;
         }
-        else if (paused)
+        else if (paused && pause != null)
         {
             //canvas.SetActive(false);
             settings.SetActive(false);
@@ -61,16 +62,50 @@ public class MenuManager : MonoBehaviour
 
     public void Settings()
     {
-        settings.SetActive(true);
+        settings.SetActive(true); 
+        ControlsMenu.SetActive(false);
+        MusicMenu.SetActive(false);
         MainMenu.SetActive(false);
     }
 
-    public void Back()
+    public void Controls()
+    {
+        settings.SetActive(false);
+        ControlsMenu.SetActive(true);
+        MusicMenu.SetActive(false);
+        MainMenu.SetActive(false);
+    }
+
+    public void Music()
+    {
+        settings.SetActive(false);
+        ControlsMenu.SetActive(false);
+        MusicMenu.SetActive(true);
+        MainMenu.SetActive(false);
+    }
+
+    public void SettingsBack()
     {
         settings.SetActive(false);
         MusicMenu.SetActive(false);
         ControlsMenu.SetActive(false);
         MainMenu.SetActive(true);
+    }
+
+    public void MusicBack()
+    {
+        settings.SetActive(true);
+        MusicMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
+        MainMenu.SetActive(false);
+    }
+
+    public void ControlsBack()
+    {
+        settings.SetActive(true);
+        MusicMenu.SetActive(false);
+        ControlsMenu.SetActive(false);
+        MainMenu.SetActive(false);
     }
 
     public void Exit()
