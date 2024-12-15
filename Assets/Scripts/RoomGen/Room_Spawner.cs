@@ -46,7 +46,6 @@ public class Room_Spawner : MonoBehaviour
             StartCoroutine(spawnRoom());
             chainSpawn = true;
         }
-
     }
 
     void roomCheck()
@@ -85,13 +84,14 @@ public class Room_Spawner : MonoBehaviour
                             {
                                 leftHit.collider.GetComponent<Room_Spawner>().conection += 1;
                             }
+                            leftHit.collider.GetComponent<Room_Spawner>().rs = true;
+                            leftRay = false;
+                            detected = true;
                             if (leftHit.collider.GetComponent<Room_Spawner>().longRoom && !leftHit.collider.GetComponent<Room_Spawner>().detected)
                             {
                                 leftHit.collider.GetComponent<Room_Spawner>().roomCheck();
                             }
-                            leftHit.collider.GetComponent<Room_Spawner>().rs = true;
-                            leftRay = false;
-                            detected = true;
+                            
                         }
                     }
                     if (leftHit.collider == null && check < 3)
@@ -151,13 +151,14 @@ public class Room_Spawner : MonoBehaviour
                             {
                                 rightHit.collider.GetComponent<Room_Spawner>().conection += 1;
                             }
+                            rightHit.collider.GetComponent<Room_Spawner>().rs = true;
+                            rightRay = false;
+                            detected = true;
                             if (rightHit.collider.GetComponent<Room_Spawner>().longRoom && !rightHit.collider.GetComponent<Room_Spawner>().detected)
                             {
                                 rightHit.collider.GetComponent<Room_Spawner>().roomCheck();
                             }
-                            rightHit.collider.GetComponent<Room_Spawner>().rs = true;
-                            rightRay = false;
-                            detected = true;
+                            
                         }
                     }
 
@@ -191,7 +192,7 @@ public class Room_Spawner : MonoBehaviour
     IEnumerator spawnRoom()
     {
         
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         if (conection == 0 && !spawn)
         {
             roomSpawn = 0;
