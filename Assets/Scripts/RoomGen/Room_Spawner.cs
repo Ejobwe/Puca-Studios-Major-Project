@@ -63,7 +63,6 @@ public class Room_Spawner : MonoBehaviour
         if (Physics.Raycast(roomCheckBack, out backHit, 200f, roomLayer) && longRoomSpawnDown)
         {
             backHit.collider.GetComponent<Room_Spawner>().longRoom = true;
-
         }
         if(check < 3 || !detected)
         {
@@ -73,25 +72,29 @@ public class Room_Spawner : MonoBehaviour
                 case 0:
                     if (Physics.Raycast(roomCheckLeft, out leftHit, 200f, roomLayer))
                     {
-                        if (leftHit.collider.GetComponent<Room_Spawner>().chainSpawn == true)
+                        //skip to next side
+                        if (leftHit.collider.GetComponent<Room_Spawner>().chainSpawn == true || leftHit.collider.GetComponent<Room_Spawner>().detected)
                         {
                             rayDirection = 1;
                             check += 1;
                             roomCheck();
                         }
-                        if (room || longRoom)
+                        else
                         {
-                            leftHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                            if (room || longRoom)
+                            {
+                                leftHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                            }
+                            if (leftHit.collider.GetComponent<Room_Spawner>().longRoom && !leftHit.collider.GetComponent<Room_Spawner>().detected)
+                            {
+                                leftHit.collider.GetComponent<Room_Spawner>().roomCheck();
+                            }
+                            leftHit.collider.GetComponent<Room_Spawner>().rs = true;
+                            leftRay = false;
+                            detected = true;
                         }
-                        if (leftHit.collider.GetComponent<Room_Spawner>().longRoom)
-                        {
-                            roomCheck();
-                        }
-                        leftHit.collider.GetComponent<Room_Spawner>().rs = true;
-                        leftRay = false;
-                        detected = true;
                     }
-                    if (leftHit.collider == null)
+                    if (leftHit.collider == null && check < 3)
                     {
                         check += 1;
                         rayDirection = 1;
@@ -103,27 +106,28 @@ public class Room_Spawner : MonoBehaviour
                 case 2:
                     if (Physics.Raycast(roomCheckBack, out backHit, 200f, roomLayer))
                     {
-                        if (backHit.collider.GetComponent<Room_Spawner>().chainSpawn == true)
+                        if (backHit.collider.GetComponent<Room_Spawner>().chainSpawn == true || backHit.collider.GetComponent<Room_Spawner>().detected)
                         {
                             rayDirection = 0;
                             check += 1;
                             roomCheck();
                         }
-                        if (room || longRoom)
+                        else
                         {
-                            backHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                            if (room || longRoom)
+                            {
+                                backHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                            }
+                            if (longRoomSpawnDown)
+                            {
+                                backHit.collider.GetComponent<Room_Spawner>().roomCheck();
+                            }
+
+                            backHit.collider.GetComponent<Room_Spawner>().rs = true;
+                            detected = true;
                         }
-                        if (longRoomSpawnDown)
-                        {
-                            backHit.collider.GetComponent<Room_Spawner>().longRoom = true;
-                            backHit.collider.GetComponent<Room_Spawner>().roomCheck();
-                        }
-                        
-                        backHit.collider.GetComponent<Room_Spawner>().rs = true;
-                        backRay = false;
-                        detected = true;
                     }
-                    if (backHit.collider == null)
+                    if (backHit.collider == null && check < 3)
                     {
                         rayDirection = 0;
                         check += 1;
@@ -135,26 +139,29 @@ public class Room_Spawner : MonoBehaviour
                 case 1:
                     if (Physics.Raycast(roomCheckRight, out rightHit, 200f, roomLayer))
                     {
-                        if (rightHit.collider.GetComponent<Room_Spawner>().chainSpawn == true)
+                        if (rightHit.collider.GetComponent<Room_Spawner>().chainSpawn == true || rightHit.collider.GetComponent<Room_Spawner>().detected)
                         {
                             rayDirection = 2;
                             check += 1;
                             roomCheck();
                         }
-                        if (room || longRoom)
+                        else
                         {
-                            rightHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                            if (room || longRoom)
+                            {
+                                rightHit.collider.GetComponent<Room_Spawner>().conection += 1;
+                            }
+                            if (rightHit.collider.GetComponent<Room_Spawner>().longRoom && !rightHit.collider.GetComponent<Room_Spawner>().detected)
+                            {
+                                rightHit.collider.GetComponent<Room_Spawner>().roomCheck();
+                            }
+                            rightHit.collider.GetComponent<Room_Spawner>().rs = true;
+                            rightRay = false;
+                            detected = true;
                         }
-                        if (rightHit.collider.GetComponent<Room_Spawner>().longRoom)
-                        {
-                            roomCheck();
-                        }
-                        rightHit.collider.GetComponent<Room_Spawner>().rs = true;
-                        rightRay = false;
-                        detected = true;
                     }
 
-                    if (rightHit.collider == null)
+                    if (rightHit.collider == null && check < 3)
                     {
                         rayDirection = 2;
                         check += 1;

@@ -11,19 +11,6 @@ public class RoomManager : MonoBehaviour
     public CinemachineCamera frontCam;
     public CinemachineCamera backCam;
 
+    public bool isLongRoom;
 
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

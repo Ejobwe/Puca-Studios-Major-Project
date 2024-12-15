@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class Wall_Checker : MonoBehaviour
 {
-    
-
-    public Transform leftWall;
-    public Transform rightWall;
-    public Transform backWall;
-    public Transform frontWall;
+    int[] array;
 
     [SerializeField] private LayerMask wallCheck;
+    
 
     RoomManager roomManager;
 
     // Start is called before the first frame update
     void Awake()
     {
-
+        if(array == null)
+        {
+            Debug.Log("sssss");
+        }
         StartCoroutine(Delay());
         roomManager = transform.parent.GetComponent<RoomManager>();
 
@@ -64,6 +63,11 @@ public class Wall_Checker : MonoBehaviour
         {
             backHit.collider.gameObject.GetComponent<Wall_Generator>().roomCount += 1;
             backHit.collider.gameObject.GetComponent<Wall_Generator>().backCam = roomManager.roomCam;
+            if(roomManager.isLongRoom)
+            {
+                backHit.collider.gameObject.GetComponent<Wall_Generator>().isLongRoom = true;
+            }
+            
         }
         
 

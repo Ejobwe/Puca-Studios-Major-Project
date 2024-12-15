@@ -6,6 +6,8 @@ using UnityEngine;
 public class Wall_Generator : MonoBehaviour
 {
     public float roomCount;
+    public bool isLongRoom;
+
 
     public GameObject normalWall;
     public GameObject entranceWall;
@@ -23,16 +25,16 @@ public class Wall_Generator : MonoBehaviour
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         SpawnWall();
     }
     public void SpawnWall()
     {
-        if(roomCount > 1)
+        if(roomCount > 1 && !isLongRoom)
         {
             Instantiate(entranceWall, transform.parent.position, transform.parent.rotation,transform);
         }
-        if(roomCount <= 1)
+        if(roomCount <= 1 && !isLongRoom)
         {
             Instantiate(normalWall, transform.parent.position, transform.parent.rotation,transform);
         }

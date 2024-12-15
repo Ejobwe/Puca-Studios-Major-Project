@@ -744,7 +744,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   damage: 1
-  stop: 0
 --- !u!1 &6843239607086129570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,10 +1050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56171b9d74afc814d84580fb6bbdeb59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftWall: {fileID: 0}
-  rightWall: {fileID: 0}
-  backWall: {fileID: 0}
-  frontWall: {fileID: 0}
   wallCheck:
     serializedVersion: 2
     m_Bits: 64
@@ -1194,6 +1189,7 @@ MonoBehaviour:
   rightCam: {fileID: 0}
   frontCam: {fileID: 0}
   backCam: {fileID: 0}
+  isLongRoom: 1
 --- !u!114 &8838673109422568882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1563,4 +1559,3 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   damage: 1
-  stop: 0
