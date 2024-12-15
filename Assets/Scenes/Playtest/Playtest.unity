@@ -324,6 +324,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &28080671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -721,6 +724,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &121520340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1207,6 +1213,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &283461700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1843,6 +1852,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &469983875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1969,6 +1981,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &483439376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2201,6 +2216,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &647922521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2568,6 +2586,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &736780031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3146,6 +3167,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &761544911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3272,6 +3296,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &769059173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3879,6 +3906,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &818050758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4816,6 +4846,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1058870481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5048,6 +5081,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1065260713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5291,6 +5327,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1158932505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5523,6 +5562,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1187562910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5978,6 +6020,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1232128411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6210,6 +6255,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1278861203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6336,6 +6384,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1295202777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6462,6 +6513,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1300606405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7040,6 +7094,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1441439197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7166,6 +7223,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1448497726
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7504,6 +7564,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1480812766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8125,6 +8188,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1686583775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8251,6 +8317,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1692797764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8377,6 +8446,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1700073588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8715,6 +8787,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1771200724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8841,6 +8916,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1786603197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9208,6 +9286,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1831174806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9334,6 +9415,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1891495423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9655,6 +9739,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &1974296972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9926,6 +10013,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &2050295484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10130,7 +10220,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065480006}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cfb7b3ce7cb9914e93fc90d0f0b277d, type: 3}
   m_Name: 
@@ -10140,7 +10230,14 @@ MonoBehaviour:
     m_Bits: 128
   blocked:
   - {fileID: 0}
-  noblocked: []
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  noblocked:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2067188795
 GameObject:
   m_ObjectHideFlags: 0
@@ -10196,6 +10293,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &2067188798
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10322,6 +10422,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &2076754153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10565,6 +10668,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &2134765676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10691,6 +10797,9 @@ MonoBehaviour:
   backCam: {fileID: 0}
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  wallCheck:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!65 &2135664533
 BoxCollider:
   m_ObjectHideFlags: 0

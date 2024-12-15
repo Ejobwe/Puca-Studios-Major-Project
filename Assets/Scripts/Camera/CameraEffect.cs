@@ -64,12 +64,15 @@ public class CameraEffect : MonoBehaviour
                 }
 
             }
-        for (int j = 0; j < blocked.Count; j++)
+        if (blocked[0].tag == "Player")
         {
-            if (!blocked.Contains(noblocked[j]))
+            for (int j = 0; j < blocked.Count; j++)
             {
-                noblocked[j].GetComponent<ObjectFader>().doFade = false;
-                noblocked.Remove(noblocked[j]);
+                if (!blocked.Contains(noblocked[j]) && noblocked[j] != null)
+                {
+                    noblocked[j].GetComponent<ObjectFader>().doFade = false;
+                    noblocked.Remove(noblocked[j]);
+                }
             }
         }
 
