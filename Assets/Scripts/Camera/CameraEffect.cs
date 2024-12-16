@@ -66,7 +66,7 @@ public class CameraEffect : MonoBehaviour
             }
         if (blocked[0].tag == "Player")
         {
-            for (int j = 0; j < blocked.Count; j++)
+            for (int j = 0; j < noblocked.Count; j++)
             {
                 if (!blocked.Contains(noblocked[j]) && noblocked[j] != null)
                 {
