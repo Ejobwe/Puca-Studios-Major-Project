@@ -16,7 +16,7 @@ public class BasicRangedAI : MonoBehaviour
     public LayerMask border;
     public float DistanceToPlayer;
     public bool stop;
-    int number;
+    int number = 20;
 
     [SerializeField] private float awayDistance;
     // Start is called before the first frame update
@@ -52,15 +52,15 @@ public class BasicRangedAI : MonoBehaviour
             stop = false;
         }
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance > awayDistance && !stop)
+        if (distance > awayDistance && !stop && number > 30)
         {
             Move();
         }
 
-        else if (distance < awayDistance && !stop)
+        else if (distance < awayDistance && !stop && number > 30)
         {
             MoveAway();
-        }else if (Time.time > nextShotTime && !stop)
+        }else if (Time.time > nextShotTime && !stop && number > 30)
         {
             Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
             nextShotTime = Time.time + timeBetweenShots;

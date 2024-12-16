@@ -14,13 +14,12 @@ public class EnemyAI : MonoBehaviour
     public int damage;
     public bool stop;
 
-    int number;
+    int number = 20;
 
     private GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
-        number = 20;
         enemy = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");  
     }
