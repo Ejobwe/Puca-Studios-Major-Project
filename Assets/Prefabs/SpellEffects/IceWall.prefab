@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3334089857728033896}
   - component: {fileID: 4878600293255721584}
   - component: {fileID: 5373095059598076228}
+  - component: {fileID: 2071663631460257237}
   m_Layer: 0
   m_Name: IceWall
-  m_TagString: Untagged
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,3 +119,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2071663631460257237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607860793750473685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57764e449e6799e458286cf82a72603b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2

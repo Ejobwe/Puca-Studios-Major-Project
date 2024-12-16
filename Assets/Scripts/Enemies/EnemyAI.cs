@@ -63,7 +63,6 @@ public class EnemyAI : MonoBehaviour
         {
             StartCoroutine(attack());
         }
-
     }
 
     void follow()
@@ -79,5 +78,21 @@ public class EnemyAI : MonoBehaviour
             Player.GetComponent<Player_Health>().takeDamage(damage);
         }
         
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "IceSpell")
+        {
+            GetComponent<NavMeshAgent>().speed = 2.5f;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "IceSpell")
+        {
+            GetComponent<NavMeshAgent>().speed = 5;
+        }
     }
 }

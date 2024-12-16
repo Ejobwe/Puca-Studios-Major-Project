@@ -6,14 +6,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float PlayerMoveSpeed;
+    public float PlayerMoveSpeed;
     [SerializeField] private float PlayerSprintSpeed;
     [SerializeField] private double PSSHolder;
-    [SerializeField] private Rigidbody Rb;
-    [SerializeField] private Vector3 Movement;
+    [SerializeField] public Rigidbody Rb;
+    [SerializeField] public Vector3 Movement;
     [SerializeField] private bool sprinting;
 
     public bool canMove;
+    public bool sliding;
 
     private void Start()
     {
@@ -45,11 +46,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!sprinting && canMove)
+        if (!sprinting && canMove && !sliding)
         {
             Rb.velocity = new Vector3(Movement.x * PlayerMoveSpeed, 0, Movement.z * PlayerMoveSpeed);
         }
-        else if (sprinting && canMove)
+        else if (sprinting && canMove && !sliding)
         {
             Rb.MovePosition(Rb.position + Movement * PlayerSprintSpeed * Time.fixedDeltaTime);                          // next on agenda... Player rolling, and movement from attacks( likely to be used in the attacks code borrowing from this script)
         }
