@@ -10,27 +10,27 @@ public class Enviroment_Effects : MonoBehaviour
     private float slideZ;
     private Vector3 slide;
 
-    Movement player_move;
+    PlayerMovement player_move;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player_move = GameObject.FindWithTag("Player").GetComponent<Movement>();
+        player_move = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (Slow && other.CompareTag("Player"))
         {
-            player_move.playerSpeed = player_move.playerSpeed / 2;
+            player_move.PlayerMoveSpeed = player_move.PlayerMoveSpeed / 2;
         }
         if (Slip && other.CompareTag("Player"))
         {
             //player_move.playerSpeed = player_move.playerSpeed * 3;
-            slideX = -player_move.input.x;
-            slideZ = player_move.input.z;
-            slide = new Vector3 (slideZ * 15, 0 , slideX * 15);
-            player_move.rb.velocity = slide;
+            slideX = player_move.Movement.x;
+            slideZ = player_move.Movement.z;
+            slide = new Vector3 (slideX * 15, 0 , slideZ * 15);
+            player_move.Rb.velocity = slide;
             player_move.sliding = true;
         }
     }
@@ -40,7 +40,7 @@ public class Enviroment_Effects : MonoBehaviour
     {
         if (Slow && other.CompareTag("Player"))
         {
-            player_move.playerSpeed = player_move.playerSpeed * 2;
+            player_move.PlayerMoveSpeed = player_move.PlayerMoveSpeed * 2;
         }
         if (Slip && other.CompareTag("Player"))
         {

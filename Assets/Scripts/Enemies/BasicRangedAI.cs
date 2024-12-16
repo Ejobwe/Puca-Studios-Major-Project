@@ -22,6 +22,7 @@ public class BasicRangedAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         enemy = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
     }
@@ -65,6 +66,7 @@ public class BasicRangedAI : MonoBehaviour
             nextShotTime = Time.time + timeBetweenShots;
         }
         //Debug.Log(gameObject.name + gameObject.GetComponent<Rigidbody>().velocity);
+
     }
     void Move()
     {
@@ -76,5 +78,22 @@ public class BasicRangedAI : MonoBehaviour
         Vector3 dirToPlayer = transform.position - player.transform.position;
         Vector3 newPos = transform.position + dirToPlayer;
         enemy.SetDestination(newPos);
+    }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "IceSpell")
+        {
+            GetComponent<NavMeshAgent>().speed = 2.5f;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "IceSpell")
+        {
+            GetComponent<NavMeshAgent>().speed = 5;
+        }
     }
 }

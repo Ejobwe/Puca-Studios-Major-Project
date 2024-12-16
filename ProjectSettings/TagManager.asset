@@ -8,6 +8,8 @@ TagManager:
   - RoomCam
   - CameraManager
   - Border
+  - Enemy
+  - Ice
   layers:
   - Default
   - TransparentFX
