@@ -261,7 +261,9 @@ PrefabInstance:
       value: 'Wizard flipped '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+    - {fileID: -8700617353114198275, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
