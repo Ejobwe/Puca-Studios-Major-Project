@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour
     public LayerMask border;
 
     public int damage;
-    private bool stop;
+    public bool stop;
 
     int number;
 

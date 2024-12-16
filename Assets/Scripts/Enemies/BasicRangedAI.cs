@@ -15,7 +15,7 @@ public class BasicRangedAI : MonoBehaviour
 
     public LayerMask border;
     public float DistanceToPlayer;
-    private bool stop;
+    public bool stop;
     int number;
 
     [SerializeField] private float awayDistance;
