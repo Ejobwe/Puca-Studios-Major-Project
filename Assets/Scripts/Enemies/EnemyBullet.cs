@@ -21,11 +21,7 @@ public class EnemyBullet : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         //Player
-        if (collision.tag != "Enemy")
-        {
-           Destroy(gameObject);
-
-        }
+        
         if(collision.tag == "Player")
         {
             collision.GetComponent<Player_Health>().takeDamage(damage);

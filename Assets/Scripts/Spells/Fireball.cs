@@ -28,6 +28,8 @@ public class Fireball : MonoBehaviour
         if(other.collider.tag == "Enemy")
         {
             other.collider.GetComponent<Enemy_Health>().takeDamage(damage);
+            Destroy(this.gameObject);
         }
+        
     }
 }
