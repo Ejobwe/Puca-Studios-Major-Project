@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class Load : MonoBehaviour
 {
-    Movement player;
+    PlayerMovement player;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player").GetComponent<Movement>();
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
         StartCoroutine(load());
     }
 
     IEnumerator load()
     {
 
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(20);
         GetComponent<Image>().color = new Color(0, 0, 0, 0);
         gameObject.SetActive(false);
         player.canMove = true;
