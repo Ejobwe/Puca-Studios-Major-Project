@@ -131,6 +131,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1713038957}
     m_Modifications:
+    - target: {fileID: 2177700094052551124, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: 12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177700094052551124, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: 53.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177700094052551124, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: 15.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177700094052551124, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: 59.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2626475603472254507, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -138,6 +154,26 @@ PrefabInstance:
     - target: {fileID: 2626475603472254507, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689522520246464053, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -115.1589
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689522520246464053, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -27.37778
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689522520246464053, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.4961
+      objectReference: {fileID: 0}
+    - target: {fileID: 3689522520246464053, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.31342
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370974097675024599, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -81.9
       objectReference: {fileID: 0}
     - target: {fileID: 6215788691827315383, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_Pivot.x
@@ -398,8 +434,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.1961975, y: 0.059209824}
-  m_SizeDelta: {x: -98.6779, y: -26.89207}
+  m_AnchoredPosition: {x: 2.2809, y: 0.059209824}
+  m_SizeDelta: {x: -91.7236, y: -26.89207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &77907643
 MonoBehaviour:
@@ -1103,6 +1139,22 @@ PrefabInstance:
     - target: {fileID: 3195996790249387583, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ControlsBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965586109960257721, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: 12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965586109960257721, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: 53.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965586109960257721, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: 15.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965586109960257721, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: 60.1
       objectReference: {fileID: 0}
     - target: {fileID: 4823255937630938630, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
       propertyPath: m_Pivot.x
@@ -3773,7 +3825,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &598540065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9657,12 +9709,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 48.09, y: 13.57, z: 51.49, w: 13.63}
+  m_RaycastPadding: {x: 48.09, y: 13.57, z: 42.88, w: 13.63}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3099870b655feab4cabe5b0df6aff42e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bca8de5c05137f74fab4bbef7e72b7c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12786,6 +12838,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: 12.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: 53.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: 15.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: 59.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -13251,7 +13319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.69411767}
+  m_Color: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 0.74509805}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
