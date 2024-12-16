@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enviroment_Effects : MonoBehaviour
 {
@@ -33,6 +34,26 @@ public class Enviroment_Effects : MonoBehaviour
             player_move.Rb.velocity = slide;
             player_move.sliding = true;
         }
+        if (Slow && other.CompareTag("Enemy"))
+        {
+            other.GetComponent<NavMeshAgent>().speed = 2.5f;
+            
+        }
+        //if (Slip && other.CompareTag("Enemy"))
+        //{
+        //    slideX = other.GetComponent<Rigidbody>().velocity.x;
+        //    slideZ = other.GetComponent<Rigidbody>().velocity.x;
+        //    slide = new Vector3(slideX * 15, 0, slideZ * 15);
+        //    other.GetComponent<Rigidbody>().velocity = slide;
+        //    if (other.GetComponent<BasicRangedAI>() != null)
+        //    {
+        //        other.GetComponent<BasicRangedAI>().stop = true;
+        //    }
+        //    else if (other.GetComponent<EnemyAI>() != null)
+        //    {
+        //        other.GetComponent<EnemyAI>().stop = true;
+        //    }
+        //}
     }
     
 
@@ -47,6 +68,23 @@ public class Enviroment_Effects : MonoBehaviour
             player_move.sliding = false;
             //player_move.playerSpeed = player_move.playerSpeed / 3;
         }
+        if (Slow && other.CompareTag("Enemy"))
+        {
+            other.GetComponent<NavMeshAgent>().speed = 5;
+            
+        }
+        //if (Slip && other.CompareTag("Enemy"))
+        //{
+        //    if (other.GetComponent<BasicRangedAI>() != null)
+        //    {
+        //        other.GetComponent<BasicRangedAI>().stop = false;
+        //    }
+        //    else if (other.GetComponent<EnemyAI>() != null)
+        //    {
+        //        other.GetComponent<EnemyAI>().stop = false;
+        //    }
+        //    //player_move.playerSpeed = player_move.playerSpeed / 3;
+        //}
     }
 
     // Update is called once per frame

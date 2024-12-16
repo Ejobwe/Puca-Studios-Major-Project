@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
-    public class Player_Health : MonoBehaviour
+public class Player_Health : MonoBehaviour
     {
         // Start is called before the first frame update
 
@@ -49,6 +50,7 @@ using UnityEngine.UI;
         if (currentHealth <= 0)
             {
                 gameObject.SetActive(false);
+                SceneManager.LoadScene(3);
             }
 
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);

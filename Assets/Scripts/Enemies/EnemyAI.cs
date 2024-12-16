@@ -12,11 +12,13 @@ public class EnemyAI : MonoBehaviour
     public LayerMask border;
 
     public int damage;
-    private bool stop;
+    public bool stop;
 
     int number = 20;
 
     private GameObject Player;
+
+    [SerializeField] private float awayDistance;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,24 +51,24 @@ public class EnemyAI : MonoBehaviour
             stop = false;
         }
 
+        
         if (DistanceToPlayer > 3 && !stop && number > 30)
         {
-            enemy.speed = 6;
-            follow();
+            Move();
         }
         else
-        {
-            enemy.speed = 0;
-        }
         if(DistanceToPlayer <= 3)
         {
             StartCoroutine(attack());
         }
     }
 
-    void follow()
+    
+
+    void Move()
     {
         enemy.SetDestination(Player.transform.position);
+        enemy.stoppingDistance = awayDistance;
     }
 
     IEnumerator attack()

@@ -19,7 +19,7 @@ public class SpellCaster : MonoBehaviour
     private Vector3 SpawnPoint;
     private IsometricAiming isometricAiming;
     private Vector3 Mpos;
-    private float Speed = 5f;
+    private float Speed = 10f;
     
     
     

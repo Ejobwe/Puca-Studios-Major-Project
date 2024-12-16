@@ -232,7 +232,7 @@ public class Room_Spawner : MonoBehaviour
             case 1:
                 
                 rng = Random.Range(0, rooms.Length);
-                if(rng != 2)
+                if(rooms[rng].name != "LongRoom")
                 {
                     Instantiate(rooms[rng], transform.position, Quaternion.identity);
                     room = true;
@@ -241,7 +241,7 @@ public class Room_Spawner : MonoBehaviour
                 }
 
 
-                if (rng == 2)
+                if (rooms[rng].name == "LongRoom")
                 {
                     Instantiate(rooms[rng], transform.position, Quaternion.identity);
                     longRoom = true;

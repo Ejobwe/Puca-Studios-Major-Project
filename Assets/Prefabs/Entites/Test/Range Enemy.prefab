@@ -175,7 +175,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   DistanceToPlayer: 0
-  awayDistance: 5
+  stop: 0
+  number: 20
+  awayDistance: 10
 --- !u!195 &3365412792051451889
 NavMeshAgent:
   m_ObjectHideFlags: 0
