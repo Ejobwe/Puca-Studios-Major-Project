@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector3 Movement;
     [SerializeField] private bool sprinting;
 
+    public bool canMove;
+
     private void Start()
     {
         if (1 > PlayerMoveSpeed)
@@ -26,8 +28,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Movement.x = Input.GetAxisRaw("Horizontal");
-        Movement.z = Input.GetAxisRaw("Vertical");
+       
+            Movement.x = Input.GetAxisRaw("Horizontal");
+            Movement.z = Input.GetAxisRaw("Vertical");
+        
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -41,11 +45,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!sprinting)
+        if (!sprinting && canMove)
         {
-            Rb.MovePosition(Rb.position + Movement * PlayerMoveSpeed * Time.fixedDeltaTime);
+            Rb.velocity = new Vector3(Movement.x * PlayerMoveSpeed, 0, Movement.z * PlayerMoveSpeed);
         }
-        else if (sprinting)
+        else if (sprinting && canMove)
         {
             Rb.MovePosition(Rb.position + Movement * PlayerSprintSpeed * Time.fixedDeltaTime);                          // next on agenda... Player rolling, and movement from attacks( likely to be used in the attacks code borrowing from this script)
         }
