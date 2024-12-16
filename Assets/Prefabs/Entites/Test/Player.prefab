@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6061211292368293544}
   - component: {fileID: 83669400315311312}
   - component: {fileID: -3064581021016138392}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -176,6 +176,7 @@ MonoBehaviour:
   Movement: {x: 0, y: 0, z: 0}
   sprinting: 0
   canMove: 0
+  sliding: 0
 --- !u!114 &83669400315311312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,9 +275,49 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6985665939629942731, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6189992990918215266, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -5471901410102084090, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4896138535258819265, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4819223349682164798, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2511240423080479738, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1468141210385095649, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -1328971450476997612, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
       propertyPath: m_Name
       value: 'Wizard flipped '
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6075344892844799141, guid: ff5538f7a261b9b42a6ea439d354c60a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

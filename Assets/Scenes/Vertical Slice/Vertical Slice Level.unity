@@ -4554,8 +4554,16 @@ PrefabInstance:
       objectReference: {fileID: 1819453621}
     - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: Spells.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
+      propertyPath: Spells.Array.data[0]
+      value: 
+      objectReference: {fileID: 9012806443288443818, guid: 4234db219594c66448b2d93612b3e4b2, type: 3}
+    - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
+      propertyPath: Spells.Array.data[1]
+      value: 
+      objectReference: {fileID: 1607860793750473685, guid: 502a422fc7e4ef04dbc6a29eb1780b77, type: 3}
     - target: {fileID: 1947318381022631344, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -147.40948
