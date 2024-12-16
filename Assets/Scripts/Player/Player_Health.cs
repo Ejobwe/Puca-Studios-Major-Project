@@ -50,7 +50,7 @@ public class Player_Health : MonoBehaviour
         if (currentHealth <= 0)
             {
                 gameObject.SetActive(false);
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(2);
             }
 
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
