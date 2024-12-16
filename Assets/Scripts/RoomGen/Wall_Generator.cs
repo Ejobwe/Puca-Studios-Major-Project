@@ -24,12 +24,12 @@ public class Wall_Generator : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CheckLongRoom());
+        StartCoroutine(Delay());
     }
 
-    IEnumerator CheckLongRoom()
+    IEnumerator Delay()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(17);
         if (isLongRoom)
         {
             Ray backRay = new Ray(transform.position, Vector3.back);
@@ -39,15 +39,9 @@ public class Wall_Generator : MonoBehaviour
             {
                 backHit.collider.gameObject.GetComponent<Wall_Generator>().roomCount += 1;
                 backHit.collider.gameObject.GetComponent<Wall_Generator>().backCam = backCam;
+                backHit.collider.GetComponent<Wall_Generator>().SpawnWall();
             }
         }
-
-        StartCoroutine(Delay());
-    }
-
-    IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(2);
         SpawnWall();
     }
     public void SpawnWall()
