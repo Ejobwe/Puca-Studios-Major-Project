@@ -32,7 +32,7 @@ public class SpellMixManager : MonoBehaviour
 
     private void SpellFuse(SpellProperty SP1, SpellProperty SP2)
     {
-        if (SP1.Burning || SP2.Burning && SP1.Wet || SP2.Wet)
+        if ((SP1.Burning || SP2.Burning) && (SP1.Wet || SP2.Wet))
         {
             Debug.Log("WE MADE STEAM");
         }
