@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4878600293255721584}
   - component: {fileID: 5373095059598076228}
   - component: {fileID: 2071663631460257237}
+  - component: {fileID: -6198730500261778882}
   m_Layer: 0
   m_Name: IceWall
   m_TagString: Ice
@@ -101,7 +102,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -132,3 +133,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
+--- !u!114 &-6198730500261778882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607860793750473685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3e1012d8303ad468d9d51c18f8217e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SMM: {fileID: 0}
+  Burning: 0
+  Wet: 1
+  combo: {fileID: 0}
