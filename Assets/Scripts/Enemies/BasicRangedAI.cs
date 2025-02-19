@@ -35,24 +35,24 @@ public class BasicRangedAI : MonoBehaviour
 
         RaycastHit borderHit;
 
-        if (Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
-        {
-            if (!borderHit.collider.gameObject.CompareTag("Player"))
-            {
-                stop = true;
-                number = 200;
-            }
-            else
-            {
-                stop = false;
-            }
-        }
-        else
-        {
-            stop = false;
-        }
+        //if (Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
+        //{
+        //    if (!borderHit.collider.gameObject.CompareTag("Player"))
+        //    {
+        //        stop = true;
+        //        number = 200;
+        //    }
+        //    else
+        //    {
+        //        stop = false;
+        //    }
+        //}
+        //else
+        //{
+        //    stop = false;
+        //}
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance > awayDistance && !stop && number > 30)
+        if (distance > awayDistance && !stop && DistanceToPlayer < 30)
         {
             Move();
         }
