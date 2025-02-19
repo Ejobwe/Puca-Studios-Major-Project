@@ -10,6 +10,7 @@ public class SpellProperty : MonoBehaviour
     public bool Burning;
     public bool Wet;
     public GameObject combo;
+    
 
 void Start()
     {
