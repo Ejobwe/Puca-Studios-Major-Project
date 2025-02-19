@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8134296412240017161}
   - component: {fileID: 6259125631137905760}
   - component: {fileID: 4531753829381001836}
+  - component: {fileID: -2792660282203064016}
   m_Layer: 0
   m_Name: Steam
   m_TagString: Untagged
@@ -105,3 +106,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2792660282203064016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733155497710665275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3e1012d8303ad468d9d51c18f8217e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SMM: {fileID: 0}
+  Burning: 0
+  Wet: 0
+  combo: {fileID: 0}
