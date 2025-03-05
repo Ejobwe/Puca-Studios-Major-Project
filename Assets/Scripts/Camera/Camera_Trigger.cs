@@ -26,29 +26,29 @@ public class Camera_Trigger : MonoBehaviour
         CameraBrain = GameObject.FindWithTag("CameraManager").GetComponent<CameraManager>();
         _coll = GetComponent<Collider>();
 
-        CamCheck = transform.parent.transform.parent.GetComponent<Wall_Generator>();
+        //CamCheck = transform.parent.transform.parent.GetComponent<Wall_Generator>();
 
         
     }
 
     private void Update()
     {
-        if (CamCheck.frontCam != null)
-        {
-            frontCam = CamCheck.frontCam;
-        }
-        if(CamCheck.backCam != null)
-        {
-            backCam = CamCheck.backCam;
-        }
-        if(CamCheck.leftCam != null)
-        {
-            leftCam = CamCheck.leftCam;
-        }
-        if(CamCheck.rightCam != null) 
-        { 
-            rightCam = CamCheck.rightCam;
-        }
+        //if (CamCheck.frontCam != null)
+        //{
+        //    frontCam = CamCheck.frontCam;
+        //}
+        //if(CamCheck.backCam != null)
+        //{
+        //    backCam = CamCheck.backCam;
+        //}
+        //if(CamCheck.leftCam != null)
+        //{
+        //    leftCam = CamCheck.leftCam;
+        //}
+        //if(CamCheck.rightCam != null) 
+        //{ 
+        //    rightCam = CamCheck.rightCam;
+        //}
 
     }
     public void OnTriggerExit(Collider other)

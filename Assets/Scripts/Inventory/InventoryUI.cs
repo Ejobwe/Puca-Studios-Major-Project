@@ -30,7 +30,7 @@ public class InventoryUI : MonoBehaviour
             if (i < inventory.items.Count)
             {
                 slots[i].addItem(inventory.items[i]);
-                Debug.Log("updating UI");
+               // Debug.Log("updating UI");
             }
             else
             {

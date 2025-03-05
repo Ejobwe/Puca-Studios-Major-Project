@@ -34,25 +34,25 @@ public class EnemyAI : MonoBehaviour
 
         RaycastHit borderHit;
         
-        if(Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
-        {
-            if (!borderHit.collider.gameObject.CompareTag("Player"))
-            {
-                stop = true;
-                number = 200;
-            }
-            else
-            {
-                stop = false;
-            }
-        }
-        else
-        {
-            stop = false;
-        }
+        //if(Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
+        //{
+        //    if (!borderHit.collider.gameObject.CompareTag("Player"))
+        //    {
+        //        stop = true;
+        //        number = 200;
+        //    }
+        //    else
+        //    {
+        //        stop = false;
+        //    }
+        //}
+        //else
+        //{
+        //    stop = false;
+        //}
 
         
-        if (DistanceToPlayer > 3 && !stop && number > 30)
+        if (DistanceToPlayer > 3 && !stop && DistanceToPlayer < 30)
         {
             Move();
         }

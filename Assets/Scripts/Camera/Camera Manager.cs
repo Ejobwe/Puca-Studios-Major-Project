@@ -23,9 +23,10 @@ public class CameraManager : MonoBehaviour
     }
     public void SwapCamera(CinemachineCamera leftCam, CinemachineCamera rightCam, CinemachineCamera frontCam, CinemachineCamera backCam, Vector3 triggerExitDirection)
     {
+        Debug.Log("CameraSwap");
         if (leftCam != null)
         {
-            if (currentCamera == leftCam && triggerExitDirection.x < 0f)
+            if (currentCamera == leftCam && triggerExitDirection.x > 0f)
             {
                 currentCamera.Priority -= 1;
 
@@ -39,7 +40,7 @@ public class CameraManager : MonoBehaviour
 
         if (rightCam != null)
         {
-            if (currentCamera == rightCam && triggerExitDirection.x > 0f)
+            if (currentCamera == rightCam && triggerExitDirection.x < 0f)
             {
                 print("HELLO");
                 currentCamera.Priority -= 1;
