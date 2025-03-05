@@ -1,30 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6719257899412582497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sphere Gaming 2/Volime
-  m_EditorClassIdentifier: 
-  Name: Volime
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3413619270
-    data2: 4139425382
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-5690677134863578635
+--- !u!114 &-8088157171809900208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: ../Sound Design/Learning FMOD Intergration/Assets/FMOD/Sound Design FMOD/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638683184079391698
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638767755245648420
   FileSizes:
   - Name: Desktop
-    Value: 83520
+    Value: 541280
   Exists: 1
---- !u!114 &-1083922396024496412
+--- !u!114 &-2104836814589050451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,53 +29,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Shpere gaming 1 solo
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: snapshot:/Shpere gaming 1 solo
-  Guid:
-    Data1: -1997191787
-    Data2: 1256602310
-    Data3: 1547573181
-    Data4: 1690335463
-  Banks:
-  - {fileID: 942942830798660859}
-  - {fileID: -5690677134863578635}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-319648312095671328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sphere Gaming 2
-  m_EditorClassIdentifier: 
-  Path: event:/Sphere Gaming 2
-  Guid:
-    Data1: 947058352
-    Data2: 1215036025
-    Data3: -893314648
-    Data4: -970421563
-  Banks:
-  - {fileID: -5690677134863578635}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6719257899412582497}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5877
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638767755238912655
+  FileSizes:
+  - Name: Desktop
+    Value: 858
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,22 +53,20 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 8027241581684151964}
-  - {fileID: 942942830798660859}
-  - {fileID: -5690677134863578635}
+  - {fileID: -2104836814589050451}
+  - {fileID: 5455298256137886285}
+  - {fileID: -8088157171809900208}
+  - {fileID: 5196819213728997773}
   EditorEvents:
-  - {fileID: 5955205312288790568}
-  - {fileID: -1083922396024496412}
-  - {fileID: 253623259471674673}
-  - {fileID: -319648312095671328}
+  - {fileID: 8316673291840827358}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 942942830798660859}
+  - {fileID: 5455298256137886285}
   StringsBanks:
-  - {fileID: 8027241581684151964}
-  cacheTime: 638683184867483768
+  - {fileID: -2104836814589050451}
+  cacheTime: 638767755245648420
   cacheVersion: 131619
---- !u!114 &253623259471674673
+--- !u!114 &5196819213728997773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,26 +75,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sphere Gaming
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  Path: event:/Sphere Gaming
-  Guid:
-    Data1: 256258370
-    Data2: 1269757666
-    Data3: 1966638007
-    Data4: 1465799857
-  Banks:
-  - {fileID: -5690677134863578635}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 3983340183156360530}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5877
---- !u!114 &942942830798660859
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638767755075023347
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &5455298256137886285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,39 +98,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../Sound Design/Learning FMOD Intergration/Assets/FMOD/Sound Design FMOD/Build/Desktop/Master.bank
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638683184867468717
+  lastModified: 638767755238892665
   FileSizes:
   - Name: Desktop
-    Value: 2488
+    Value: 1036
   Exists: 1
---- !u!114 &3983340183156360530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sphere Gaming/Volime
-  m_EditorClassIdentifier: 
-  Name: Volime
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3413619270
-    data2: 4139425382
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &5955205312288790568
+--- !u!114 &8316673291840827358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,41 +116,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Normal
+  m_Name: event:/Main Menu Music
   m_EditorClassIdentifier: 
-  Path: snapshot:/Normal
+  Path: event:/Main Menu Music
   Guid:
-    Data1: 1626712454
-    Data2: 1275496381
-    Data3: 394508450
-    Data4: 935452764
+    Data1: -1556276315
+    Data2: 1153588476
+    Data3: 991636353
+    Data4: 1364146566
   Banks:
-  - {fileID: 942942830798660859}
-  - {fileID: -5690677134863578635}
-  IsStream: 0
+  - {fileID: -8088157171809900208}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &8027241581684151964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../Sound Design/Learning FMOD Intergration/Assets/FMOD/Sound Design FMOD/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638683184867483768
-  FileSizes:
-  - Name: Desktop
-    Value: 1084
-  Exists: 1
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 48500

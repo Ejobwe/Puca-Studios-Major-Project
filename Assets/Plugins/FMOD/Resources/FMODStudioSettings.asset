@@ -526,10 +526,9 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../Sound Design/Learning FMOD Intergration/Assets/FMOD/Sound
-    Design FMOD/Sound Design FMOD.fspro
-  sourceBankPath: ../Sound Design/Learning FMOD Intergration/Assets/FMOD/Sound Design
-    FMOD/Build
+  sourceProjectPath: "Assets/FMOD/P\xFAca Game Sound Project FMOD/P\xFAca Game Sound
+    Project FMOD.fspro"
+  sourceBankPath: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build"
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -553,6 +552,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Music
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
