@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 
 public class Movement : MonoBehaviour
 {
     public Rigidbody rb;
+    public Transform playerBottom;
 
     public bool camTran;
 
@@ -20,10 +23,16 @@ public class Movement : MonoBehaviour
     public bool sliding;
     public bool canMove;
 
+    public EventInstance playerFootsteps;
+
     private void Start()
     {
+        playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
+
         rb = GetComponent<Rigidbody>();
         //   Bullet = GetComponent<Gun>();
+
+        UpdateSound();
     }
 
     void Update()
@@ -45,6 +54,11 @@ public class Movement : MonoBehaviour
           // Debug.Log(input.x);
     }
 
+    private void FixedUpdate()
+    {
+        UpdateSound();
+    }
+
     private IEnumerator Dash()
     {
         isDashing = true;
@@ -56,5 +70,39 @@ public class Movement : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         camTran = false;
+    }
+
+    private void UpdateSound()
+    {
+        playerFootsteps.set3DAttributes(RuntimeUtils.To3DAttributes(playerBottom.position));
+
+        if (rb.velocity.x != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                playerFootsteps.start();
+        }
+        else if (rb.velocity.z != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                playerFootsteps.start();
+        }
+        else if (rb.velocity.z != 0f && rb.velocity.x != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            playerFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                playerFootsteps.start();
+        }
+        else
+        {
+            playerFootsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }
