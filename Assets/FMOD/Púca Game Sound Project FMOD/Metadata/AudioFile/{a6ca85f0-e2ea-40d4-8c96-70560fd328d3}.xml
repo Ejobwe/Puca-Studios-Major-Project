@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{847e06bc-2120-45da-a9d3-8ffdf4d4e5e9}">
+	<object class="AudioFile" id="{a6ca85f0-e2ea-40d4-8c96-70560fd328d3}">
 		<property name="assetPath">
-			<value>Music/Main Menu Music play on launch.wav</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>SFX/Pickups/Fire Pickup placeholder.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -14,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>17.461405895691609</value>
+			<value>1.750204081632653</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{ed1fddc2-404f-4913-a3ea-39e0d08fc99b}</destination>

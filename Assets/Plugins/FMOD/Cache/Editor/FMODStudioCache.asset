@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638767755245648420
+  lastModified: 638771330971001386
   FileSizes:
   - Name: Desktop
     Value: 541280
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638767755238912655
+  lastModified: 638771332503938729
   FileSizes:
   - Name: Desktop
-    Value: 858
+    Value: 1006
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -58,14 +58,43 @@ MonoBehaviour:
   - {fileID: -8088157171809900208}
   - {fileID: 5196819213728997773}
   EditorEvents:
-  - {fileID: 8316673291840827358}
+  - {fileID: 2655879048112964742}
+  - {fileID: 6497892871258626862}
+  - {fileID: 6165101069501583737}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5455298256137886285}
   StringsBanks:
   - {fileID: -2104836814589050451}
-  cacheTime: 638767755245648420
+  cacheTime: 638771332504583949
   cacheVersion: 131619
+--- !u!114 &2655879048112964742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Main Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Main Menu Music
+  Guid:
+    Data1: -1556276315
+    Data2: 1153588476
+    Data3: 991636353
+    Data4: 1364146566
+  Banks:
+  - {fileID: -8088157171809900208}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 48500
 --- !u!114 &5196819213728997773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,10 +110,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638767755075023347
+  lastModified: 638771332504583949
   FileSizes:
   - Name: Desktop
-    Value: 494
+    Value: 35968
   Exists: 1
 --- !u!114 &5455298256137886285
 MonoBehaviour:
@@ -101,12 +130,12 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638767755238892665
+  lastModified: 638771332503928650
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
---- !u!114 &8316673291840827358
+--- !u!114 &6165101069501583737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,20 +145,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Main Menu Music
+  m_Name: event:/SFX/Pickup SFX/fire Pickup SFX
   m_EditorClassIdentifier: 
-  Path: event:/Main Menu Music
+  Path: event:/SFX/Pickup SFX/fire Pickup SFX
   Guid:
-    Data1: -1556276315
-    Data2: 1153588476
-    Data3: 991636353
-    Data4: 1364146566
+    Data1: 100951688
+    Data2: 1173034295
+    Data3: 135218359
+    Data4: -1243086660
   Banks:
-  - {fileID: -8088157171809900208}
-  IsStream: 1
-  Is3D: 0
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 48500
+  Length: 1750
+--- !u!114 &6497892871258626862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Footsteps
+  Guid:
+    Data1: -546734392
+    Data2: 1133789727
+    Data3: -2011707766
+    Data4: -954444644
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 830

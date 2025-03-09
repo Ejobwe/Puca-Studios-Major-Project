@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     {
         playerFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.playerFootsteps);
 
+        UpdateSound();
+
         if (1 > PlayerMoveSpeed)
         {
             PlayerMoveSpeed = 1;
@@ -33,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
 
         PSSHolder= PlayerMoveSpeed * 1.5;
         PlayerSprintSpeed = Convert.ToSingle(PSSHolder);
-
-        UpdateSound();
     }
 
     private void Update()
@@ -56,8 +56,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        UpdateSound();
-
         if (!sprinting && canMove && !sliding)
         {
             Rb.velocity = new Vector3(Movement.x * PlayerMoveSpeed, 0, Movement.z * PlayerMoveSpeed);
@@ -66,13 +64,15 @@ public class PlayerMovement : MonoBehaviour
         {
             Rb.MovePosition(Rb.position + Movement * PlayerSprintSpeed * Time.fixedDeltaTime);                          // next on agenda... Player rolling, and movement from attacks( likely to be used in the attacks code borrowing from this script)
         }
+
+        UpdateSound();
     }
 
     private void UpdateSound()
     {
         playerFootsteps.set3DAttributes(RuntimeUtils.To3DAttributes(playerBottom.position));
 
-        if (Rb.velocity.x != 0f)
+        if (Rb.velocity.x != 0f && !sliding)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
                 playerFootsteps.start();
         }
-        else if (Rb.velocity.z != 0f)
+        else if (Rb.velocity.z != 0f && !sliding)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
                 playerFootsteps.start();
         }
-        else if (Rb.velocity.z != 0f && Rb.velocity.x != 0f)
+        else if (Rb.velocity.z != 0f && Rb.velocity.x != 0f && !sliding)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);

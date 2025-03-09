@@ -10891,11 +10891,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <playerFootsteps>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -546734392
+      Data2: 1133789727
+      Data3: -2011707766
+      Data4: -954444644
+    Path: event:/SFX/Player SFX/player Footsteps
   <enemyFootsteps>k__BackingField:
     Guid:
       Data1: 0
@@ -13032,7 +13032,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1320801334}
-  - component: {fileID: 1320801333}
   - component: {fileID: 1320801336}
   m_Layer: 0
   m_Name: Audio Manager
@@ -13041,19 +13040,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1320801333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320801332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2249d113e31cb644885dc491974ca7c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 1998470936}
 --- !u!4 &1320801334
 Transform:
   m_ObjectHideFlags: 0
@@ -17173,11 +17159,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.25
   far clip plane: 5000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
-  orthographic size: 10
+  orthographic size: 14.3
   m_Depth: -6.61
   m_CullingMask:
     serializedVersion: 2
@@ -17201,8 +17187,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733293428}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38365063, y: 0, z: 0, w: 0.9234783}
-  m_LocalPosition: {x: -57.785248, y: 14.151358, z: -13.096388}
+  m_LocalRotation: {x: 0.36939582, y: 0, z: 0, w: 0.9292722}
+  m_LocalPosition: {x: -154.59, y: 24.990002, z: 57.270004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21176,7 +21162,7 @@ PrefabInstance:
     - target: {fileID: 8337324840687291384, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1320801333}
+      objectReference: {fileID: 0}
     - target: {fileID: 8337324840687291384, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetVolume
@@ -21191,17 +21177,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3674613174189326642, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
   m_PrefabInstance: {fileID: 1998470934}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1998470936 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8337324840687291384, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-  m_PrefabInstance: {fileID: 1998470934}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1998470937 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1837721996963604735, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
