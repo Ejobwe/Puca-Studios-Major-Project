@@ -239,6 +239,7 @@ MonoBehaviour:
   Rb: {fileID: 0}
   Movement: {x: 0, y: 0, z: 0}
   sprinting: 0
+  playerBottom: {fileID: 8620406080009561157}
   canMove: 0
   sliding: 0
 --- !u!114 &83669400315311312
