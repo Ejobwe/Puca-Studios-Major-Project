@@ -89,10 +89,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638776657156371800
+  lastModified: 638777586395342281
   FileSizes:
   - Name: Desktop
-    Value: 1278
+    Value: 1410
   Exists: 1
 --- !u!114 &-608039952032590616
 MonoBehaviour:
@@ -146,12 +146,14 @@ MonoBehaviour:
   - {fileID: -5261752806660675040}
   - {fileID: -608039952032590616}
   - {fileID: 3479348773719939073}
+  - {fileID: 3134925828862974841}
+  - {fileID: 5678948527485315785}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5455298256137886285}
   StringsBanks:
   - {fileID: -2104836814589050451}
-  cacheTime: 638776657157331271
+  cacheTime: 638777632657319639
   cacheVersion: 131619
 --- !u!114 &2347220663610290740
 MonoBehaviour:
@@ -204,6 +206,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 48500
+--- !u!114 &3134925828862974841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+  Guid:
+    Data1: -1026172666
+    Data2: 1114701544
+    Data3: -1528410193
+    Data4: -134833747
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
 --- !u!114 &3479348773719939073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,10 +275,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638776657157331271
+  lastModified: 638777632657319639
   FileSizes:
   - Name: Desktop
-    Value: 392800
+    Value: 426112
   Exists: 1
 --- !u!114 &5455298256137886285
 MonoBehaviour:
@@ -266,11 +295,38 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638776657156361808
+  lastModified: 638777586395322282
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &5678948527485315785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+  Guid:
+    Data1: -1324713590
+    Data2: 1228623726
+    Data3: 64972930
+    Data4: 353736687
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
 --- !u!114 &6165101069501583737
 MonoBehaviour:
   m_ObjectHideFlags: 0
