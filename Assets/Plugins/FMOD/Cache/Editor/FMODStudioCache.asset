@@ -15,11 +15,65 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638773748449292474
+  lastModified: 638771330971001386
   FileSizes:
   - Name: Desktop
     Value: 541280
   Exists: 1
+--- !u!114 &-7035304372317831423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Select
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Select
+  Guid:
+    Data1: 661412619
+    Data2: 1226007382
+    Data3: -1789146690
+    Data4: -2010387109
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5261752806660675040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Unselect
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Unselect
+  Guid:
+    Data1: -1028035313
+    Data2: 1077154307
+    Data3: 2027969964
+    Data4: 1356946681
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2104836814589050451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,11 +89,38 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638773748449213658
+  lastModified: 638776657156371800
   FileSizes:
   - Name: Desktop
-    Value: 1006
+    Value: 1278
   Exists: 1
+--- !u!114 &-608039952032590616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/pickup Hover SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/pickup Hover SFX
+  Guid:
+    Data1: 1242134101
+    Data2: 1112203383
+    Data3: -1492014918
+    Data4: 1765212251
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30275
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,13 +142,41 @@ MonoBehaviour:
   - {fileID: 2655879048112964742}
   - {fileID: 6497892871258626862}
   - {fileID: 6165101069501583737}
+  - {fileID: -7035304372317831423}
+  - {fileID: -5261752806660675040}
+  - {fileID: -608039952032590616}
+  - {fileID: 3479348773719939073}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5455298256137886285}
   StringsBanks:
   - {fileID: -2104836814589050451}
-  cacheTime: 638773748449296480
+  cacheTime: 638776657157331271
   cacheVersion: 131619
+--- !u!114 &2347220663610290740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/player Footsteps/isSprinting
+  m_EditorClassIdentifier: 
+  Name: isSprinting
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 516941880
+    data2: 2204918999
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2655879048112964742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,6 +204,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 48500
+--- !u!114 &3479348773719939073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Miss
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Miss
+  Guid:
+    Data1: -1460144388
+    Data2: 1113654763
+    Data3: 1003120264
+    Data4: -2097339375
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5196819213728997773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,10 +246,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638773748449296480
+  lastModified: 638776657157331271
   FileSizes:
   - Name: Desktop
-    Value: 35968
+    Value: 392800
   Exists: 1
 --- !u!114 &5455298256137886285
 MonoBehaviour:
@@ -130,7 +266,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638767755238892665
+  lastModified: 638776657156361808
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -185,7 +321,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 2347220663610290740}
   MinDistance: 1
   MaxDistance: 20
-  Length: 830
+  Length: 450
