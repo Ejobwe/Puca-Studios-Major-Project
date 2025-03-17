@@ -137,11 +137,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 100951688
-      Data2: 1173034295
-      Data3: 135218359
-      Data4: -1243086660
-    Path: event:/SFX/Pickup SFX/fire Pickup SFX
+      Data1: 1242134101
+      Data2: 1112203383
+      Data3: -1492014918
+      Data4: 1765212251
+    Path: event:/SFX/Pickup SFX/pickup Hover SFX
   Event: 
   PlayEvent: 1
   StopEvent: 2

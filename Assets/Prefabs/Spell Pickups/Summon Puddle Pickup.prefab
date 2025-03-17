@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3335223649218129246}
   - component: {fileID: 4122610692657980314}
   - component: {fileID: 9040220049952086224}
+  - component: {fileID: 9135850113370044466}
   m_Layer: 0
   m_Name: Summon Puddle Pickup
   m_TagString: Untagged
@@ -121,3 +122,34 @@ MonoBehaviour:
   Radius: 2
   item: {fileID: 11400000, guid: 7f198f1898e8f6b47b9d63313adfcdc9, type: 2}
   grabbable: 0
+--- !u!114 &9135850113370044466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544554319555865480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1242134101
+      Data2: 1112203383
+      Data3: -1492014918
+      Data4: 1765212251
+    Path: event:/SFX/Pickup SFX/pickup Hover SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
