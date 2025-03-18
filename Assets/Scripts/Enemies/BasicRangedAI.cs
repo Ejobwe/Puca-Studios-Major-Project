@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class BasicRangedAI : MonoBehaviour
 {
@@ -18,13 +20,23 @@ public class BasicRangedAI : MonoBehaviour
     public bool stop;
     public int number = 20;
 
+    private Rigidbody Rb;
+
+    public Transform enemyBottom;
+
+    public EventInstance enemyFootsteps;
+
     [SerializeField] private float awayDistance;
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemyFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.eightLeggedEnemyFootsteps);
+
+        UpdateSound();
+
         enemy = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
+        Rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -82,6 +94,44 @@ public class BasicRangedAI : MonoBehaviour
         enemy.SetDestination(newPos);
     }
 
+    private void FixedUpdate()
+    {
+        UpdateSound();
+    }
+
+    private void UpdateSound()
+    {
+        enemyFootsteps.set3DAttributes(RuntimeUtils.To3DAttributes(enemyBottom.position));
+
+        if (Rb.velocity.x != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            enemyFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                enemyFootsteps.start();
+        }
+        else if (Rb.velocity.z != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            enemyFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                enemyFootsteps.start();
+        }
+        else if (Rb.velocity.z != 0f && Rb.velocity.x != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            enemyFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                enemyFootsteps.start();
+        }
+        else
+        {
+            enemyFootsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {

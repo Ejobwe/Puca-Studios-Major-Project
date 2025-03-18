@@ -1,8 +1,10 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using FMODUnity;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -18,10 +20,20 @@ public class EnemyAI : MonoBehaviour
 
     private GameObject Player;
 
+    private Rigidbody Rb;
+
+    public Transform enemyBottom;
+
+    public EventInstance enemyFootsteps;
+
     [SerializeField] private float awayDistance;
     // Start is called before the first frame update
     void Start()
     {
+        enemyFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.sixLeggedEnemyFootsteps);
+
+        UpdateSound();
+
         enemy = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");  
     }
@@ -63,7 +75,44 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    
+    private void FixedUpdate()
+    {
+        UpdateSound();
+    }
+
+    private void UpdateSound()
+    {
+        enemyFootsteps.set3DAttributes(RuntimeUtils.To3DAttributes(enemyBottom.position));
+
+        if (Rb.velocity.x != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            enemyFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                enemyFootsteps.start();
+        }
+        else if (Rb.velocity.z != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            enemyFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                enemyFootsteps.start();
+        }
+        else if (Rb.velocity.z != 0f && Rb.velocity.x != 0f)
+        {
+            PLAYBACK_STATE playbackState;
+            enemyFootsteps.getPlaybackState(out playbackState);
+
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                enemyFootsteps.start();
+        }
+        else
+        {
+            enemyFootsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+    }
 
     void Move()
     {

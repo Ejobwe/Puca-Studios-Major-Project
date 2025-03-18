@@ -47,6 +47,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5474216240611134089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Click
+  Guid:
+    Data1: 972787024
+    Data2: 1076101062
+    Data3: -1611192156
+    Data4: 1621814505
+  Banks:
+  - {fileID: 5196819213728997773}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5261752806660675040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,10 +116,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638777586395342281
+  lastModified: 638779053932478811
   FileSizes:
   - Name: Desktop
-    Value: 1410
+    Value: 1446
   Exists: 1
 --- !u!114 &-608039952032590616
 MonoBehaviour:
@@ -148,12 +175,13 @@ MonoBehaviour:
   - {fileID: 3479348773719939073}
   - {fileID: 3134925828862974841}
   - {fileID: 5678948527485315785}
+  - {fileID: -5474216240611134089}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5455298256137886285}
   StringsBanks:
   - {fileID: -2104836814589050451}
-  cacheTime: 638778407284216799
+  cacheTime: 638779056517578624
   cacheVersion: 131619
 --- !u!114 &2347220663610290740
 MonoBehaviour:
@@ -275,10 +303,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638778407284216799
+  lastModified: 638779056517578624
   FileSizes:
   - Name: Desktop
-    Value: 463328
+    Value: 469472
   Exists: 1
 --- !u!114 &5455298256137886285
 MonoBehaviour:
@@ -295,7 +323,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638777586395322282
+  lastModified: 638779053932458287
   FileSizes:
   - Name: Desktop
     Value: 1036
