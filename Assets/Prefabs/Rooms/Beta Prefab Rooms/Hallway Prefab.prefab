@@ -310,7 +310,7 @@ Transform:
   m_GameObject: {fileID: 1285422327069932211}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.461, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5054, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.1, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2226,6 +2226,7 @@ GameObject:
   - component: {fileID: 5093692993470207663}
   - component: {fileID: 8095625943124755372}
   - component: {fileID: 6620494401877301289}
+  - component: {fileID: 2596321505668849697}
   m_Layer: 0
   m_Name: RoomCheck
   m_TagString: RoomCheck
@@ -2315,12 +2316,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2596321505668849697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5860884932497883179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ce1cde0f6c056448f7e89e031a082a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomFinished: 0
+  spawner: {fileID: 4301581881786739790}
 --- !u!1 &5883971757329657977
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,7 +2611,7 @@ Transform:
   m_GameObject: {fileID: 6235082776131947352}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.4605, y: 0, z: 0}
+  m_LocalPosition: {x: 0.4986, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.1, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
