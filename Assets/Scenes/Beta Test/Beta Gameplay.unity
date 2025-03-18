@@ -9349,6 +9349,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0283860f25ea155439b1ae01700b5556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <music>k__BackingField:
+    Guid:
+      Data1: -2019831982
+      Data2: 1250177706
+      Data3: -1676847730
+      Data4: -1990015886
+    Path: event:/Music/In Game Music
+  <ambiencePlaceHolder>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -546734392
@@ -9358,39 +9372,39 @@ MonoBehaviour:
     Path: event:/SFX/Player SFX/player Footsteps
   <eightLeggedEnemyFootsteps>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1324713590
+      Data2: 1228623726
+      Data3: 64972930
+      Data4: 353736687
+    Path: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
   <sixLeggedEnemyFootsteps>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1026172666
+      Data2: 1114701544
+      Data3: -1528410193
+      Data4: -134833747
+    Path: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
   <buttonHover>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 661412619
+      Data2: 1226007382
+      Data3: -1789146690
+      Data4: -2010387109
+    Path: event:/SFX/Menu SFX/menu Select
   <buttonUnHover>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1028035313
+      Data2: 1077154307
+      Data3: 2027969964
+      Data4: 1356946681
+    Path: event:/SFX/Menu SFX/menu Unselect
   <buttonClick>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 972787024
+      Data2: 1076101062
+      Data3: -1611192156
+      Data4: 1621814505
+    Path: event:/SFX/Menu SFX/menu Click
 --- !u!1 &1091485680
 GameObject:
   m_ObjectHideFlags: 0
@@ -11742,6 +11756,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 875431a5471d6384bba4dbd4a3603350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterVolume: 1
+  musicVolume: 1
+  ambienceVolume: 1
+  sfxVolume: 1
 --- !u!1 &1328571927
 GameObject:
   m_ObjectHideFlags: 0
@@ -18938,10 +18956,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Menu Set
       objectReference: {fileID: 0}
-    - target: {fileID: 1837721996963604735, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3349269905019806477, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -18961,14 +18975,6 @@ PrefabInstance:
     - target: {fileID: 3349269905019806477, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3514723621811010169, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3514723621811010169, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3674613174189326642, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_Pivot.x
@@ -19050,34 +19056,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_RaycastPadding.w
-      value: 12.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_RaycastPadding.x
-      value: 53.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_RaycastPadding.y
-      value: 15.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5294284314312986284, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_RaycastPadding.z
-      value: 59.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7006846404544957327, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -19093,14 +19071,6 @@ PrefabInstance:
     - target: {fileID: 7006846404544957327, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnMouseUnHoverButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 8337324840687291384, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8337324840687291384, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetVolume
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
