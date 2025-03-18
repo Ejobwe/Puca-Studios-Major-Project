@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerFootsteps.set3DAttributes(RuntimeUtils.To3DAttributes(playerBottom.position));
 
-        if (Rb.velocity.x != 0f && !sliding)
+        if (Rb.velocity.x != 0f && !sliding && canMove)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
                 playerFootsteps.start();
         }
-        else if (Rb.velocity.z != 0f && !sliding)
+        else if (Rb.velocity.z != 0f && !sliding && canMove)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
                 playerFootsteps.start();
         }
-        else if (Rb.velocity.z != 0f && Rb.velocity.x != 0f && !sliding)
+        else if (Rb.velocity.z != 0f && Rb.velocity.x != 0f && !sliding && canMove)
         {
             PLAYBACK_STATE playbackState;
             playerFootsteps.getPlaybackState(out playbackState);
