@@ -1,229 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8088157171809900208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638771330971001386
-  FileSizes:
-  - Name: Desktop
-    Value: 541280
-  Exists: 1
---- !u!114 &-7035304372317831423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Menu SFX/menu Select
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu SFX/menu Select
-  Guid:
-    Data1: 661412619
-    Data2: 1226007382
-    Data3: -1789146690
-    Data4: -2010387109
-  Banks:
-  - {fileID: 5196819213728997773}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5474216240611134089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Menu SFX/menu Click
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu SFX/menu Click
-  Guid:
-    Data1: 972787024
-    Data2: 1076101062
-    Data3: -1611192156
-    Data4: 1621814505
-  Banks:
-  - {fileID: 5196819213728997773}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5261752806660675040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Menu SFX/menu Unselect
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu SFX/menu Unselect
-  Guid:
-    Data1: -1028035313
-    Data2: 1077154307
-    Data3: 2027969964
-    Data4: 1356946681
-  Banks:
-  - {fileID: 5196819213728997773}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2104836814589050451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  lastModified: 638779053932478811
-=======
-  lastModified: 638779080234774018
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234774018
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234774018
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234774018
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234774018
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 1446
-  Exists: 1
---- !u!114 &-608039952032590616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Pickup SFX/pickup Hover SFX
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Pickup SFX/pickup Hover SFX
-  Guid:
-    Data1: 1242134101
-    Data2: 1112203383
-    Data3: -1492014918
-    Data4: 1765212251
-  Banks:
-  - {fileID: 5196819213728997773}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 30275
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -2104836814589050451}
-  - {fileID: 5455298256137886285}
-  - {fileID: -8088157171809900208}
-  - {fileID: 5196819213728997773}
-  EditorEvents:
-  - {fileID: 2655879048112964742}
-  - {fileID: 6497892871258626862}
-  - {fileID: 6165101069501583737}
-  - {fileID: -7035304372317831423}
-  - {fileID: -5261752806660675040}
-  - {fileID: -608039952032590616}
-  - {fileID: 3479348773719939073}
-  - {fileID: 3134925828862974841}
-  - {fileID: 5678948527485315785}
-  - {fileID: -5474216240611134089}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 5455298256137886285}
-  StringsBanks:
-  - {fileID: -2104836814589050451}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  cacheTime: 638779056517578624
-=======
-  cacheTime: 638779080234876443
->>>>>>> Stashed changes
-=======
-  cacheTime: 638779080234876443
->>>>>>> Stashed changes
-=======
-  cacheTime: 638779080234876443
->>>>>>> Stashed changes
-=======
-  cacheTime: 638779080234876443
->>>>>>> Stashed changes
-=======
-  cacheTime: 638779080234876443
->>>>>>> Stashed changes
-  cacheVersion: 131619
---- !u!114 &2347220663610290740
+--- !u!114 &-8214602627707594269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,7 +24,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &2655879048112964742
+--- !u!114 &-7298670256967621846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,51 +34,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Main Menu Music
+  m_Name: event:/SFX/Menu SFX/menu Select
   m_EditorClassIdentifier: 
-  Path: event:/Music/Main Menu Music
+  Path: event:/SFX/Menu SFX/menu Select
   Guid:
-    Data1: -1556276315
-    Data2: 1153588476
-    Data3: 991636353
-    Data4: 1364146566
+    Data1: 661412619
+    Data2: 1226007382
+    Data3: -1789146690
+    Data4: -2010387109
   Banks:
-  - {fileID: -8088157171809900208}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 48500
---- !u!114 &3134925828862974841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
-  Guid:
-    Data1: -1026172666
-    Data2: 1114701544
-    Data3: -1528410193
-    Data4: -134833747
-  Banks:
-  - {fileID: 5196819213728997773}
+  - {fileID: 2480582485997872963}
   IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 400
---- !u!114 &3479348773719939073
+  Length: 0
+--- !u!114 &-6929934117353619485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -320,7 +70,7 @@ MonoBehaviour:
     Data3: 1003120264
     Data4: -2097339375
   Banks:
-  - {fileID: 5196819213728997773}
+  - {fileID: 2480582485997872963}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -328,94 +78,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &5196819213728997773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
-  Name: SFX
-  StudioPath: bank:/SFX
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  lastModified: 638779056517578624
-=======
-  lastModified: 638779080234876443
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234876443
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234876443
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234876443
->>>>>>> Stashed changes
-=======
-  lastModified: 638779080234876443
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: Desktop
-    Value: 469472
-  Exists: 1
---- !u!114 &5455298256137886285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638779053932458287
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
---- !u!114 &5678948527485315785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
-  Guid:
-    Data1: -1324713590
-    Data2: 1228623726
-    Data3: 64972930
-    Data4: 353736687
-  Banks:
-  - {fileID: 5196819213728997773}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 450
---- !u!114 &6165101069501583737
+--- !u!114 &-5578225398574626061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -434,7 +97,7 @@ MonoBehaviour:
     Data3: 135218359
     Data4: -1243086660
   Banks:
-  - {fileID: 5196819213728997773}
+  - {fileID: 2480582485997872963}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -442,7 +105,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1750
---- !u!114 &6497892871258626862
+--- !u!114 &-5125726006023859604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Main Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Main Menu Music
+  Guid:
+    Data1: -1556276315
+    Data2: 1153588476
+    Data3: 991636353
+    Data4: 1364146566
+  Banks:
+  - {fileID: 1463049922401189822}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 48500
+--- !u!114 &-4583279891668767972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,12 +151,262 @@ MonoBehaviour:
     Data3: -2011707766
     Data4: -954444644
   Banks:
-  - {fileID: 5196819213728997773}
+  - {fileID: 2480582485997872963}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 2347220663610290740}
+  - {fileID: -8214602627707594269}
   MinDistance: 1
   MaxDistance: 20
   Length: 450
+--- !u!114 &-3249028772511989370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/pickup Hover SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/pickup Hover SFX
+  Guid:
+    Data1: 1242134101
+    Data2: 1112203383
+    Data3: -1492014918
+    Data4: 1765212251
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30275
+--- !u!114 &-239521393016366171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+  Guid:
+    Data1: -1324713590
+    Data2: 1228623726
+    Data3: 64972930
+    Data4: 353736687
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 8575044568419345392}
+  - {fileID: 1903925806909654580}
+  - {fileID: 1463049922401189822}
+  - {fileID: 2480582485997872963}
+  EditorEvents:
+  - {fileID: -5125726006023859604}
+  - {fileID: 4997526024108441590}
+  - {fileID: -7298670256967621846}
+  - {fileID: 3685305164825477819}
+  - {fileID: 3546380795260987280}
+  - {fileID: -3249028772511989370}
+  - {fileID: -5578225398574626061}
+  - {fileID: -239521393016366171}
+  - {fileID: -4583279891668767972}
+  - {fileID: -6929934117353619485}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 1903925806909654580}
+  StringsBanks:
+  - {fileID: 8575044568419345392}
+  cacheTime: 638779082486041765
+  cacheVersion: 131619
+--- !u!114 &1463049922401189822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638778981658720650
+  FileSizes:
+  - Name: Desktop
+    Value: 541280
+  Exists: 1
+--- !u!114 &1903925806909654580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638755241117036617
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &2480582485997872963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638779082486041765
+  FileSizes:
+  - Name: Desktop
+    Value: 469472
+  Exists: 1
+--- !u!114 &3546380795260987280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Click
+  Guid:
+    Data1: 972787024
+    Data2: 1076101062
+    Data3: -1611192156
+    Data4: 1621814505
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3685305164825477819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Unselect
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Unselect
+  Guid:
+    Data1: -1028035313
+    Data2: 1077154307
+    Data3: 2027969964
+    Data4: 1356946681
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4997526024108441590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+  Guid:
+    Data1: -1026172666
+    Data2: 1114701544
+    Data3: -1528410193
+    Data4: -134833747
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
+--- !u!114 &8575044568419345392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638779082486006201
+  FileSizes:
+  - Name: Desktop
+    Value: 1446
+  Exists: 1
