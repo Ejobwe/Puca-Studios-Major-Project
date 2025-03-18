@@ -3,39 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Linq;
 
 public class SpellProperty : MonoBehaviour
 {
-    [SerializeField] private SpellMixManager SMM;
     public bool Burning;
     public bool Wet;
-    public GameObject combo;
-    
+    public bool Metal;
+    public bool Frozen;
 
-void Start()
+    public List<SpellProperty> cantCheckProperties = new List<SpellProperty>();
+
+    void FixedUpdate()
     {
-        SMM = GameObject.Find("GameManager").GetComponent<SpellMixManager>();
-
-    }
-
-    void Update()
-    {
-
+        if(cantCheckProperties.Count > 0) cantCheckProperties = new List<SpellProperty>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<SpellProperty>())
+        if(other.TryGetComponent<SpellProperty>(out SpellProperty SpellProperty))
         {
-            SMM.Spells.Add(this.GameObject());
-            SMM.Props.Add(this);
-            combo = other.GameObject();
+            print("Spellcollision");
+            if(!cantCheckProperties.Contains(SpellProperty))
+            {
+                FindObjectOfType<SpellMixManager>().SpellFuse(this, SpellProperty);
+                //SpellFuse(this, SpellProperty);
+                SpellProperty.cantCheckProperties.Add(this);
+            }
         }
-    }
-
-    private void OnDestroy()
-    {
-        SMM.Spells.Remove(this.GameObject());
-        SMM.Props.Remove(this);
     }
 }

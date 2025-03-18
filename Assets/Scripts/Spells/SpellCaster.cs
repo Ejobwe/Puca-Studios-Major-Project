@@ -7,7 +7,7 @@ using UnityEngine;
 public class SpellCaster : MonoBehaviour
 {
     // Welcome! this is the important script for the spellcasting.
-    // This script os where every spell is kept and chosen for casting.
+    // This script is where every spell is kept and chosen for casting.
     // Important variables for adding new spells will be explained on their line.
     [SerializeField]private GameObject Player;
     [SerializeField]private GameObject Manager;
@@ -58,6 +58,9 @@ public class SpellCaster : MonoBehaviour
                     case 2:
                         SummonIceWall();
                         break;
+                    case 3:
+                        RollingSteelBall();
+                        break;
                     // new spells are added to the end of the list in order of their index number.
                 }
             }
@@ -102,5 +105,12 @@ public class SpellCaster : MonoBehaviour
         Instantiate(Spells[CurrentSpell.Index], isometricAiming.Pos, Quaternion.Euler(Player.transform.localRotation.eulerAngles));
     }
     #endregion
-    
+    #region RollingSteelBall
+    private void RollingSteelBall()
+    {
+        SpawnPoint = SPObj.transform.position;
+        GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.Euler(Mpos));
+        clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * Speed);
+    }
+    #endregion
 }
