@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028459, g: 0.22571512, b: 0.30692506, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028472, g: 0.22571513, b: 0.30692458, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -152,8 +152,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 367337575}
     - target: {fileID: 2626475603472254507, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 2626475603472254507, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626475603472254507, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseClickButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626475603472254507, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3202120139509744241, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 3202120139509744241, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 3202120139509744241, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseHoverButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3202120139509744241, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseUnHoverButton
       objectReference: {fileID: 0}
     - target: {fileID: 3689522520246464053, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -255,13 +283,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6457877319835009650, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 6457877319835009650, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 6457877319835009650, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseHoverButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457877319835009650, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseUnHoverButton
+      objectReference: {fileID: 0}
     - target: {fileID: 6575829645361578424, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 367337575}
     - target: {fileID: 6575829645361578424, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 6575829645361578424, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SettingsBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575829645361578424, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseClickButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575829645361578424, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8994088796714529146, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_Name
@@ -271,13 +327,41 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9132677491367883963, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 9132677491367883963, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 9132677491367883963, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseHoverButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132677491367883963, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseUnHoverButton
+      objectReference: {fileID: 0}
     - target: {fileID: 9221593740678455030, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 367337575}
     - target: {fileID: 9221593740678455030, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 9221593740678455030, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221593740678455030, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseClickButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221593740678455030, guid: 55e0a2b5fbcd8c74ba19e83e0d2eea6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1735,8 +1819,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 367337575}
     - target: {fileID: 3195996790249387583, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 3195996790249387583, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ControlsBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195996790249387583, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseClickButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195996790249387583, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3965586109960257721, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
       propertyPath: m_RaycastPadding.w
@@ -1833,6 +1929,22 @@ PrefabInstance:
     - target: {fileID: 4823255937630938630, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031288363274070763, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 9031288363274070763, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 9031288363274070763, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseHoverButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031288363274070763, guid: a65b01082c6ad5f4cb2d159683aab049, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseUnHoverButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6335,6 +6447,7 @@ GameObject:
   - component: {fileID: 723218146}
   - component: {fileID: 723218145}
   - component: {fileID: 723218144}
+  - component: {fileID: 723218147}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -6418,6 +6531,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 367337575}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: OnMouseClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &723218145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6456,6 +6581,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723218142}
   m_CullTransparentMesh: 1
+--- !u!114 &723218147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723218142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseUnHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &745165395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9111499488197326748, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
@@ -7292,6 +7462,7 @@ GameObject:
   - component: {fileID: 865156571}
   - component: {fileID: 865156570}
   - component: {fileID: 865156569}
+  - component: {fileID: 865156572}
   m_Layer: 5
   m_Name: Quit Game
   m_TagString: Untagged
@@ -7375,6 +7546,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 367337575}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: OnMouseClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &865156570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7413,6 +7596,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865156567}
   m_CullTransparentMesh: 1
+--- !u!114 &865156572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865156567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseUnHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &882944781
 GameObject:
   m_ObjectHideFlags: 0
@@ -9128,7 +9356,35 @@ MonoBehaviour:
       Data3: -2011707766
       Data4: -954444644
     Path: event:/SFX/Player SFX/player Footsteps
-  <enemyFootsteps>k__BackingField:
+  <eightLeggedEnemyFootsteps>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <sixLeggedEnemyFootsteps>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <buttonHover>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <buttonUnHover>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <buttonClick>k__BackingField:
     Guid:
       Data1: 0
       Data2: 0
@@ -10524,6 +10780,7 @@ GameObject:
   - component: {fileID: 1201910883}
   - component: {fileID: 1201910882}
   - component: {fileID: 1201910881}
+  - component: {fileID: 1201910884}
   m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
@@ -10607,6 +10864,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 367337575}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: OnMouseClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1201910882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10645,6 +10914,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201910879}
   m_CullTransparentMesh: 1
+--- !u!114 &1201910884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201910879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseUnHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1232201423
 GameObject:
   m_ObjectHideFlags: 0
@@ -14138,6 +14452,7 @@ GameObject:
   - component: {fileID: 1582210956}
   - component: {fileID: 1582210955}
   - component: {fileID: 1582210954}
+  - component: {fileID: 1582210957}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -14221,6 +14536,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 367337575}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: OnMouseClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1582210955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14259,6 +14586,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582210952}
   m_CullTransparentMesh: 1
+--- !u!114 &1582210957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582210952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseUnHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1603787152
 GameObject:
   m_ObjectHideFlags: 0
@@ -14690,6 +15062,7 @@ GameObject:
   - component: {fileID: 1624686344}
   - component: {fileID: 1624686343}
   - component: {fileID: 1624686342}
+  - component: {fileID: 1624686345}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -14773,6 +15146,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 367337575}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: OnMouseClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1624686343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14811,6 +15196,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624686340}
   m_CullTransparentMesh: 1
+--- !u!114 &1624686345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624686340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 367337575}
+          m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+          m_MethodName: OnMouseUnHoverButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1629487883
 GameObject:
   m_ObjectHideFlags: 0
@@ -18517,8 +18947,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 367337575}
     - target: {fileID: 3349269905019806477, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 3349269905019806477, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MusicBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349269905019806477, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnMouseClickButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349269905019806477, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3514723621811010169, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_AnchorMax.x
@@ -18635,6 +19077,22 @@ PrefabInstance:
     - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006846404544957327, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 7006846404544957327, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 367337575}
+    - target: {fileID: 7006846404544957327, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseHoverButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006846404544957327, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseUnHoverButton
       objectReference: {fileID: 0}
     - target: {fileID: 8337324840687291384, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
