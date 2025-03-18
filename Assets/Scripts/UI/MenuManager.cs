@@ -54,6 +54,7 @@ public class MenuManager : MonoBehaviour
         pause.SetActive(false);
         paused = false;
     }
+
     public void GoToMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -110,6 +111,21 @@ public class MenuManager : MonoBehaviour
         MusicMenu.SetActive(false);
         ControlsMenu.SetActive(false);
         MainMenu.SetActive(false);
+    }
+
+    public void OnMouseHoverButton()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.buttonHover, this.transform.position);
+    }
+
+    public void OnMouseUnHoverButton()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.buttonUnHover, this.transform.position);
+    }
+
+    public void OnMouseClickButton()
+    {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.buttonClick, this.transform.position);
     }
 
     public void Exit()

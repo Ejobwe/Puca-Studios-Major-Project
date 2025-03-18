@@ -8,9 +8,13 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Player SFX")]
     [field: SerializeField] public EventReference playerFootsteps {get; private set;}
 
-    [field: Header("EnemySFX")]
+    [field: Header("Enemy SFX")]
     [field: SerializeField] public EventReference enemyFootsteps {get; private set;}
 
+    [field: Header("UI SFX")]
+    [field: SerializeField] public EventReference buttonHover {get; private set;}
+    [field: SerializeField] public EventReference buttonUnHover { get; private set; }
+    [field: SerializeField] public EventReference buttonClick { get; private set; }
 
     public static FMODEvents instance {get; private set;}
 
