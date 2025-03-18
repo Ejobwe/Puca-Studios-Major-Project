@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0d0bf0058d6df3c4ca8de2c5870a9f01, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bdd90d5c1f7b0c42a9ac7a8661d4f63, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bca8de5c05137f74fab4bbef7e72b7c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 036a763057ead6845aec6b40dfcccc5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -764,7 +764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 664371eaf11d51349adb8728144433e9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d63f5dda87a80494cb1107a86ebc7ffd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1915,6 +1915,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2025956560}
+    - target: {fileID: 3514723621811010169, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514723621811010169, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3674613174189326642, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1993,6 +2001,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3674613174189326642, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344813023005603950, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8337324840687291384, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
