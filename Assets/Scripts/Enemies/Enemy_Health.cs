@@ -20,7 +20,7 @@ public class Enemy_Health : MonoBehaviour
     {
         if (currentHealth <= 0 && !boss)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
         if (currentHealth <= 0 && boss)
         {
