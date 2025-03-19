@@ -5,20 +5,20 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    //[SerializeField] private GameObject canvas;
     [SerializeField] private GameObject MainMenu;
     [SerializeField] private GameObject settings;
     [SerializeField] private GameObject ControlsMenu;
-    [SerializeField] private GameObject pause;
     [SerializeField] private bool paused;
 
     [SerializeField] public List<GameObject> musicMenu;
+    [SerializeField] private List<GameObject> pause;
 
     [SerializeField] private PausedGame pausedGame;
 
     void Awake()
     {
-        pause.SetActive(false);
+        pause[0].SetActive(false);
+        pause[1].SetActive(false);
         settings.SetActive(false);
         ControlsMenu.SetActive(false);
         musicMenu[0].SetActive(false);
@@ -54,8 +54,8 @@ public class MenuManager : MonoBehaviour
     {
         if (!paused && pause != null)
         {
-            //canvas.SetActive(true);
-            pause.SetActive(true);
+            pause[0].SetActive(true);
+            pause[1].SetActive(true);
             settings.SetActive(false);
             pausedGame = PausedGame.PAUSED;
             AudioManager.instance.SetGamePausedState(pausedGame);
@@ -64,9 +64,9 @@ public class MenuManager : MonoBehaviour
         }
         else if (paused && pause != null)
         {
-            //canvas.SetActive(false);
             settings.SetActive(false);
-            pause.SetActive(false);
+            pause[0].SetActive(false);
+            pause[1].SetActive(false);
             pausedGame = PausedGame.PLAYING;
             AudioManager.instance.SetGamePausedState(pausedGame);
             Debug.Log(pausedGame);
@@ -76,9 +76,9 @@ public class MenuManager : MonoBehaviour
 
     public void Resume()
     {
-        //canvas.SetActive(false);
         settings.SetActive(false);
-        pause.SetActive(false);
+        pause[0].SetActive(false);
+        pause[1].SetActive(false);
         paused = false;
     }
 
