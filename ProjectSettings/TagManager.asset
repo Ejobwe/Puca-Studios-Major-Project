@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Ice
   - RoomCheck
+  - Club
   layers:
   - Default
   - TransparentFX
