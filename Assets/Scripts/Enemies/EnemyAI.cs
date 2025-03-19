@@ -10,7 +10,7 @@ public class EnemyAI : MonoBehaviour
 {
 
     public float DistanceToPlayer;
-    NavMeshAgent enemy;
+    public NavMeshAgent enemy;
     public LayerMask border;
 
     public int damage;
@@ -18,9 +18,9 @@ public class EnemyAI : MonoBehaviour
 
     int number = 20;
 
-    private GameObject Player;
+    public GameObject Player;
 
-    private Rigidbody Rb;
+    public Rigidbody Rb;
 
     public Transform enemyBottom;
 
@@ -43,6 +43,8 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemy = GetComponent<NavMeshAgent>();
+        Player = GameObject.FindWithTag("Player");
         DistanceToPlayer = Vector3.Distance(transform.position, Player.transform.position);
         //Ray borderRay = new Ray(transform.position, Player.transform.position - transform.position);
         //

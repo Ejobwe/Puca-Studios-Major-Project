@@ -210,8 +210,9 @@ MonoBehaviour:
     m_Bits: 128
   damage: 1
   stop: 0
+  Player: {fileID: 0}
   enemyBottom: {fileID: 593850049207871316}
-  awayDistance: 0
+  awayDistance: 1
 --- !u!114 &-8331714121368509834
 MonoBehaviour:
   m_ObjectHideFlags: 0
