@@ -13,6 +13,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject pause;
     [SerializeField] private bool paused;
 
+    [SerializeField] public List<GameObject> musicMenu;
+
     [SerializeField] private PausedGame pausedGame;
 
     void Awake()
@@ -94,6 +96,24 @@ public class MenuManager : MonoBehaviour
         settings.SetActive(false);
         ControlsMenu.SetActive(false);
         MusicMenu.SetActive(true);
+        musicMenu[0].SetActive(true);
+        musicMenu[1].SetActive(true);
+        musicMenu[2].SetActive(true);
+        musicMenu[3].SetActive(true);
+        musicMenu[4].SetActive(true);
+        musicMenu[5].SetActive(true);
+        musicMenu[6].SetActive(true);
+        musicMenu[7].SetActive(true);
+        musicMenu[8].SetActive(true);
+        musicMenu[9].SetActive(true);
+        musicMenu[10].SetActive(true);
+        musicMenu[11].SetActive(true);
+        musicMenu[12].SetActive(true);
+        musicMenu[13].SetActive(true);
+        musicMenu[14].SetActive(true);
+        musicMenu[15].SetActive(true);
+        musicMenu[16].SetActive(true);
+        musicMenu[17].SetActive(true);
         MainMenu.SetActive(false);
     }
 
@@ -109,6 +129,24 @@ public class MenuManager : MonoBehaviour
     {
         settings.SetActive(true);
         MusicMenu.SetActive(false);
+        musicMenu[0].SetActive(false);
+        musicMenu[1].SetActive(false);
+        musicMenu[2].SetActive(false);
+        musicMenu[3].SetActive(false);
+        musicMenu[4].SetActive(false);
+        musicMenu[5].SetActive(false);
+        musicMenu[6].SetActive(false);
+        musicMenu[7].SetActive(false);
+        musicMenu[8].SetActive(false);
+        musicMenu[9].SetActive(false);
+        musicMenu[10].SetActive(false);
+        musicMenu[11].SetActive(false);
+        musicMenu[12].SetActive(false);
+        musicMenu[13].SetActive(false);
+        musicMenu[14].SetActive(false);
+        musicMenu[15].SetActive(false);
+        musicMenu[16].SetActive(false);
+        musicMenu[17].SetActive(false);
         ControlsMenu.SetActive(false);
         MainMenu.SetActive(false);
     }

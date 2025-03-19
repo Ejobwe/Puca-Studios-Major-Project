@@ -23,6 +23,28 @@ public class VolumeSlider : MonoBehaviour
         volumeSlider = this.GetComponentInChildren<Slider>();
     }
 
+    private void Start()
+    {
+        switch (volumeType)
+        {
+            case VolumeType.MASTER:
+                volumeSlider.value = PlayerPrefs.GetFloat("MasterVolume");
+                break;
+            case VolumeType.MUSIC:
+                volumeSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+                break;
+            case VolumeType.AMBIENCE:
+                volumeSlider.value = PlayerPrefs.GetFloat("AmbienceVolume");
+                break;
+            case VolumeType.SFX:
+                volumeSlider.value = PlayerPrefs.GetFloat("SFXVolume");
+                break;
+            default:
+                Debug.LogWarning("VolumeType not Supported" + volumeType);
+                break;
+        }
+    }
+
     private void Update()
     {
         switch (volumeType)
@@ -43,6 +65,11 @@ public class VolumeSlider : MonoBehaviour
                 Debug.LogWarning("VolumeType not Supported" + volumeType);
                 break;
         }
+
+        PlayerPrefs.SetFloat("MasterVolume", AudioManager.instance.masterVolume);
+        PlayerPrefs.SetFloat("MusicVolume", AudioManager.instance.musicVolume);
+        PlayerPrefs.SetFloat("AmbienceVolume", AudioManager.instance.ambienceVolume);
+        PlayerPrefs.SetFloat("SFXVolume", AudioManager.instance.sfxVolume);
     }
 
     public void OnSliderValueChanged()
