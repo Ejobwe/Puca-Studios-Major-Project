@@ -97,7 +97,7 @@ public class Camera_Trigger : MonoBehaviour
             }
             if (frontCam != null)
             {
-                if (exitDirection.z > 0f)
+                if (exitDirection.z < 0f)
                 {
                     BackCamera.SetActive(true);
 
@@ -106,7 +106,7 @@ public class Camera_Trigger : MonoBehaviour
             }
             if (backCam != null)
             {
-                if (exitDirection.z < 0f)
+                if (exitDirection.z > 0f)
                 {
                     FrontCamera.SetActive(true);
 

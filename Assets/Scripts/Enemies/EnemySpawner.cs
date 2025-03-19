@@ -33,17 +33,18 @@ public class EnemySpawner : MonoBehaviour
             }
             if (2 == Waves.Length)
             {
-                if (Waves[1].transform.childCount == 0 && 2 != Waves.Length)
-                {
-                    Waves[2].SetActive(true);
-                }
-                else if (Waves[1].transform.childCount == 0)
+                
+                if (Waves[1].transform.childCount == 0)
                 {
                     gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
                 }
             }
             if (3 == Waves.Length)
             {
+                if (Waves[1].transform.childCount == 0)
+                {
+                    Waves[2].SetActive(true);
+                }
                 if (Waves[2].transform.childCount == 0)
                 {
                     gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
