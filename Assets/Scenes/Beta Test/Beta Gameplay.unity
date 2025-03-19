@@ -907,7 +907,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 7277118328086887880, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
+  - {fileID: 7277118328086887880, guid: 0a9f746e270d04d44a4760a19db6f3c7, type: 3}
+  - {fileID: 7277118328086887880, guid: d70a051d9442d914baf9f5ee00d93550, type: 3}
   rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &146658951
 PrefabInstance:
@@ -2168,13 +2171,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411914458}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 148, y: 0, z: 148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259695557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &411914460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6133,13 +6136,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201750396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 148, y: 0, z: -148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259695557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1201750398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6155,7 +6158,7 @@ MonoBehaviour:
   rooms:
   - {fileID: 2963994099474594918, guid: 484a922736b8c0646a72ddb6f21e6354, type: 3}
   - {fileID: 3900047620650943977, guid: 3c28847a50ed1024a8f139e11d7b8a80, type: 3}
-  rota: {x: 0, y: 0.000001, z: 0, w: 0}
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1201750399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6482,13 +6485,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241067889}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 296, y: 0, z: -74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259695557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1241067891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6501,7 +6504,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 2994682123051047106, guid: 698ec7363e101b644a1ea61dfad5fe69, type: 3}
+  - {fileID: 2994682123051047106, guid: a3276caa618128244a8d5a9a90985582, type: 3}
+  - {fileID: 2994682123051047106, guid: 3f653fe71792ab742ab7e2cd60f3fa84, type: 3}
   rota: {x: 0, y: 90, z: 0, w: 0}
 --- !u!65 &1241067892
 BoxCollider:
@@ -6621,7 +6627,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 7277118328086887880, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
+  - {fileID: 7277118328086887880, guid: 0a9f746e270d04d44a4760a19db6f3c7, type: 3}
+  - {fileID: 7277118328086887880, guid: d70a051d9442d914baf9f5ee00d93550, type: 3}
   rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1280235338
 BoxCollider:
@@ -6833,7 +6842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1320801334
 Transform:
   m_ObjectHideFlags: 0
@@ -6988,13 +6997,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386862510}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 222, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259695557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1386862512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7007,7 +7016,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 7277118328086887880, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
+  - {fileID: 7277118328086887880, guid: 0a9f746e270d04d44a4760a19db6f3c7, type: 3}
+  - {fileID: 7277118328086887880, guid: d70a051d9442d914baf9f5ee00d93550, type: 3}
   rota: {x: 0, y: 180, z: 0, w: 0}
 --- !u!65 &1386862513
 BoxCollider:
@@ -7815,8 +7827,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rooms:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7277118328086887880, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
+  - {fileID: 7277118328086887880, guid: 0a9f746e270d04d44a4760a19db6f3c7, type: 3}
+  - {fileID: 7277118328086887880, guid: d70a051d9442d914baf9f5ee00d93550, type: 3}
   rota: {x: 0, y: 180, z: 0, w: 0}
 --- !u!65 &1537865987
 BoxCollider:
@@ -8545,7 +8558,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 7277118328086887880, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
+  - {fileID: 7277118328086887880, guid: 0a9f746e270d04d44a4760a19db6f3c7, type: 3}
+  - {fileID: 7277118328086887880, guid: d70a051d9442d914baf9f5ee00d93550, type: 3}
   rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1616470869
 BoxCollider:
@@ -8646,13 +8662,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621861519}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 296, y: 0, z: 74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259695557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1621861521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8665,7 +8681,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 2994682123051047106, guid: 698ec7363e101b644a1ea61dfad5fe69, type: 3}
+  - {fileID: 2994682123051047106, guid: a3276caa618128244a8d5a9a90985582, type: 3}
+  - {fileID: 2994682123051047106, guid: 3f653fe71792ab742ab7e2cd60f3fa84, type: 3}
   rota: {x: 0, y: 90, z: 0, w: 0}
 --- !u!65 &1621861522
 BoxCollider:
@@ -10932,6 +10951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: T Junction Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7277118328086887880, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8532466385223794291, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -11050,13 +11073,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016412544}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 370, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259695557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &2016412546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11456,13 +11479,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075262766}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 74, y: 0, z: -74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 259695557}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &2075262768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11475,8 +11498,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
-  rota: {x: 0, y: -90, z: 0, w: 0}
+  rooms:
+  - {fileID: 2994682123051047106, guid: 698ec7363e101b644a1ea61dfad5fe69, type: 3}
+  - {fileID: 2994682123051047106, guid: a3276caa618128244a8d5a9a90985582, type: 3}
+  - {fileID: 2994682123051047106, guid: 3f653fe71792ab742ab7e2cd60f3fa84, type: 3}
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &2075262769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12091,7 +12117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2113991a95a059b4e87f19d8fd26b927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms: []
+  rooms:
+  - {fileID: 7277118328086887880, guid: cf191b1c147a01942aa1ee8ce51b03e8, type: 3}
+  - {fileID: 7277118328086887880, guid: 0a9f746e270d04d44a4760a19db6f3c7, type: 3}
+  - {fileID: 7277118328086887880, guid: d70a051d9442d914baf9f5ee00d93550, type: 3}
   rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &2127517028
 BoxCollider:
