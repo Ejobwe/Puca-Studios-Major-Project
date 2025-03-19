@@ -13,9 +13,12 @@ public class RoomStart : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (roomFinished)
+        {
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,7 +34,7 @@ public class RoomStart : MonoBehaviour
     
     private IEnumerator spawnDelay()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         gameObject.transform.GetChild(0).gameObject.SetActive(true);
         spawner.GetComponent<EnemySpawner>().roomEntered = true;
     }

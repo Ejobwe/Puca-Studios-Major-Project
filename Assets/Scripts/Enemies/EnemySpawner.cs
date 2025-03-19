@@ -13,8 +13,9 @@ public class EnemySpawner : MonoBehaviour
         if(roomEntered == true)
         {
             Spawn();
-            roomEntered = false;
+            
         }
+
     }
 
     void Spawn()
@@ -22,26 +23,43 @@ public class EnemySpawner : MonoBehaviour
         if (Waves[0] != null)
         {
             Waves[0].SetActive(true);
-            if (Waves[0].transform.childCount == 0 && Waves[1] != null)
+            if (Waves[0].transform.childCount == 0 && 1 != Waves.Length)
             {
                 Waves[1].SetActive(true);
             }
-            else
+            else if (Waves[0].transform.childCount == 0)
             {
                 gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
             }
-            if (Waves[1].transform.childCount == 0 && Waves[2] != null)
+            if (2 == Waves.Length)
             {
-                Waves[2].SetActive(true);
+                if (Waves[1].transform.childCount == 0 && 2 != Waves.Length)
+                {
+                    Waves[2].SetActive(true);
+                }
+                else if (Waves[1].transform.childCount == 0)
+                {
+                    gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
+                }
             }
-            else
+            if (3 == Waves.Length)
             {
-                gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
+                if (Waves[2].transform.childCount == 0)
+                {
+                    gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
+                }
             }
-            if (Waves[2].transform.childCount == 0)
-            {
-                gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
-            }
+            //for (int i = 0; i < Waves.Length;)
+            //{
+            //    Waves[i].SetActive(true);
+            //    if (Waves[i].transform.childCount == 0 && i + 1 == Waves.Length)
+            //    {
+            //        roomEntered = false;
+            //        gameObject.transform.parent.transform.GetComponent<RoomStart>().roomFinished = true;
+
+            //    }
+
+            //}
         }
     }
 }

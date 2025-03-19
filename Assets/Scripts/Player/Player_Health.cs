@@ -75,5 +75,12 @@ public class Player_Health : MonoBehaviour
 
         invincible = false;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Club"))
+        {
+            takeDamage(2);
+        }
     }
+}
 
