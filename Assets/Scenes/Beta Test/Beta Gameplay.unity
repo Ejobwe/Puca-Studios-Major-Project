@@ -3393,6 +3393,10 @@ PrefabInstance:
       propertyPath: Spells.Array.data[1]
       value: 
       objectReference: {fileID: 1607860793750473685, guid: 502a422fc7e4ef04dbc6a29eb1780b77, type: 3}
+    - target: {fileID: 83669400315311312, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1103105329703878790, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -3566,7 +3570,11 @@ PrefabInstance:
       addedObject: {fileID: 745165402}
     - targetCorrespondingSourceObject: {fileID: 9111499488197326748, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       insertIndex: -1
+<<<<<<< Updated upstream
       addedObject: {fileID: 745165403}
+=======
+      addedObject: {fileID: 745165411}
+>>>>>>> Stashed changes
   m_SourcePrefab: {fileID: 100100000, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
 --- !u!1 &659271624 stripped
 GameObject:
@@ -3978,7 +3986,11 @@ MonoBehaviour:
     m_Bits: 0
   Pos: {x: 0, y: 0, z: 0}
   Dir: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &745165403
+=======
+--- !u!114 &745165411
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3987,6 +3999,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 745165395}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: c4c7091eeb3121f4a9330de994ed6e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -3999,6 +4012,12 @@ MonoBehaviour:
   - {fileID: 1038055896090821831, guid: 4a55e8dc42097cb41b0b6d93dec30221, type: 3}
   order: 0
   SPObj: {fileID: 745165395}
+=======
+  m_Script: {fileID: 11500000, guid: ac7b09f63a56fab49851f5b09d3b662b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1733293432}
+>>>>>>> Stashed changes
 --- !u!1 &751597160
 GameObject:
   m_ObjectHideFlags: 0
