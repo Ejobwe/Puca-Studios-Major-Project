@@ -327,11 +327,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnMouseClickButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -749,8 +749,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 428228235147815480}
-  - {fileID: 3105630444214351703}
   - {fileID: 2969530313746751285}
+  - {fileID: 3105630444214351703}
   - {fileID: 9221871653279620702}
   - {fileID: 2305641669322488743}
   - {fileID: 8653302044039632853}
@@ -1404,7 +1404,7 @@ GameObject:
   - component: {fileID: 8870935158452884552}
   - component: {fileID: 2391926070774545704}
   m_Layer: 5
-  m_Name: Master
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 5626430902315849264}
   - component: {fileID: 8305299381429381154}
   m_Layer: 5
-  m_Name: Music
+  m_Name: Master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

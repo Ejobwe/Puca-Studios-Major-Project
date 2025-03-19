@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 48.09, y: 13.57, z: 51.49, w: 13.63}
+  m_RaycastPadding: {x: 42.2, y: 12.5, z: 44.7, w: 12.6}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
