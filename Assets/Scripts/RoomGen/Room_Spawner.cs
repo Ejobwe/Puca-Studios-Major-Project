@@ -17,6 +17,4 @@ public class Room_Spawner : MonoBehaviour
         Instantiate(rooms[Random.Range(0, rooms.Length)], gameObject.transform);
 
     }
-
-
 }

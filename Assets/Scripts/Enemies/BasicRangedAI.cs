@@ -42,11 +42,11 @@ public class BasicRangedAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DistanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-        Ray borderRay = new Ray(transform.position, player.transform.position - transform.position);
-
-        RaycastHit borderHit;
-
+        //DistanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        //Ray borderRay = new Ray(transform.position, player.transform.position - transform.position);
+        //
+        //RaycastHit borderHit;
+        //
         //if (Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
         //{
         //    if (!borderHit.collider.gameObject.CompareTag("Player"))

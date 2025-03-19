@@ -44,14 +44,14 @@ public class PlayerMovement : MonoBehaviour
             Movement.z = Input.GetAxisRaw("Vertical");
         
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            sprinting = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            sprinting = false;
-        }
+        //if (Input.GetKeyDown(KeyCode.LeftShift))
+        //{
+        //    sprinting = true;
+        //}
+        //else if (Input.GetKeyUp(KeyCode.LeftShift))
+        //{
+        //    sprinting = false;
+        //}
     }
 
     private void FixedUpdate()
