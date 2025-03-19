@@ -13,6 +13,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject pause;
     [SerializeField] private bool paused;
 
+    [SerializeField] private PausedGame pausedGame;
+
     void Awake()
     {
         pause.SetActive(false);
@@ -36,6 +38,9 @@ public class MenuManager : MonoBehaviour
             //canvas.SetActive(true);
             pause.SetActive(true);
             settings.SetActive(false);
+            pausedGame = PausedGame.PAUSED;
+            AudioManager.instance.SetGamePausedState(pausedGame);
+            Debug.Log(pausedGame);
             paused = true;
         }
         else if (paused && pause != null)
@@ -43,6 +48,9 @@ public class MenuManager : MonoBehaviour
             //canvas.SetActive(false);
             settings.SetActive(false);
             pause.SetActive(false);
+            pausedGame = PausedGame.PLAYING;
+            AudioManager.instance.SetGamePausedState(pausedGame);
+            Debug.Log(pausedGame);
             paused = false;
         }
     }

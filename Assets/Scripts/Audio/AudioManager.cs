@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
     private Bus ambienceBus;
     private Bus sfxBus;
 
+    private EventInstance pausedGameEventInstance;
     private EventInstance ambienceEventInstance;
     private EventInstance musicEventInstance;
 
@@ -72,6 +73,11 @@ public class AudioManager : MonoBehaviour
     public void SetMusicArea(MusicArea area)
     {
         musicEventInstance.setParameterByName("Area", (float) area);
+    }
+
+    public void SetGamePausedState(PausedGame pausedGame)
+    {
+        pausedGameEventInstance.setParameterByName("GamePause", (float) pausedGame);
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
