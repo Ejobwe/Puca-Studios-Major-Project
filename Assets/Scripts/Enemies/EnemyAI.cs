@@ -36,6 +36,8 @@ public class EnemyAI : MonoBehaviour
 
         enemy = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");  
+
+        Rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
