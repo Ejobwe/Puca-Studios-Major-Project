@@ -15,7 +15,7 @@ public class Room_Spawner : MonoBehaviour
     private void Start()
     {
 
-        Instantiate(rooms[Random.Range(0, rooms.Length)], gameObject.transform.position, rota);
+        Instantiate(rooms[Random.Range(0, rooms.Length)], gameObject.transform);
 
     }
 }
