@@ -36,7 +36,7 @@ public class Enviroment_Effects : MonoBehaviour
         }
         if (Slow && other.CompareTag("Enemy"))
         {
-            other.GetComponent<NavMeshAgent>().speed = 2.5f;
+            other.GetComponent<NavMeshAgent>().speed = other.GetComponent<NavMeshAgent>().speed/2;
             
         }
         //if (Slip && other.CompareTag("Enemy"))
@@ -70,7 +70,7 @@ public class Enviroment_Effects : MonoBehaviour
         }
         if (Slow && other.CompareTag("Enemy"))
         {
-            other.GetComponent<NavMeshAgent>().speed = 5;
+            other.GetComponent<NavMeshAgent>().speed = other.GetComponent<NavMeshAgent>().speed*2;
             
         }
         //if (Slip && other.CompareTag("Enemy"))
