@@ -5,7 +5,7 @@
 			<value>In Game Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c4416843-e481-4deb-9e58-f85d005f7c27}</destination>

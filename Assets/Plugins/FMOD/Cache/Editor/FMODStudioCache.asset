@@ -361,7 +361,7 @@ MonoBehaviour:
   - {fileID: 1903925806909654580}
   StringsBanks:
   - {fileID: 8575044568419345392}
-  cacheTime: 638779786786540849
+  cacheTime: 638779844292611038
   cacheVersion: 131619
 --- !u!114 &898024219962843634
 MonoBehaviour:
@@ -404,10 +404,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638779785245168524
+  lastModified: 638779844292611038
   FileSizes:
   - Name: Desktop
-    Value: 544736
+    Value: 569888
   Exists: 1
 --- !u!114 &1903925806909654580
 MonoBehaviour:
@@ -468,8 +468,8 @@ MonoBehaviour:
     Data3: -963700297
     Data4: 105773428
   Banks:
-  - {fileID: 1903925806909654580}
   - {fileID: 2480582485997872963}
+  - {fileID: 1903925806909654580}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0

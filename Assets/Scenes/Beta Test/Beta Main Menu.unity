@@ -1062,6 +1062,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937437132}
   m_CullTransparentMesh: 1
+--- !u!1 &966730505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966730506}
+  - component: {fileID: 966730507}
+  m_Layer: 0
+  m_Name: Main Menu Music Emmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &966730506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966730505}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 127.08782, y: 290.26294, z: -184.14932}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &966730507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966730505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1556276315
+      Data2: 1153588476
+      Data3: 991636353
+      Data4: 1364146566
+    Path: event:/Music/Main Menu Music
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &968865545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1169811016829233572, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
@@ -1558,11 +1621,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <music>k__BackingField:
     Guid:
-      Data1: -1556276315
-      Data2: 1153588476
-      Data3: 991636353
-      Data4: 1364146566
-    Path: event:/Music/Main Menu Music
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <ambiencePlaceHolder>k__BackingField:
     Guid:
       Data1: 0
@@ -1630,11 +1693,6 @@ RectTransform:
 --- !u!1 &1768134798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6333411015824763698, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
-  m_PrefabInstance: {fileID: 7649980780080887065}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1776279945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1837721996963604735, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
   m_PrefabInstance: {fileID: 7649980780080887065}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1776279946 stripped
@@ -1795,8 +1853,6 @@ MonoBehaviour:
   MainMenu: {fileID: 1101819753}
   settings: {fileID: 1576097210}
   ControlsMenu: {fileID: 1714493869}
-  MusicMenu: {fileID: 1776279945}
-  pause: {fileID: 0}
   paused: 0
   musicMenu:
   - {fileID: 985292183}
@@ -1817,6 +1873,8 @@ MonoBehaviour:
   - {fileID: 1768134798}
   - {fileID: 1999604821}
   - {fileID: 1603442119}
+  pause:
+  - {fileID: 0}
   pausedGame: 0
 --- !u!1 &2047657747 stripped
 GameObject:
@@ -2516,3 +2574,4 @@ SceneRoots:
   - {fileID: 1960989147}
   - {fileID: 495248080}
   - {fileID: 1939774625}
+  - {fileID: 966730506}

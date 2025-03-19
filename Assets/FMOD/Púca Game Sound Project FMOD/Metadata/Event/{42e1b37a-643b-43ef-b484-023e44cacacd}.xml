@@ -5,7 +5,7 @@
 			<value>NormalArea Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{879bcf52-32aa-4a84-8e55-0d9c72c46289}</destination>
@@ -53,11 +53,17 @@
 	<object class="EventAutomatableProperties" id="{99e33806-668a-4aa0-8de2-c806bff1b8ac}" />
 	<object class="MarkerTrack" id="{02ef62c1-e832-4afc-905d-1badadd86884}" />
 	<object class="GroupTrack" id="{7b3d3b93-eb62-4f84-bd17-9619619c8dec}">
+		<relationship name="modules">
+			<destination>{c87fb901-7007-4a97-bf56-1f5e7e3b0755}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{7c0a06d3-7eaf-4bea-9d30-65cebf12d8cc}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{787a9423-e829-43cc-a71a-66e90f6e6970}">
+		<relationship name="modules">
+			<destination>{c87fb901-7007-4a97-bf56-1f5e7e3b0755}</destination>
+		</relationship>
 		<relationship name="markers">
 			<destination>{49a7284f-7d58-4c11-a1ff-81ee31426033}</destination>
 		</relationship>
@@ -79,6 +85,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8d21212c-ed11-4b20-979f-841dccfcb1a6}" />
+	<object class="SingleSound" id="{c87fb901-7007-4a97-bf56-1f5e7e3b0755}">
+		<property name="length">
+			<value>2.063673469387755</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{50579f12-f1f3-48fe-ab87-3f501c1fb076}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{7c0a06d3-7eaf-4bea-9d30-65cebf12d8cc}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -95,10 +109,10 @@
 	</object>
 	<object class="LoopRegion" id="{49a7284f-7d58-4c11-a1ff-81ee31426033}">
 		<property name="position">
-			<value>15</value>
+			<value>0</value>
 		</property>
 		<property name="length">
-			<value>30</value>
+			<value>2.063673469387755</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{787a9423-e829-43cc-a71a-66e90f6e6970}</destination>
