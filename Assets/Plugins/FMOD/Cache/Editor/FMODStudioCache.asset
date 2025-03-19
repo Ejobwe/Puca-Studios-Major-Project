@@ -79,34 +79,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-7226244112760042039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Pause SFX/GameStatus
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Pause SFX/GameStatus
-  Guid:
-    Data1: 1437994918
-    Data2: 1312923650
-    Data3: -955401838
-    Data4: -1174254967
-  Banks:
-  - {fileID: 2480582485997872963}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6010555159552798056}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-6929934117353619485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,32 +106,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6010555159552798056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/GameStatus/GamePause
-  m_EditorClassIdentifier: 
-  Name: GamePause
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1809352850
-    data2: 1198922383
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Playing
-  - Paused
-  Exists: 1
 --- !u!114 &-5578225398574626061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,14 +300,13 @@ MonoBehaviour:
   - {fileID: -8453413038734213202}
   - {fileID: 2980801171948895624}
   - {fileID: 2809797956923593312}
-  - {fileID: -7226244112760042039}
   EditorParameters:
   - {fileID: 898024219962843634}
   MasterBanks:
   - {fileID: 1903925806909654580}
   StringsBanks:
   - {fileID: 8575044568419345392}
-  cacheTime: 638779844292611038
+  cacheTime: 638779849497891221
   cacheVersion: 131619
 --- !u!114 &898024219962843634
 MonoBehaviour:
@@ -424,7 +369,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638779786786175529
+  lastModified: 638779849496935252
   FileSizes:
   - Name: Desktop
     Value: 2510
@@ -444,10 +389,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638779786786540849
+  lastModified: 638779849497891221
   FileSizes:
   - Name: Desktop
-    Value: 471200
+    Value: 469472
   Exists: 1
 --- !u!114 &2809797956923593312
 MonoBehaviour:
@@ -468,7 +413,6 @@ MonoBehaviour:
     Data3: -963700297
     Data4: 105773428
   Banks:
-  - {fileID: 2480582485997872963}
   - {fileID: 1903925806909654580}
   IsStream: 0
   Is3D: 0
@@ -620,8 +564,8 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638779786786195528
+  lastModified: 638779849496950284
   FileSizes:
   - Name: Desktop
-    Value: 1898
+    Value: 1848
   Exists: 1

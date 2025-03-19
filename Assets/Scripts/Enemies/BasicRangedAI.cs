@@ -76,7 +76,7 @@ public class BasicRangedAI : MonoBehaviour
             { 
                 Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
             nextShotTime = Time.time + timeBetweenShots;
-             }
+            }
      }
 
         //Debug.Log(gameObject.name + gameObject.GetComponent<Rigidbody>().velocity);
