@@ -34,7 +34,6 @@ public class EnemyAI : MonoBehaviour
 
         UpdateSound();
 
-        Rb = GetComponent<Rigidbody>();
         enemy = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");  
     }
@@ -131,5 +130,19 @@ public class EnemyAI : MonoBehaviour
         
     }
 
-    
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "IceSpell")
+        {
+            GetComponent<NavMeshAgent>().speed = 2.5f;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "IceSpell")
+        {
+            GetComponent<NavMeshAgent>().speed = 5;
+        }
+    }
 }
