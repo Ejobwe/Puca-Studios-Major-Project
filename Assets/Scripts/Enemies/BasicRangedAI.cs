@@ -42,6 +42,7 @@ public class BasicRangedAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemy = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
         //DistanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
         //Ray borderRay = new Ray(transform.position, player.transform.position - transform.position);
