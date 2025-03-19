@@ -42,10 +42,10 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         DistanceToPlayer = Vector3.Distance(transform.position, Player.transform.position);
-        Ray borderRay = new Ray(transform.position, Player.transform.position - transform.position);
-
-        RaycastHit borderHit;
-        
+        //Ray borderRay = new Ray(transform.position, Player.transform.position - transform.position);
+        //
+        //RaycastHit borderHit;
+        //
         //if(Physics.Raycast(borderRay, out borderHit, DistanceToPlayer, border))
         //{
         //    if (!borderHit.collider.gameObject.CompareTag("Player"))

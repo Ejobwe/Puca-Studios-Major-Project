@@ -7,14 +7,15 @@ public class Camera_Trigger : MonoBehaviour
 
    public CameraManager CameraBrain;
 
-    bool transition;
+    public GameObject FrontCamera;
+    public GameObject BackCamera;
+    public GameObject LeftCamera;
+    public GameObject RightCamera;
 
-    Wall_Generator CamCheck;
-
-    public CinemachineCamera frontCam;
-    public CinemachineCamera backCam;
-    public CinemachineCamera leftCam;
-    public CinemachineCamera rightCam;
+    private CinemachineCamera frontCam;
+    private CinemachineCamera backCam;
+    private CinemachineCamera leftCam;
+    private CinemachineCamera rightCam;
 
     Movement player;
 
@@ -27,8 +28,23 @@ public class Camera_Trigger : MonoBehaviour
         _coll = GetComponent<Collider>();
 
         //CamCheck = transform.parent.transform.parent.GetComponent<Wall_Generator>();
+        if (FrontCamera != null)
+        {
+            frontCam = FrontCamera.GetComponent<CinemachineCamera>();
+        }
+        if (BackCamera != null)
+        {
+            backCam = BackCamera.GetComponent<CinemachineCamera>();
+        }
+        if (LeftCamera != null)
+        {
+            leftCam = LeftCamera.GetComponent<CinemachineCamera>();
+        }
+        if (RightCamera != null)
+        {
+            rightCam = RightCamera.GetComponent<CinemachineCamera>();
+        }
 
-        
     }
 
     private void Update()
@@ -57,9 +73,49 @@ public class Camera_Trigger : MonoBehaviour
         {
             
             Vector3 exitDirection = (other.transform.position - _coll.bounds.center).normalized;
+            if (leftCam != null)
+            {
+                if (exitDirection.x > 0f)
+                {
+
+                    RightCamera.SetActive(true);
+
+                    LeftCamera.SetActive(false);
+
+                }
+            }
+            if (rightCam != null)
+            {
+                if (exitDirection.x < 0f)
+                {
+
+                    LeftCamera.SetActive(true);
+
+                    RightCamera.SetActive(false);
+
+                }
+            }
+            if (frontCam != null)
+            {
+                if (exitDirection.z > 0f)
+                {
+                    BackCamera.SetActive(true);
+
+                    FrontCamera.SetActive(false);
+                }
+            }
+            if (backCam != null)
+            {
+                if (exitDirection.z < 0f)
+                {
+                    FrontCamera.SetActive(true);
+
+                    BackCamera.SetActive(false);
+                }
+            }
             Debug.Log(exitDirection);
             CameraBrain.SwapCamera(leftCam, rightCam, frontCam, backCam, exitDirection);
-            transition = false;
+            
         }
     }
 }

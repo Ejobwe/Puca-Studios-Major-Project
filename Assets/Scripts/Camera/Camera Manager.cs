@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class CameraManager : MonoBehaviour
 {
     public CinemachineCamera startCamera;
-    public CinemachineCamera currentCamera;
+    private CinemachineCamera currentCamera;
 
-    public CinemachineCamera[] Cameras;
+    private CinemachineCamera[] Cameras;
 
     private void Start()
     {
@@ -17,7 +17,6 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-        
 
         currentCamera.Priority = 1;
     }
