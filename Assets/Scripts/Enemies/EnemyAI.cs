@@ -27,6 +27,7 @@ public class EnemyAI : MonoBehaviour
     public EventInstance enemyFootsteps;
 
     [SerializeField] private float awayDistance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,7 @@ public class EnemyAI : MonoBehaviour
     {
         enemy = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");
+        Rb = GetComponent<Rigidbody>();
         DistanceToPlayer = Vector3.Distance(transform.position, Player.transform.position);
         //Ray borderRay = new Ray(transform.position, Player.transform.position - transform.position);
         //
