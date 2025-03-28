@@ -20,7 +20,7 @@ public class EnemyAI : MonoBehaviour
 
     public GameObject Player;
 
-    public Rigidbody Rb;
+    private Rigidbody Rb;
 
     public Transform enemyBottom;
 
