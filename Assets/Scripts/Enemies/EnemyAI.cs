@@ -29,24 +29,23 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float awayDistance;
 
     // Start is called before the first frame update
-    void Start()
+    void onAwake()
     {
         enemyFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.sixLeggedEnemyFootsteps);
 
         UpdateSound();
 
-        enemy = GetComponent<NavMeshAgent>();
-        Player = GameObject.FindWithTag("Player");  
+        
 
+        enemy = GetComponent<NavMeshAgent>();
+        Player = GameObject.FindWithTag("Player");
         Rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        enemy = GetComponent<NavMeshAgent>();
-        Player = GameObject.FindWithTag("Player");
-        Rb = GetComponent<Rigidbody>();
+        
         DistanceToPlayer = Vector3.Distance(transform.position, Player.transform.position);
         //Ray borderRay = new Ray(transform.position, Player.transform.position - transform.position);
         //
