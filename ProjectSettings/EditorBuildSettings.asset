@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Beta Test/Beta Main Menu.unity
-    guid: 46dc0f60a6257aa4fb8f7876dbc2926d
+    path: Assets/Scenes/v1.0 Build/v1.0 Main Menu.unity
+    guid: a834511f4df838c46b3b4410dbf79713
   - enabled: 1
-    path: Assets/Scenes/Beta Test/Beta Gameplay.unity
-    guid: fed3b9174fcc7d74ab52e2d0e7402db0
+    path: Assets/Scenes/v1.0 Build/v1.0 Gameplay.unity
+    guid: 416bbf4786e38bf41ba632659ae2f83e
   - enabled: 1
-    path: Assets/Scenes/Beta Test/Beta Thanks for playing.unity
-    guid: a139d62b43db2084c9d01fd6446e2405
+    path: Assets/Scenes/v1.0 Build/v1.0 End of Run.unity
+    guid: fddb6b92c240f33438c80b28e6e4ed38
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
