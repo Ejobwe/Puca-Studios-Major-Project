@@ -84,21 +84,21 @@ public class VolumeSlider : MonoBehaviour
         switch (volumeType)
         {
             case VolumeType.MASTER:
-                volumeSlider.value = PlayerPrefs.GetFloat("Master");
+                volumeSlider.value = AudioManager.instance.masterVolume;
                 break;
             case VolumeType.MUSIC:
-                volumeSlider.value = PlayerPrefs.GetFloat("Music");
+                volumeSlider.value = AudioManager.instance.musicVolume;
                 break;
             case VolumeType.AMBIENCE:
-                volumeSlider.value = PlayerPrefs.GetFloat("Ambience");
+                volumeSlider.value = AudioManager.instance.ambienceVolume;
                 break;
             case VolumeType.SFX:
-                volumeSlider.value = PlayerPrefs.GetFloat("SFX");
+                volumeSlider.value = AudioManager.instance.sfxVolume;
                 break;
             default:
                 Debug.LogWarning("VolumeType not Supported" + volumeType);
             break;
-        }    
+        }
     }
 
     public void OnSliderValueChanged()
