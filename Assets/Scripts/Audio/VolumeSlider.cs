@@ -21,21 +21,13 @@ public class VolumeSlider : MonoBehaviour
     private void Awake()
     {
         volumeSlider = this.GetComponentInChildren<Slider>();
-    }
 
-    private void Start()
-    {
         if (!PlayerPrefs.HasKey("Master") && !PlayerPrefs.HasKey("Music") && !PlayerPrefs.HasKey("Ambience") && !PlayerPrefs.HasKey("SFX"))
         {
-            AudioManager.instance.masterVolume = 1f;
-            AudioManager.instance.musicVolume = 0.5f;
-            AudioManager.instance.ambienceVolume = 0.5f;
-            AudioManager.instance.sfxVolume = 0.5f;
-
-            PlayerPrefs.SetFloat("Master", AudioManager.instance.masterVolume);
-            PlayerPrefs.SetFloat("Music", AudioManager.instance.musicVolume);
-            PlayerPrefs.SetFloat("Ambience", AudioManager.instance.ambienceVolume);
-            PlayerPrefs.SetFloat("SFX", AudioManager.instance.sfxVolume);
+            PlayerPrefs.SetFloat("Master", AudioManager.instance.masterVolume = 1f);
+            PlayerPrefs.SetFloat("Music", AudioManager.instance.musicVolume = 0.5f);
+            PlayerPrefs.SetFloat("Ambience", AudioManager.instance.ambienceVolume = 0.5f);
+            PlayerPrefs.SetFloat("SFX", AudioManager.instance.sfxVolume = 0.5f);
 
             switch (volumeType)
             {
@@ -56,7 +48,7 @@ public class VolumeSlider : MonoBehaviour
                 break;
             }
         }
-        else
+        else if (PlayerPrefs.HasKey("Master") || PlayerPrefs.HasKey("Music") || PlayerPrefs.HasKey("Ambience") || PlayerPrefs.HasKey("SFX"))
         {
             switch (volumeType)
             {
@@ -84,16 +76,16 @@ public class VolumeSlider : MonoBehaviour
         switch (volumeType)
         {
             case VolumeType.MASTER:
-                volumeSlider.value = AudioManager.instance.masterVolume;
+                volumeSlider.value = PlayerPrefs.GetFloat("Master");
                 break;
             case VolumeType.MUSIC:
-                volumeSlider.value = AudioManager.instance.musicVolume;
+                volumeSlider.value = PlayerPrefs.GetFloat("Music");
                 break;
             case VolumeType.AMBIENCE:
-                volumeSlider.value = AudioManager.instance.ambienceVolume;
+                volumeSlider.value = PlayerPrefs.GetFloat("Ambience");
                 break;
             case VolumeType.SFX:
-                volumeSlider.value = AudioManager.instance.sfxVolume;
+                volumeSlider.value = PlayerPrefs.GetFloat("SFX");
                 break;
             default:
                 Debug.LogWarning("VolumeType not Supported" + volumeType);
