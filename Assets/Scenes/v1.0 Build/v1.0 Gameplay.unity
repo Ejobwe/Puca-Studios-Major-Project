@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028472, g: 0.22571513, b: 0.30692458, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028441, g: 0.22571479, b: 0.30692396, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3818,7 +3818,7 @@ PrefabInstance:
       objectReference: {fileID: 1819453621}
     - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: Spells.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: Spells.Array.data[0]
@@ -3827,10 +3827,26 @@ PrefabInstance:
     - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: Spells.Array.data[1]
       value: 
+      objectReference: {fileID: 4964660499573932591, guid: 783bdfe591103c24f9013e5d7c5e9039, type: 3}
+    - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
+      propertyPath: Spells.Array.data[2]
+      value: 
       objectReference: {fileID: 1607860793750473685, guid: 502a422fc7e4ef04dbc6a29eb1780b77, type: 3}
+    - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
+      propertyPath: Spells.Array.data[3]
+      value: 
+      objectReference: {fileID: 1038055896090821831, guid: 4a55e8dc42097cb41b0b6d93dec30221, type: 3}
+    - target: {fileID: -3064581021016138392, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
+      propertyPath: Spells.Array.data[4]
+      value: 
+      objectReference: {fileID: 1038055896090821831, guid: 4a55e8dc42097cb41b0b6d93dec30221, type: 3}
     - target: {fileID: 83669400315311312, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 83669400315311312, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1103105329703878790, guid: 0f518e677347a564a972bec09b7fe79b, type: 3}
       propertyPath: m_Layer
@@ -4410,7 +4426,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745165395}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52f759eee4f3d724daad2eb36e199996, type: 3}
   m_Name: 
@@ -9281,7 +9297,7 @@ Transform:
   m_GameObject: {fileID: 1587521044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.78067, y: -0.6, z: -1.1293478}
+  m_LocalPosition: {x: 16.78067, y: 0, z: -1.1293478}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 1
   m_Children: []

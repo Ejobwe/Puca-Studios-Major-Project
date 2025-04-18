@@ -7,6 +7,8 @@ public class Item: ScriptableObject
     new public string name = "new item";
     public Sprite icon = null;
     public int Index;
+    public float Cooldown;
+    public bool CanCast = true;
 
     public virtual void Use()
     {

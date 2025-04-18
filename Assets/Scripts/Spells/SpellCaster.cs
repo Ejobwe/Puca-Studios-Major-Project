@@ -44,27 +44,34 @@ public class SpellCaster : MonoBehaviour
             else
             {
                 CurrentSpell = inventory.items[order];
-
-
-                switch (CurrentSpell.Index)             // this switch statement finds the index number of the currently equipped spell in the inventory and calls the function of the associated spell.
-
+                if (CurrentSpell.CanCast)
                 {
-                    case 0:
-                        Fireball();
-                        break;
-                    case 1:
-                        SummonPuddle();
-                        break;
-                    case 2:
-                        SummonIceWall();
-                        break;
-                    case 3:
-                        RollingSteelBall();
-                        break;
-                    // new spells are added to the end of the list in order of their index number.
+                    switch
+                        (CurrentSpell.Index) // this switch statement finds the index number of the currently equipped spell in the inventory and calls the function of the associated spell.
+                    {
+                        case 0:
+                            Fireball();
+                            break;
+                        case 1:
+                            SummonPuddle();
+                            break;
+                        case 2:
+                            SummonIceWall();
+                            break;
+                        case 3:
+                            RollingSteelBall();
+                            break;
+                        // new spells are added to the end of the list in order of their index number.
+                    }
+                    CurrentSpell.CanCast = false;
+                    order++;
+                    StartCoroutine(ActivateCD(CurrentSpell));
+                }
+                else if (CurrentSpell.CanCast == false)
+                {
+                    Debug.Log("spell is on cooldown");
                 }
             }
-            order++;
         }
         //This continuous if/else statement is to ensure we don't get errors when adding or removing spells from the list
         if (order >= inventory.items.Count)
@@ -81,6 +88,12 @@ public class SpellCaster : MonoBehaviour
             Debug.Log("Spells empty");
         }
 
+    }
+
+    private IEnumerator ActivateCD(Item SpellOnCD)
+    {
+        yield return new WaitForSeconds(SpellOnCD.Cooldown);
+        SpellOnCD.CanCast = true;
     }
     
 // The following functions each call the spell they're named after.

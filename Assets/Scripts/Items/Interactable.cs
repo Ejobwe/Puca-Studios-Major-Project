@@ -46,6 +46,7 @@ public class Interactable : MonoBehaviour
         {
             Destroy(this.gameObject);
             Debug.Log("Collecting this" + item.name);
+            item.CanCast = true;
         }
     }
 }
