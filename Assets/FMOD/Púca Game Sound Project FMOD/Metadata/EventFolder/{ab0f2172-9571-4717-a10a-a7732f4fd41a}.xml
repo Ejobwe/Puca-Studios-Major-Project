@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{ab0f2172-9571-4717-a10a-a7732f4fd41a}">
+		<property name="name">
+			<value>Player Attack Hit SFX</value>
+		</property>
+		<relationship name="folder">
+			<destination>{282df205-3170-42f1-9abd-bb3abd0c1281}</destination>
+		</relationship>
+	</object>
+</objects>
