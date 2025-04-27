@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{847e06bc-2120-45da-a9d3-8ffdf4d4e5e9}">
 		<property name="assetPath">
-			<value>Music/Main Menu Music play on launch.wav</value>
+			<value>Music/Depreciated Music/Main Menu Music play on launch.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

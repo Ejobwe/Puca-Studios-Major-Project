@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{879bcf52-32aa-4a84-8e55-0d9c72c46289}">
 		<property name="name">
-			<value>In Game Music</value>
+			<value>Game Music</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -65,6 +65,7 @@
 		<relationship name="modules">
 			<destination>{77f45e66-db11-4014-b8f6-7d0e66b056b9}</destination>
 			<destination>{7f658237-d3b3-4ea6-bfdf-1362d46563ab}</destination>
+			<destination>{82094565-6c8f-4e29-8196-93529ca2c109}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{5f1899d9-8cf4-4bf4-b81a-3d080135fde0}</destination>
@@ -79,6 +80,7 @@
 		<relationship name="modules">
 			<destination>{77f45e66-db11-4014-b8f6-7d0e66b056b9}</destination>
 			<destination>{7f658237-d3b3-4ea6-bfdf-1362d46563ab}</destination>
+			<destination>{82094565-6c8f-4e29-8196-93529ca2c109}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{72ed6fb7-83fb-4f86-b042-5ae7b1c7b9d6}</destination>
@@ -102,6 +104,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{5e8f8485-5067-4847-b90f-6741a536a587}" />
 	<object class="EventSound" id="{77f45e66-db11-4014-b8f6-7d0e66b056b9}">
+		<property name="start">
+			<value>1</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{7dc907d5-c8f2-49f4-b648-1692951721df}</destination>
 		</relationship>
@@ -111,13 +116,18 @@
 	</object>
 	<object class="EventSound" id="{7f658237-d3b3-4ea6-bfdf-1362d46563ab}">
 		<property name="start">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{280c2af4-2776-4596-a9d9-596717bb1c60}</destination>
 		</relationship>
 		<relationship name="event">
 			<destination>{14719cb8-2f51-46d8-b048-f70837a03dfe}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{82094565-6c8f-4e29-8196-93529ca2c109}">
+		<relationship name="event">
+			<destination>{66790df0-e2db-43ef-9a3c-1e16ef19f4d2}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5f1899d9-8cf4-4bf4-b81a-3d080135fde0}">

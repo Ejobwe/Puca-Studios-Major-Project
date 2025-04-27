@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{f77b2fb4-d02e-4bc1-bf63-7a09e79b7e40}">
+	<object class="AudioFile" id="{17546cc5-6188-4c09-83b3-062089f489b7}">
 		<property name="assetPath">
-			<value>Music/Depreciated Music/Main Menu Music Loop.wav</value>
+			<value>Music/In Game Music/Game Theme.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
@@ -14,7 +14,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>33.483174603174604</value>
+			<value>18.3437641723356</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{ed1fddc2-404f-4913-a3ea-39e0d08fc99b}</destination>

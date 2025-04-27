@@ -5,7 +5,7 @@
 			<value>BossArea Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{879bcf52-32aa-4a84-8e55-0d9c72c46289}</destination>
@@ -53,11 +53,17 @@
 	<object class="EventAutomatableProperties" id="{8ac72ae6-5dad-47f4-ad98-54c42367ba68}" />
 	<object class="MarkerTrack" id="{d13ee1f0-9dae-4003-ad0a-9f2af3aab61b}" />
 	<object class="GroupTrack" id="{6585fe62-aaac-4e8e-88d9-19375c3d7d3d}">
+		<relationship name="modules">
+			<destination>{0911285c-c71f-4a81-9ef7-d338ebbac9e0}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{680aa9e4-9489-4183-afb4-99e4089b44e0}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{7b69d659-af0f-4ad9-99e1-334f154e8db5}">
+		<relationship name="modules">
+			<destination>{0911285c-c71f-4a81-9ef7-d338ebbac9e0}</destination>
+		</relationship>
 		<relationship name="markers">
 			<destination>{bd7c4f52-d012-48cd-9651-99591bde6bd9}</destination>
 		</relationship>
@@ -79,7 +85,21 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3f6fe76e-01e8-4352-a7d4-6851ac337a96}" />
+	<object class="SingleSound" id="{0911285c-c71f-4a81-9ef7-d338ebbac9e0}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>14.200000000000001</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{3750077a-a202-4652-98c6-3ebd3d468c8a}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{680aa9e4-9489-4183-afb4-99e4089b44e0}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -95,10 +115,10 @@
 	</object>
 	<object class="LoopRegion" id="{bd7c4f52-d012-48cd-9651-99591bde6bd9}">
 		<property name="position">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<property name="length">
-			<value>30</value>
+			<value>14</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{7b69d659-af0f-4ad9-99e1-334f154e8db5}</destination>
