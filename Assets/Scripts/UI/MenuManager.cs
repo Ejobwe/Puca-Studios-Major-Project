@@ -23,31 +23,50 @@ public class MenuManager : MonoBehaviour
         {
             AudioManager.instance.SetMusicArea(MusicArea.Normal_Area);
         }
-
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(2))
+        {
+            AudioManager.instance.SetMusicArea(MusicArea.Menu_Area);
+        }
+        
         AudioManager.instance.SetGamePausedState(PausedGame.PLAYING);
 
-        pause[0].SetActive(false);
-        pause[1].SetActive(false);
-        settings.SetActive(false);
-        ControlsMenu.SetActive(false);
-        musicMenu[0].SetActive(false);
-        musicMenu[1].SetActive(false);
-        musicMenu[2].SetActive(false);
-        musicMenu[3].SetActive(false);
-        musicMenu[4].SetActive(false);
-        musicMenu[5].SetActive(false);
-        musicMenu[6].SetActive(false);
-        musicMenu[7].SetActive(false);
-        musicMenu[8].SetActive(false);
-        musicMenu[9].SetActive(false);
-        musicMenu[10].SetActive(false);
-        musicMenu[11].SetActive(false);
-        musicMenu[12].SetActive(false);
-        musicMenu[13].SetActive(false);
-        musicMenu[14].SetActive(false);
-        musicMenu[15].SetActive(false);
-        musicMenu[16].SetActive(false);
-        musicMenu[17].SetActive(false);
+        if (pause != null)
+        {
+            pause[0].SetActive(false);
+            pause[1].SetActive(false);
+        }
+
+        if (settings != null)
+        {
+            settings.SetActive(false);
+        }
+
+        if (ControlsMenu != null)
+        {
+            ControlsMenu.SetActive(false);
+        }
+
+        if (musicMenu != null)
+        {
+            musicMenu[0].SetActive(false);
+            musicMenu[1].SetActive(false);
+            musicMenu[2].SetActive(false);
+            musicMenu[3].SetActive(false);
+            musicMenu[4].SetActive(false);
+            musicMenu[5].SetActive(false);
+            musicMenu[6].SetActive(false);
+            musicMenu[7].SetActive(false);
+            musicMenu[8].SetActive(false);
+            musicMenu[9].SetActive(false);
+            musicMenu[10].SetActive(false);
+            musicMenu[11].SetActive(false);
+            musicMenu[12].SetActive(false);
+            musicMenu[13].SetActive(false);
+            musicMenu[14].SetActive(false);
+            musicMenu[15].SetActive(false);
+            musicMenu[16].SetActive(false);
+            musicMenu[17].SetActive(false);
+        }
     }
 
     void Update()
