@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6651449668312405203}
   - component: {fileID: 4731910495110391928}
   - component: {fileID: 3870496089076161101}
+  - component: {fileID: -8105300572147230946}
   m_Layer: 0
   m_Name: Fireball Pickup
   m_TagString: Untagged
@@ -142,6 +143,37 @@ MonoBehaviour:
       Data3: -1492014918
       Data4: 1765212251
     Path: event:/SFX/Pickup SFX/pickup Hover SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-8105300572147230946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3147165450199483598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 100951688
+      Data2: 1173034295
+      Data3: 135218359
+      Data4: -1243086660
+    Path: event:/SFX/Pickup SFX/fire Pickup SFX
   Event: 
   PlayEvent: 1
   StopEvent: 2

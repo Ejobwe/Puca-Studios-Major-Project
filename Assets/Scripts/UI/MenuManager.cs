@@ -13,10 +13,19 @@ public class MenuManager : MonoBehaviour
     [SerializeField] public List<GameObject> musicMenu;
     [SerializeField] private List<GameObject> pause;
 
-    [SerializeField] private PausedGame pausedGame;
-
     void Awake()
     {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
+        {
+            AudioManager.instance.SetMusicArea(MusicArea.Menu_Area);
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(1))
+        {
+            AudioManager.instance.SetMusicArea(MusicArea.Normal_Area);
+        }
+
+        AudioManager.instance.SetGamePausedState(PausedGame.PLAYING);
+
         pause[0].SetActive(false);
         pause[1].SetActive(false);
         settings.SetActive(false);
@@ -39,7 +48,6 @@ public class MenuManager : MonoBehaviour
         musicMenu[15].SetActive(false);
         musicMenu[16].SetActive(false);
         musicMenu[17].SetActive(false);
-
     }
 
     void Update()
@@ -57,9 +65,7 @@ public class MenuManager : MonoBehaviour
             pause[0].SetActive(true);
             pause[1].SetActive(true);
             settings.SetActive(false);
-            pausedGame = PausedGame.PAUSED;
-            AudioManager.instance.SetGamePausedState(pausedGame);
-            Debug.Log(pausedGame);
+            AudioManager.instance.SetGamePausedState(PausedGame.PAUSED);
             paused = true;
         }
         else if (paused && pause != null)
@@ -67,10 +73,12 @@ public class MenuManager : MonoBehaviour
             settings.SetActive(false);
             pause[0].SetActive(false);
             pause[1].SetActive(false);
-            pausedGame = PausedGame.PLAYING;
-            AudioManager.instance.SetGamePausedState(pausedGame);
-            Debug.Log(pausedGame);
+            AudioManager.instance.SetGamePausedState(PausedGame.PLAYING);
             paused = false;
+        }
+        else if (pause == null)
+        {
+            return;
         }
     }
 

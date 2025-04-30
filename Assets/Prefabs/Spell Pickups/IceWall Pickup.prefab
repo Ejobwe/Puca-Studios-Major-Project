@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2715900452388807289}
   - component: {fileID: 404728867934614789}
   - component: {fileID: 4419065698908311683}
+  - component: {fileID: 7523946517447926509}
   m_Layer: 0
   m_Name: IceWall Pickup
   m_TagString: Untagged
@@ -142,6 +143,37 @@ MonoBehaviour:
       Data3: -1492014918
       Data4: 1765212251
     Path: event:/SFX/Pickup SFX/pickup Hover SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &7523946517447926509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400718841416626324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 332842708
+      Data2: 1161818510
+      Data3: 1060847497
+      Data4: -1738557964
+    Path: event:/SFX/Pickup SFX/ice Pickup SFX
   Event: 
   PlayEvent: 1
   StopEvent: 2

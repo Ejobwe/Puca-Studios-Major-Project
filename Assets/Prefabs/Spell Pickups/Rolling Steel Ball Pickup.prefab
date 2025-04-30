@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5693046748236352523}
   - component: {fileID: 1013532974883358632}
   - component: {fileID: 7032281238241811720}
+  - component: {fileID: 2207191456074455894}
   m_Layer: 0
   m_Name: Rolling Steel Ball Pickup
   m_TagString: Untagged
@@ -142,6 +143,37 @@ MonoBehaviour:
       Data3: -1492014918
       Data4: 1765212251
     Path: event:/SFX/Pickup SFX/pickup Hover SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2207191456074455894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6044620732975442274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 349429924
+      Data2: 1214597828
+      Data3: -1934920062
+      Data4: 2060560145
+    Path: event:/SFX/Pickup SFX/metal Pickup SFX
   Event: 
   PlayEvent: 1
   StopEvent: 2

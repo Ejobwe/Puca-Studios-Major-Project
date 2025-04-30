@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 41866454337238402}
   - component: {fileID: 8701366046029627374}
   - component: {fileID: 5302303791810402396}
+  - component: {fileID: 7405539405621368157}
+  - component: {fileID: 2069512367553294807}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -179,3 +181,66 @@ MonoBehaviour:
   Metal: 0
   Frozen: 0
   cantCheckProperties: []
+--- !u!114 &7405539405621368157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012806443288443818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1896427870
+      Data2: 1302456698
+      Data3: 1090767792
+      Data4: 46238343
+    Path: event:/SFX/Player SFX/player Attack SFX/Fire Ball SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2069512367553294807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012806443288443818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 479177701
+      Data2: 1227648165
+      Data3: -1293968204
+      Data4: -121292051
+    Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Fire Ball
+      Hit SFX
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
