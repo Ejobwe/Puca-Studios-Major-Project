@@ -87,7 +87,7 @@
 	<object class="MixerBusPanner" id="{3f6fe76e-01e8-4352-a7d4-6851ac337a96}" />
 	<object class="SingleSound" id="{0911285c-c71f-4a81-9ef7-d338ebbac9e0}">
 		<property name="start">
-			<value>1</value>
+			<value>3</value>
 		</property>
 		<property name="length">
 			<value>14.200000000000001</value>
@@ -115,7 +115,7 @@
 	</object>
 	<object class="LoopRegion" id="{bd7c4f52-d012-48cd-9651-99591bde6bd9}">
 		<property name="position">
-			<value>1</value>
+			<value>3</value>
 		</property>
 		<property name="length">
 			<value>14</value>

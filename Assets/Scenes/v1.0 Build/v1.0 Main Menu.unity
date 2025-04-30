@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1639,42 +1639,42 @@ MonoBehaviour:
       Data2: 1133789727
       Data3: -2011707766
       Data4: -954444644
-    Path: event:/SFX/Player SFX/player Footsteps
+    Path: event:/SFX/Player SFX/player Footsteps SFX
   <eightLeggedEnemyFootsteps>k__BackingField:
     Guid:
       Data1: -1324713590
       Data2: 1228623726
       Data3: 64972930
       Data4: 353736687
-    Path: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+    Path: event:/SFX/Enemy SFX/Enemy Footsteps/8 Legged Enemy Footsteps SFX
   <sixLeggedEnemyFootsteps>k__BackingField:
     Guid:
       Data1: -1026172666
       Data2: 1114701544
       Data3: -1528410193
       Data4: -134833747
-    Path: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+    Path: event:/SFX/Enemy SFX/Enemy Footsteps/6 Legged Enemy Footsteps SFX
   <buttonHover>k__BackingField:
     Guid:
       Data1: 661412619
       Data2: 1226007382
       Data3: -1789146690
       Data4: -2010387109
-    Path: event:/SFX/Menu SFX/menu Select
+    Path: event:/SFX/Menu SFX/menu Select SFX
   <buttonUnHover>k__BackingField:
     Guid:
       Data1: -1028035313
       Data2: 1077154307
       Data3: 2027969964
       Data4: 1356946681
-    Path: event:/SFX/Menu SFX/menu Unselect
+    Path: event:/SFX/Menu SFX/menu Unselect SFX
   <buttonClick>k__BackingField:
     Guid:
       Data1: 972787024
       Data2: 1076101062
       Data3: -1611192156
       Data4: 1621814505
-    Path: event:/SFX/Menu SFX/menu Click
+    Path: event:/SFX/Menu SFX/menu Click SFX
 --- !u!1 &1603442119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1146007746228258873, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}

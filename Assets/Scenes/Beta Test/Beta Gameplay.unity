@@ -6113,7 +6113,7 @@ MonoBehaviour:
       Data2: 1250177706
       Data3: -1676847730
       Data4: -1990015886
-    Path: event:/Music/In Game Music
+    Path: event:/Music/Game Music
   <ambiencePlaceHolder>k__BackingField:
     Guid:
       Data1: 0
@@ -6127,42 +6127,42 @@ MonoBehaviour:
       Data2: 1133789727
       Data3: -2011707766
       Data4: -954444644
-    Path: event:/SFX/Player SFX/player Footsteps
+    Path: event:/SFX/Player SFX/player Footsteps SFX
   <eightLeggedEnemyFootsteps>k__BackingField:
     Guid:
       Data1: -1324713590
       Data2: 1228623726
       Data3: 64972930
       Data4: 353736687
-    Path: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+    Path: event:/SFX/Enemy SFX/Enemy Footsteps/8 Legged Enemy Footsteps SFX
   <sixLeggedEnemyFootsteps>k__BackingField:
     Guid:
       Data1: -1026172666
       Data2: 1114701544
       Data3: -1528410193
       Data4: -134833747
-    Path: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+    Path: event:/SFX/Enemy SFX/Enemy Footsteps/6 Legged Enemy Footsteps SFX
   <buttonHover>k__BackingField:
     Guid:
       Data1: 661412619
       Data2: 1226007382
       Data3: -1789146690
       Data4: -2010387109
-    Path: event:/SFX/Menu SFX/menu Select
+    Path: event:/SFX/Menu SFX/menu Select SFX
   <buttonUnHover>k__BackingField:
     Guid:
       Data1: -1028035313
       Data2: 1077154307
       Data3: 2027969964
       Data4: 1356946681
-    Path: event:/SFX/Menu SFX/menu Unselect
+    Path: event:/SFX/Menu SFX/menu Unselect SFX
   <buttonClick>k__BackingField:
     Guid:
       Data1: 972787024
       Data2: 1076101062
       Data3: -1611192156
       Data4: 1621814505
-    Path: event:/SFX/Menu SFX/menu Click
+    Path: event:/SFX/Menu SFX/menu Click SFX
 --- !u!1 &1124328495
 GameObject:
   m_ObjectHideFlags: 0
