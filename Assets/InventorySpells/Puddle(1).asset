@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a93c6fbb26889954ba4bd7c36336d17b, type: 3}
-  m_Name: FireBall
+  m_Name: Puddle(1)
   m_EditorClassIdentifier: 
-  name: Fireball
-  icon: {fileID: 21300000, guid: db0a6d9f32023b7469a349a079890a2a, type: 3}
-  Index: 0
+  name: Puddle
+  icon: {fileID: 21300000, guid: 8882125495ce71c428885eb610d6e9af, type: 3}
+  Index: 1
   Cooldown: 3
   CanCast: 1

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a93c6fbb26889954ba4bd7c36336d17b, type: 3}
-  m_Name: RollingSteelBall
+  m_Name: Rockfall(6)
   m_EditorClassIdentifier: 
-  name: RollingSteelBall
-  icon: {fileID: 21300000, guid: df4621548258a1149b885a614afe8b19, type: 3}
-  Index: 3
-  Cooldown: 3
+  name: new item
+  icon: {fileID: 0}
+  Index: 0
+  Cooldown: 0
   CanCast: 1

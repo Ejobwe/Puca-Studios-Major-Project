@@ -16,7 +16,7 @@ public class SpellCaster : MonoBehaviour
     public int order;
     private Item CurrentSpell; // The scriptable object in the inventory thats being used to cast the spell.            To create a new spell, simply right click in the project window > create > inventory > equipment. From there you can give it a name, icon and index number.
     [SerializeField] private GameObject SPObj;                                                                        //Please keep all equipment scriptable objects in the Inventory Spells folder.
-    private Vector3 SpawnPoint;
+    public Vector3 SpawnPoint;
     private IsometricAiming isometricAiming;
     private Vector3 Mpos;
     private float Speed = 10f;
@@ -126,4 +126,5 @@ public class SpellCaster : MonoBehaviour
         clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * Speed);
     }
     #endregion
+    
 }
