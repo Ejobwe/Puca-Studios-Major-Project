@@ -1,57 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8453413038734213202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/In Game Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/In Game Music
-  Guid:
-    Data1: -2019831982
-    Data2: 1250177706
-    Data3: -1676847730
-    Data4: -1990015886
-  Banks:
-  - {fileID: 1463049922401189822}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1369687078032550157}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-8214602627707594269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/player Footsteps/isSprinting
-  m_EditorClassIdentifier: 
-  Name: isSprinting
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 516941880
-    data2: 2204918999
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-7970303237598784771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,7 +28,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-7298670256967621846
+--- !u!114 &-7603976304500012421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,14 +38,96 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Menu SFX/menu Select
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Lightning Bolt SFX
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu SFX/menu Select
+  Path: event:/SFX/Player SFX/player Attack SFX/Lightning Bolt SFX
   Guid:
-    Data1: 661412619
-    Data2: 1226007382
-    Data3: -1789146690
-    Data4: -2010387109
+    Data1: -1478483054
+    Data2: 1293738260
+    Data3: -1688274293
+    Data4: -1900114339
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7180710229837308043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/water Pickup SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/water Pickup SFX
+  Guid:
+    Data1: 295825313
+    Data2: 1303817214
+    Data3: 11242415
+    Data4: 1760987873
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2800
+--- !u!114 &-6600688288117103259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Combos SFX/Steam
+    SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Combos SFX/Steam SFX
+  Guid:
+    Data1: 1781832170
+    Data2: 1281128278
+    Data3: 180966073
+    Data4: -693472348
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6580448244700113024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Unselect SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Unselect SFX
+  Guid:
+    Data1: -1028035313
+    Data2: 1077154307
+    Data3: 2027969964
+    Data4: 1356946681
   Banks:
   - {fileID: 2480582485997872963}
   IsStream: 0
@@ -107,7 +137,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6929934117353619485
+--- !u!114 &-6348352743743301391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,18 +147,73 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player SFX/player Miss
+  m_Name: event:/Music/Game Music
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player SFX/player Miss
+  Path: event:/Music/Game Music
   Guid:
-    Data1: -1460144388
-    Data2: 1113654763
-    Data3: 1003120264
-    Data4: -2097339375
+    Data1: -2019831982
+    Data2: 1250177706
+    Data3: -1676847730
+    Data4: -1990015886
+  Banks:
+  - {fileID: 1463049922401189822}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6304192788542292363}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6304192788542292363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Game Music/Area
+  m_EditorClassIdentifier: 
+  Name: Area
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2288529256
+    data2: 888590846
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - MenuArea
+  - NormalArea
+  - BossArea
+  Exists: 1
+--- !u!114 &-5708113491211428804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Death SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Death SFX
+  Guid:
+    Data1: -2134856948
+    Data2: 1159884458
+    Data3: 375613324
+    Data4: 1646264978
   Banks:
   - {fileID: 2480582485997872963}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -154,14 +239,14 @@ MonoBehaviour:
     Data4: -1243086660
   Banks:
   - {fileID: 2480582485997872963}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1750
---- !u!114 &-5125726006023859604
+  Length: 15551
+--- !u!114 &-5377697211972522781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,51 +256,137 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Main Menu Music
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Tornado Hit
+    SFX
   m_EditorClassIdentifier: 
-  Path: event:/Music/Main Menu Music
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Tornado Hit
+    SFX
   Guid:
-    Data1: -1556276315
-    Data2: 1153588476
-    Data3: 991636353
-    Data4: 1364146566
-  Banks:
-  - {fileID: 1463049922401189822}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 48500
---- !u!114 &-4583279891668767972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player SFX/player Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player SFX/player Footsteps
-  Guid:
-    Data1: -546734392
-    Data2: 1133789727
-    Data3: -2011707766
-    Data4: -954444644
+    Data1: -208610310
+    Data2: 1158161506
+    Data3: -472565871
+    Data4: 1811973836
   Banks:
   - {fileID: 2480582485997872963}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -8214602627707594269}
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 450
+  Length: 0
+--- !u!114 &-4178031157542050631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Fire Ball
+    Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Fire Ball Hit
+    SFX
+  Guid:
+    Data1: 479177701
+    Data2: 1227648165
+    Data3: -1293968204
+    Data4: -121292051
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3985544923690162253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Water Blast
+    Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Water Blast
+    Hit SFX
+  Guid:
+    Data1: 361066172
+    Data2: 1178570786
+    Data3: -927248472
+    Data4: -1530761537
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3985138073680787997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Hit SFX/6 Legged Enemy Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Hit SFX/6 Legged Enemy Hit SFX
+  Guid:
+    Data1: 453597309
+    Data2: 1329602192
+    Data3: -1203877964
+    Data4: -139131247
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3554236268418205092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Tornado SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Tornado SFX
+  Guid:
+    Data1: 1958126970
+    Data2: 1177093720
+    Data3: -2955080
+    Data4: -378830709
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3249028772511989370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,33 +414,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 30275
---- !u!114 &-1369687078032550157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/In Game Music/Area
-  m_EditorClassIdentifier: 
-  Name: Area
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2288529256
-    data2: 888590846
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - NormalArea
-  - BossArea
-  Exists: 1
---- !u!114 &-239521393016366171
+--- !u!114 &-3132449087591240717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,14 +424,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Lightning
+    Bolt Hit SFX
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Enemy SFX/8 Legged Enemy Footsteps
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Lightning Bolt
+    Hit SFX
   Guid:
-    Data1: -1324713590
-    Data2: 1228623726
-    Data3: 64972930
-    Data4: 353736687
+    Data1: -1898927554
+    Data2: 1268284031
+    Data3: -720296782
+    Data4: 1128315290
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2192054868497687204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Footsteps/6 Legged Enemy Footsteps SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Footsteps/6 Legged Enemy Footsteps SFX
+  Guid:
+    Data1: -1026172666
+    Data2: 1114701544
+    Data3: -1528410193
+    Data4: -134833747
   Banks:
   - {fileID: 2480582485997872963}
   IsStream: 0
@@ -295,7 +469,171 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 450
+  Length: 320
+--- !u!114 &-2110480716086052456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Click SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Click SFX
+  Guid:
+    Data1: 972787024
+    Data2: 1076101062
+    Data3: -1611192156
+    Data4: 1621814505
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1839661202520940075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Hit SFX/Boss Enemy Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Hit SFX/Boss Enemy Hit SFX
+  Guid:
+    Data1: -1339244850
+    Data2: 1205504213
+    Data3: 1993193362
+    Data4: -1837271505
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1134217126570753409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Hit SFX/8 Legged Enemy Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Hit SFX/8 Legged Enemy Hit SFX
+  Guid:
+    Data1: -422021262
+    Data2: 1121527726
+    Data3: 21818289
+    Data4: -634424672
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-428736077186234266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Metal Ball
+    Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Metal Ball
+    Hit SFX
+  Guid:
+    Data1: -1556349014
+    Data2: 1257174040
+    Data3: 1520429465
+    Data4: -672634237
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-279189459134763172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/tornado Pickup SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/tornado Pickup SFX
+  Guid:
+    Data1: -1929847694
+    Data2: 1132435191
+    Data3: 1669140890
+    Data4: 36573475
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14236
+--- !u!114 &-275474301653194937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Menu SFX/menu Select SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Menu SFX/menu Select SFX
+  Guid:
+    Data1: 661412619
+    Data2: 1226007382
+    Data3: -1789146690
+    Data4: -2010387109
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,29 +653,52 @@ MonoBehaviour:
   - {fileID: 2480582485997872963}
   - {fileID: 4772902080104624639}
   EditorEvents:
-  - {fileID: -5125726006023859604}
-  - {fileID: 4997526024108441590}
-  - {fileID: -7298670256967621846}
-  - {fileID: 3685305164825477819}
-  - {fileID: 3546380795260987280}
   - {fileID: -3249028772511989370}
   - {fileID: -5578225398574626061}
-  - {fileID: -239521393016366171}
-  - {fileID: -4583279891668767972}
-  - {fileID: -6929934117353619485}
-  - {fileID: -8453413038734213202}
   - {fileID: 2980801171948895624}
   - {fileID: 2809797956923593312}
   - {fileID: -7970303237598784771}
-  EditorParameters:
-  - {fileID: 898024219962843634}
+  - {fileID: -6348352743743301391}
+  - {fileID: -2192054868497687204}
+  - {fileID: -275474301653194937}
+  - {fileID: -5708113491211428804}
+  - {fileID: -6580448244700113024}
+  - {fileID: 3074418921113246316}
+  - {fileID: 4877750479224053600}
+  - {fileID: 996150080462016428}
+  - {fileID: 7263105121079258134}
+  - {fileID: 8235725498652358244}
+  - {fileID: -3132449087591240717}
+  - {fileID: 9118404223260107049}
+  - {fileID: -2110480716086052456}
+  - {fileID: 855708982714572465}
+  - {fileID: 4622883399087371798}
+  - {fileID: -1134217126570753409}
+  - {fileID: -279189459134763172}
+  - {fileID: -3554236268418205092}
+  - {fileID: -3985138073680787997}
+  - {fileID: 5312822690893460487}
+  - {fileID: -7603976304500012421}
+  - {fileID: -7180710229837308043}
+  - {fileID: 3337681685936377771}
+  - {fileID: 2612138804608617805}
+  - {fileID: -428736077186234266}
+  - {fileID: -3985544923690162253}
+  - {fileID: 763794415786248545}
+  - {fileID: -1839661202520940075}
+  - {fileID: 7062079072092850323}
+  - {fileID: 6971432211038710017}
+  - {fileID: -4178031157542050631}
+  - {fileID: -6600688288117103259}
+  - {fileID: -5377697211972522781}
+  EditorParameters: []
   MasterBanks:
   - {fileID: 1903925806909654580}
   StringsBanks:
   - {fileID: 8575044568419345392}
-  cacheTime: 638780015689190402
+  cacheTime: 638816651593030857
   cacheVersion: 131619
---- !u!114 &898024219962843634
+--- !u!114 &763794415786248545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,23 +707,79 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/GamePause
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Footsteps SFX
   m_EditorClassIdentifier: 
-  Name: GamePause
-  StudioPath: parameter:/GamePause
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1809352850
-    data2: 1198922383
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Playing
-  - Paused
-  Exists: 1
+  Path: event:/SFX/Player SFX/player Footsteps SFX
+  Guid:
+    Data1: -546734392
+    Data2: 1133789727
+    Data3: -2011707766
+    Data4: -954444644
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3255823245644236268}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &855708982714572465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Attack SFX/Boss Enemy Attack SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Attack SFX/Boss Enemy Attack SFX
+  Guid:
+    Data1: 1662647389
+    Data2: 1190022040
+    Data3: 2114226565
+    Data4: -2008674345
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &996150080462016428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Ice Snap SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Ice Snap SFX
+  Guid:
+    Data1: -1579405532
+    Data2: 1202049279
+    Data3: -1957448774
+    Data4: -407383099
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1463049922401189822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,10 +795,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638780015689159481
+  lastModified: 638816651592990200
   FileSizes:
   - Name: Desktop
-    Value: 569888
+    Value: 533344
   Exists: 1
 --- !u!114 &1903925806909654580
 MonoBehaviour:
@@ -398,10 +815,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638780015689103440
+  lastModified: 638816651592969842
   FileSizes:
   - Name: Desktop
-    Value: 3756
+    Value: 3688
   Exists: 1
 --- !u!114 &2480582485997872963
 MonoBehaviour:
@@ -418,11 +835,38 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638780015689190402
+  lastModified: 638816651593030857
   FileSizes:
   - Name: Desktop
-    Value: 469472
+    Value: 1566560
   Exists: 1
+--- !u!114 &2612138804608617805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/metal Pickup SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/metal Pickup SFX
+  Guid:
+    Data1: 349429924
+    Data2: 1214597828
+    Data3: -1934920062
+    Data4: 2060560145
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1780
 --- !u!114 &2809797956923593312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,7 +915,7 @@ MonoBehaviour:
     data1: 1809352850
     data2: 1198922383
   Type: 2
-  IsGlobal: 1
+  IsGlobal: 0
   Labels:
   - Playing
   - Paused
@@ -503,7 +947,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &3546380795260987280
+--- !u!114 &3074418921113246316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -513,24 +957,75 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Menu SFX/menu Click
+  m_Name: event:/SFX/Pickup SFX/lightning Pickup SFX
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu SFX/menu Click
+  Path: event:/SFX/Pickup SFX/lightning Pickup SFX
   Guid:
-    Data1: 972787024
-    Data2: 1076101062
-    Data3: -1611192156
-    Data4: 1621814505
+    Data1: 1264937236
+    Data2: 1317688921
+    Data3: -1200025665
+    Data4: -537884668
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12956
+--- !u!114 &3255823245644236268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/player Footsteps SFX/isSprinting
+  m_EditorClassIdentifier: 
+  Name: isSprinting
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 516941880
+    data2: 2204918999
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &3337681685936377771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Fire Ball SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Fire Ball SFX
+  Guid:
+    Data1: -1896427870
+    Data2: 1302456698
+    Data3: 1090767792
+    Data4: 46238343
   Banks:
   - {fileID: 2480582485997872963}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &3685305164825477819
+--- !u!114 &4622883399087371798
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -540,18 +1035,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Menu SFX/menu Unselect
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Metal Ball SFX
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu SFX/menu Unselect
+  Path: event:/SFX/Player SFX/player Attack SFX/Metal Ball SFX
   Guid:
-    Data1: -1028035313
-    Data2: 1077154307
-    Data3: 2027969964
-    Data4: 1356946681
+    Data1: -1826838943
+    Data2: 1115845118
+    Data3: -1374125909
+    Data4: 372661441
   Banks:
   - {fileID: 2480582485997872963}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -577,7 +1072,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1202
   Exists: 1
---- !u!114 &4997526024108441590
+--- !u!114 &4877750479224053600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,14 +1082,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+  m_Name: event:/SFX/Player SFX/player Hit SFX
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Enemy SFX/6 Legged Enemy Footsteps
+  Path: event:/SFX/Player SFX/player Hit SFX
   Guid:
-    Data1: -1026172666
-    Data2: 1114701544
-    Data3: -1528410193
-    Data4: -134833747
+    Data1: 578075412
+    Data2: 1097324974
+    Data3: 1932987784
+    Data4: -1727972595
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5312822690893460487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Footsteps/8 Legged Enemy Footsteps SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Footsteps/8 Legged Enemy Footsteps SFX
+  Guid:
+    Data1: -1324713590
+    Data2: 1228623726
+    Data3: 64972930
+    Data4: 353736687
   Banks:
   - {fileID: 2480582485997872963}
   IsStream: 0
@@ -603,7 +1125,117 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 400
+  Length: 240
+--- !u!114 &6971432211038710017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/ice Pickup SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/ice Pickup SFX
+  Guid:
+    Data1: 332842708
+    Data2: 1161818510
+    Data3: 1060847497
+    Data4: -1738557964
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3160
+--- !u!114 &7062079072092850323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Water Blast SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Water Blast SFX
+  Guid:
+    Data1: 971001040
+    Data2: 1309920909
+    Data3: 2102802342
+    Data4: -1088305523
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7263105121079258134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Attack SFX/6 Legged Enemy Attack SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Attack SFX/6 Legged Enemy Attack SFX
+  Guid:
+    Data1: -1029590231
+    Data2: 1253883182
+    Data3: 1790179209
+    Data4: -439563446
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8235725498652358244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Ice Snap
+    Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Ice Snap Hit
+    SFX
+  Guid:
+    Data1: 1278248755
+    Data2: 1317554535
+    Data3: -291658323
+    Data4: -64122359
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8575044568419345392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,8 +1251,35 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638780015689108525
+  lastModified: 638816651592969842
   FileSizes:
   - Name: Desktop
-    Value: 1946
+    Value: 3264
   Exists: 1
+--- !u!114 &9118404223260107049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Enemy SFX/Enemy Attack SFX/8 Legged Enemy Attack SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Enemy SFX/Enemy Attack SFX/8 Legged Enemy Attack SFX
+  Guid:
+    Data1: -1617968829
+    Data2: 1163194101
+    Data3: 129247401
+    Data4: -1851342031
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
