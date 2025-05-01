@@ -696,7 +696,7 @@ MonoBehaviour:
   - {fileID: 1903925806909654580}
   StringsBanks:
   - {fileID: 8575044568419345392}
-  cacheTime: 638816651593030857
+  cacheTime: 638816961427839094
   cacheVersion: 131619
 --- !u!114 &763794415786248545
 MonoBehaviour:
@@ -795,7 +795,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638816651592990200
+  lastModified: 638816961427795961
   FileSizes:
   - Name: Desktop
     Value: 533344
@@ -815,7 +815,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638816651592969842
+  lastModified: 638816961427741578
   FileSizes:
   - Name: Desktop
     Value: 3688
@@ -835,7 +835,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638816651593030857
+  lastModified: 638816961427839094
   FileSizes:
   - Name: Desktop
     Value: 1566560
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Ambience.bank"
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638780015689103440
+  lastModified: 638816961427730969
   FileSizes:
   - Name: Desktop
     Value: 1202
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638816651592969842
+  lastModified: 638816961427752225
   FileSizes:
   - Name: Desktop
     Value: 3264

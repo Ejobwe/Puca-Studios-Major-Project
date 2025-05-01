@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18bce451bcf8f3c4bafa2db7c98ec6a6
+guid: 950ec16c61be4cd4592b51726b44c05e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,18 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 4071fba28acc163488cd0ddc6a5b93c2, type: 2}
+      name: Front porch
+    second: {fileID: 2100000, guid: 72061843cad64cd49b92d1feca261c03, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
+      name: Glass
     second: {fileID: 2100000, guid: 124292a8a3379c6468b9f3500eb6457e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
+      name: Main
+    second: {fileID: 2100000, guid: 4071fba28acc163488cd0ddc6a5b93c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
     second: {fileID: 2100000, guid: 0395af3b35201944683ef10c0904698a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window ledge
+    second: {fileID: 2100000, guid: 14fb4a3b3ec99b640a81b5e2bb3429a3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

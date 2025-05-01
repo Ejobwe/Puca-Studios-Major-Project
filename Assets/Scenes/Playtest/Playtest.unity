@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -159,19 +159,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 1
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &3949106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -545,9 +533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startCamera: {fileID: 5722737343295654695}
-  currentCamera: {fileID: 0}
-  Cameras:
-  - {fileID: 5722737343295654695}
 --- !u!4 &76450570
 Transform:
   m_ObjectHideFlags: 0
@@ -833,19 +818,7 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &127585164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1323,19 +1296,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &351080158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1563,19 +1524,7 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &370063006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1698,19 +1647,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &379723875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2326,19 +2263,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &658162851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2907,19 +2832,7 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &742305633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3512,19 +3425,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &800080317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5671,19 +5572,7 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1192878960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6834,19 +6723,7 @@ MonoBehaviour:
   rooms:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1356455916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7674,19 +7551,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1503744321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9132,19 +8997,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1795654259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9585,19 +9438,7 @@ MonoBehaviour:
   - {fileID: 9059756480612776041, guid: e8c80ff0e0542b34f9a649c228fe3ed4, type: 3}
   - {fileID: 6757542761836304795, guid: 84b4b49d20f5eec42b05052207da7918, type: 3}
   - {fileID: 7625892103890342066, guid: 089cbeca935f90d4fb031069bc6c7cea, type: 3}
-  spawn: 0
-  room: 0
-  rs: 0
-  conection: 0
-  roomLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  longRoom: 0
-  longRoomSpawnDown: 0
-  chainSpawn: 0
-  detected: 0
-  rayDirection: 0
-  check: 0
+  rota: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1958824881
 BoxCollider:
   m_ObjectHideFlags: 0
