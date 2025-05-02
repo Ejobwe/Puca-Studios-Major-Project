@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{72a537b2-701b-4d24-b2b3-9fbfcfc9a87f}">
+		<property name="assetPath">
+			<value>SFX/Pickups/Rock Pickup SFX.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.5118367346938779</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ed1fddc2-404f-4913-a3ea-39e0d08fc99b}</destination>
+		</relationship>
+	</object>
+</objects>

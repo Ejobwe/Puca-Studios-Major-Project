@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2513475883058421485}
   - component: {fileID: 6808871401880408692}
   - component: {fileID: 8418076923273303838}
+  - component: {fileID: 2312255054985368628}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -147,3 +148,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1
+--- !u!114 &2312255054985368628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555613936732255044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1526924702
+      Data2: 1298523048
+      Data3: 188314496
+      Data4: 93998813
+    Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Rockfall
+      Hit SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
