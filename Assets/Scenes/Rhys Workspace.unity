@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &507063211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6736602841587780, guid: ea4bf0d03b7036e44be130dd852a46e3, type: 3}
+  m_PrefabInstance: {fileID: 4238100562615681232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &507063214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507063211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 5
 --- !u!1 &612232499
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc9c70cb8644f046862d8626e29b3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LightningTransforms: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,9 +937,8 @@ MonoBehaviour:
   - {fileID: 1607860793750473685, guid: 502a422fc7e4ef04dbc6a29eb1780b77, type: 3}
   - {fileID: 1038055896090821831, guid: 4a55e8dc42097cb41b0b6d93dec30221, type: 3}
   - {fileID: 3022268652489412846, guid: e6434a2b3d9bd0543b0a7c1b6d257176, type: 3}
-  - {fileID: 3022268652489412846, guid: e6434a2b3d9bd0543b0a7c1b6d257176, type: 3}
+  - {fileID: 6736602841587780, guid: ea4bf0d03b7036e44be130dd852a46e3, type: 3}
   - {fileID: 3971978683839533798, guid: 0f52577cac5b12948920b567b982218b, type: 3}
-  - {fileID: 3022268652489412846, guid: e6434a2b3d9bd0543b0a7c1b6d257176, type: 3}
   order: 0
   SPObj: {fileID: 1542257678}
   SpawnPoint: {x: 0, y: 0, z: 0}
@@ -1424,7 +1440,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6736602841587780, guid: ea4bf0d03b7036e44be130dd852a46e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507063214}
   m_SourcePrefab: {fileID: 100100000, guid: ea4bf0d03b7036e44be130dd852a46e3, type: 3}
 --- !u!1001 &4248865031845153863
 PrefabInstance:
@@ -1638,6 +1657,10 @@ PrefabInstance:
     - target: {fileID: 3971978683839533798, guid: 0f52577cac5b12948920b567b982218b, type: 3}
       propertyPath: m_Name
       value: GrassPatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187129021121667494, guid: 0f52577cac5b12948920b567b982218b, type: 3}
+      propertyPath: timer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8416469128430463650, guid: 0f52577cac5b12948920b567b982218b, type: 3}
       propertyPath: m_LocalPosition.x
