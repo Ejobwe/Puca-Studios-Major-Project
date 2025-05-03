@@ -1364,6 +1364,20 @@ MonoBehaviour:
       Data3: -2011707766
       Data4: -954444644
     Path: event:/SFX/Player SFX/player Footsteps SFX
+  <playerHit>k__BackingField:
+    Guid:
+      Data1: 578075412
+      Data2: 1097324974
+      Data3: 1932987784
+      Data4: -1727972595
+    Path: event:/SFX/Player SFX/player Hit SFX
+  <playerDeath>k__BackingField:
+    Guid:
+      Data1: -2134856948
+      Data2: 1159884458
+      Data3: 375613324
+      Data4: 1646264978
+    Path: event:/SFX/Player SFX/player Death SFX
   <eightLeggedEnemyFootsteps>k__BackingField:
     Guid:
       Data1: -1324713590
@@ -1378,6 +1392,48 @@ MonoBehaviour:
       Data3: -1528410193
       Data4: -134833747
     Path: event:/SFX/Enemy SFX/Enemy Footsteps/6 Legged Enemy Footsteps SFX
+  <rangedEnemyAttack>k__BackingField:
+    Guid:
+      Data1: -1617968829
+      Data2: 1163194101
+      Data3: 129247401
+      Data4: -1851342031
+    Path: event:/SFX/Enemy SFX/Enemy Attack SFX/8 Legged Enemy Attack SFX
+  <meleeEnemyAttack>k__BackingField:
+    Guid:
+      Data1: -1029590231
+      Data2: 1253883182
+      Data3: 1790179209
+      Data4: -439563446
+    Path: event:/SFX/Enemy SFX/Enemy Attack SFX/6 Legged Enemy Attack SFX
+  <bossEnemyAttack>k__BackingField:
+    Guid:
+      Data1: 1662647389
+      Data2: 1190022040
+      Data3: 2114226565
+      Data4: -2008674345
+    Path: event:/SFX/Enemy SFX/Enemy Attack SFX/Boss Enemy Attack SFX
+  <rangedEnemyHit>k__BackingField:
+    Guid:
+      Data1: -422021262
+      Data2: 1121527726
+      Data3: 21818289
+      Data4: -634424672
+    Path: event:/SFX/Enemy SFX/Enemy Hit SFX/8 Legged Enemy Hit SFX
+  <meleeEnemyHit>k__BackingField:
+    Guid:
+      Data1: 453597309
+      Data2: 1329602192
+      Data3: -1203877964
+      Data4: -139131247
+    Path: event:/SFX/Enemy SFX/Enemy Hit SFX/6 Legged Enemy Hit SFX
+  <bossEnemyHit>k__BackingField:
+    Guid:
+      Data1: -1339244850
+      Data2: 1205504213
+      Data3: 1993193362
+      Data4: -1837271505
+    Path: event:/SFX/Enemy SFX/Enemy Hit SFX/Boss Enemy Hit SFX
   <buttonHover>k__BackingField:
     Guid:
       Data1: 661412619

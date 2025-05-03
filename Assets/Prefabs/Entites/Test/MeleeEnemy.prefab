@@ -207,6 +207,7 @@ MonoBehaviour:
   maxHealth: 9
   boss: 0
   currentHealth: 0
+  enemyType: 1
 --- !u!65 &6908737377977549800
 BoxCollider:
   m_ObjectHideFlags: 0

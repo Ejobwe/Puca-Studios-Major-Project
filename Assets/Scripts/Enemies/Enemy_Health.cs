@@ -5,9 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class Enemy_Health : MonoBehaviour
 {
+    private enum EnemyType
+    {
+        RANGED,
+        MELEE,
+        BOSS
+    }
+
     public int maxHealth;
     [SerializeField] private bool boss;
     [SerializeField] private int currentHealth;
+
+    [SerializeField] private EnemyType enemyType;
+
+    private void Awake()
+    {
+        
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +49,22 @@ public class Enemy_Health : MonoBehaviour
         if (currentHealth > 0)
         {
             currentHealth -= damage;
+
+            switch (enemyType)
+            {
+                case EnemyType.RANGED:
+                    AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyHit, transform.position);
+                    break;
+                case EnemyType.MELEE:
+                    AudioManager.instance.PlayOneShot(FMODEvents.instance.meleeEnemyHit, transform.position);
+                    break;
+                case EnemyType.BOSS:
+                    AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyHit, transform.position);
+                    break;
+                default:
+                    Debug.LogWarning("Enemy type not supported: " + enemyType);
+                break;
+            }
         }
     }
 

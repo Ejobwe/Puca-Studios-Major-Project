@@ -49,6 +49,7 @@ public class Player_Health : MonoBehaviour
 
         if (currentHealth <= 0)
             {
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.playerDeath, transform.position);
                 gameObject.SetActive(false);
                 SceneManager.LoadScene(2);
             }
@@ -63,6 +64,7 @@ public class Player_Health : MonoBehaviour
             if (currentHealth > 0)
             {
                 currentHealth -= damage;
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.playerHit, transform.position);
             }
         StartCoroutine(InvincibilityFrames());
         }
