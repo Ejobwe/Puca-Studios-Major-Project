@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rockfall(6)
   m_EditorClassIdentifier: 
   name: new item
-  icon: {fileID: 0}
-  Index: 0
-  Cooldown: 0
+  icon: {fileID: 21300000, guid: 55b439e8875150140a43623c8f9e2081, type: 3}
+  Index: 6
+  Cooldown: 5
   CanCast: 1

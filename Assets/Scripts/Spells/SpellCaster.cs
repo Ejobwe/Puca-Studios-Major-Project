@@ -61,6 +61,9 @@ public class SpellCaster : MonoBehaviour
                         case 3:
                             RollingSteelBall();
                             break;
+                        case 4:
+                            Tornado();
+                            break;
                         // new spells are added to the end of the list in order of their index number.
                     }
                     CurrentSpell.CanCast = false;
@@ -100,6 +103,7 @@ public class SpellCaster : MonoBehaviour
     #region Fireball
     private void Fireball()
     {
+        Speed = 10f;
         SpawnPoint = SPObj.transform.position;
         GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.Euler(Mpos));
         clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * Speed);
@@ -121,10 +125,23 @@ public class SpellCaster : MonoBehaviour
     #region RollingSteelBall
     private void RollingSteelBall()
     {
+        Speed = 10f;
         SpawnPoint = SPObj.transform.position;
         GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.Euler(Mpos));
         clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * Speed);
     }
     #endregion
-    
+
+    #region Tornado
+
+    private void Tornado()
+    {
+        Speed = 5f;
+        SpawnPoint = SPObj.transform.position;
+        GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.Euler(Mpos));
+        clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * Speed);
+    }
+
+
+    #endregion
 }
