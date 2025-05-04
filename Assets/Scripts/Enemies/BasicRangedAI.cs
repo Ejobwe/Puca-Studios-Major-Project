@@ -76,9 +76,10 @@ public class BasicRangedAI : MonoBehaviour
             if (Time.time > nextShotTime && !stop && number > 30)
             { 
                 Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
-            nextShotTime = Time.time + timeBetweenShots;
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyAttack, transform.position);
+                nextShotTime = Time.time + timeBetweenShots;
             }
-     }
+        }
 
         //Debug.Log(gameObject.name + gameObject.GetComponent<Rigidbody>().velocity);
 

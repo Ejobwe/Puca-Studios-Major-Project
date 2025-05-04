@@ -130,6 +130,7 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         if (DistanceToPlayer <= 3)
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.meleeEnemyAttack, transform.position);
             Player.GetComponent<Player_Health>().takeDamage(damage);
         }
         

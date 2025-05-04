@@ -45,7 +45,7 @@ public class BossAi : MonoBehaviour
     IEnumerator Swing()
     {
         moves.SetBool("Swing",true);
-
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyAttack, transform.position);
         yield return new WaitForSeconds(1);
         moves.SetBool("Swing", false);
         attacking = false;
@@ -53,6 +53,7 @@ public class BossAi : MonoBehaviour
     IEnumerator Slam()
     {
         moves.SetBool("Slam", true);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyAttack, transform.position);
         transform.LookAt(new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, this.transform.position.y, GameObject.FindGameObjectWithTag("Player").transform.position.z));
         yield return new WaitForSeconds(1);
         moves.SetBool("Slam", false);
