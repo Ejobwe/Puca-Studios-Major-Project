@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6003226291050618921}
   - component: {fileID: -5332737607733106618}
   m_Layer: 0
-  m_Name: SummonCircle
+  m_Name: WaterPuddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

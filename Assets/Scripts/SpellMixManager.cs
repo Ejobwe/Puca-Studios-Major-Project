@@ -9,83 +9,92 @@ using UnityEngine;
 
 public class SpellMixManager : MonoBehaviour
 {
-    public  List<GameObject>  Spells = new List<GameObject>();
-    public List<SpellProperty> Props = new List<SpellProperty>();
+
     [SerializeField] private List<GameObject> Spellojects = new List<GameObject>();
+    [SerializeField] private List<Material> NewMaterials = new List<Material>();
     private int oldcount;
-
     public static SpellMixManager instance;
-
-    private Vector3 FrozenSpeed;
-
-    void Start()
-    {
-        if(instance != null && instance != this)
-        {
-            //DestroyAll(gameObject);
-        }
-        else
-        {
-            instance = this;
-        }
-        
-        StartCoroutine(Flush());
-    }
-
     
-    /* void Update()
-    {
-        oldcount = Spells.Count;
-        for (int i = 0; i < Spells.Count; i++)
-        {
-            for (int j = 0; j < Spells.Count; j++)
-            {
-                if (Props[i].combo == Spells[j])
-                { 
-                    SpellFuse(Props[i], Props[j]);
-                    Debug.Log("tada");
-                    break;
-                }
-            }
-        }
-    } */
-
     public void SpellFuse(SpellProperty SP1, SpellProperty SP2)
     {
-        #region Wet/Burning
+        #region Burning/Wet
         if ((SP1.Burning || SP2.Burning) && (SP1.Wet || SP2.Wet))
         {
             if (SP1.Wet == true)
             {
+                        //Vector3 temp = new Vector3();
+                // add shrinking effect 
                 Instantiate(Spellojects[0],new Vector3(SP1.transform.position.x, SP1.transform.position.y, SP1.transform.position.z), Quaternion.identity);
             }
             if (SP2.Wet == true)
             {
-                Instantiate(Spellojects[0],
-                    new Vector3(SP2.transform.position.x, SP2.transform.position.y, SP2.transform.position.z), Quaternion.identity);
+                Vector3 temp = new Vector3();
+                Instantiate(Spellojects[0],new Vector3(SP2.transform.position.x, SP2.transform.position.y, SP2.transform.position.z), Quaternion.identity);
             }
             DestroyAll(SP1.GameObject(),SP2.GameObject());
         }
         #endregion
+        #region Burning/Frozen
+        if ((SP1.Burning || SP2.Burning) && (SP1.Frozen || SP2.Frozen))
+        {
+            if (SP1.Burning == true)
+            {
+                Instantiate(Spellojects[2],new Vector3(SP2.transform.position.x, SP2.transform.position.y, SP2.transform.position.z), Quaternion.identity);
+            }
+            if (SP2.Burning == true)
+            {
+                Instantiate(Spellojects[2],new Vector3(SP1.transform.position.x, SP1.transform.position.y, SP1.transform.position.z), Quaternion.identity);
+            }
+            DestroyAll(SP1.GameObject(),SP2.GameObject());
+        }
+        #endregion
+        #region Burning/Steel
+        if((SP1.Burning || SP2.Burning) && (SP1.Burning || SP2.Burning))
+            if (SP1.Burning == true)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[0];
+            }
+        if (SP2.Burning == true)
+        {
+            SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[0];
+        }
+        
 
+        #endregion
+
+        #region Burning/Windy
+
+        if((SP1.Burning || SP2.Burning) && (SP1.Windy || SP2.Windy))
+            if (SP1.Burning)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
+                SP2.Burning = true;
+            }
+            if (SP2.Burning)
+            {
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
+                SP1.Burning = true;
+            }
+
+        #endregion
+        // Issue with interaction Below, return to solve later.   
         #region Wet/Frozen
         if((SP1.Frozen || SP2.Frozen) && (SP1.Wet || SP2.Wet))
         {
             if(SP1.Wet == true)
             {
-                SP1.gameObject.GetComponent<Rigidbody>().velocity = transform.TransformDirection(FrozenSpeed);;
-                SP1.Frozen = true;
+                Debug.Log("yippie");
                 SP1.Wet = false;
+                SP1.Frozen = true;
             }
             if(SP2.Wet == true)
             {
-                SP1.gameObject.GetComponent<Rigidbody>().velocity = transform.TransformDirection(FrozenSpeed);;
+                Debug.Log("yippie");
+                SP2.Wet = false;
                 SP2.Frozen = true;
-                SP2.Wet = false; 
             }
         }
-        #endregion
-
+        #endregion      
         #region Frozen/Steel
         if((SP1.Frozen || SP2.Frozen) && (SP1.Metal || SP2.Metal))
         {
@@ -112,33 +121,6 @@ public class SpellMixManager : MonoBehaviour
         }
         #endregion
     }
-        
-    #region Flush
-
-    
-
-    
-    private IEnumerator Flush()
-    {
-        for (int i = 0; i < Spells.Count; i++)
-        {
-            if (null == Spells[i])
-            {
-                Spells.Remove(Spells[i]);
-            }
-        }
-        for (int i = 0; i < Props.Count; i++)
-        {
-            if (Props[i] == null)
-            {
-                Props.Remove(Props[i]);
-            }
-        }
-        yield return new WaitForSeconds(0.2f);
-        StartCoroutine(Flush());
-    }
-    #endregion
-
     private void DestroyAll(GameObject S1, GameObject S2)
     {
         Destroy(S1);

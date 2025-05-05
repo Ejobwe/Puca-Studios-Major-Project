@@ -13,6 +13,9 @@ public class SpellProperty : MonoBehaviour
     public bool Frozen;
     public bool Windy;
     public bool Electric;
+    public bool planty;
+    public bool Earthy;
+    public float Damage;
 
     public List<SpellProperty> cantCheckProperties = new List<SpellProperty>();
 

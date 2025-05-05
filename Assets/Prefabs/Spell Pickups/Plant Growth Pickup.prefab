@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &555613936732255044
+--- !u!1 &8201746739553045288
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6271083132049760919}
-  - component: {fileID: 8392524755668987819}
-  - component: {fileID: 8948010137850336351}
-  - component: {fileID: 2513475883058421485}
-  - component: {fileID: 6808871401880408692}
-  - component: {fileID: 8418076923273303838}
-  - component: {fileID: 2312255054985368628}
-  - component: {fileID: 3124210583473048350}
+  - component: {fileID: 5855869248110198621}
+  - component: {fileID: 3666871860076718102}
+  - component: {fileID: 543542813244973731}
+  - component: {fileID: 5780766332385300077}
+  - component: {fileID: 5463925050264211800}
+  - component: {fileID: 7403183366174190543}
+  - component: {fileID: 821291110787096540}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: Plant Growth Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6271083132049760919
+--- !u!4 &5855869248110198621
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
+  m_GameObject: {fileID: 8201746739553045288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.63, y: 2.34, z: -2.43}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 10, y: 1, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8392524755668987819
+--- !u!33 &3666871860076718102
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8948010137850336351
+  m_GameObject: {fileID: 8201746739553045288}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &543542813244973731
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
+  m_GameObject: {fileID: 8201746739553045288}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31d125519e3682a4591383da66469364, type: 2}
+  - {fileID: 2100000, guid: 0b42851a3cdb1c644aa7ffd1c3ee182e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,13 +87,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2513475883058421485
-BoxCollider:
+--- !u!135 &5780766332385300077
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
+  m_GameObject: {fileID: 8201746739553045288}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -107,55 +106,30 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6808871401880408692
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &8418076923273303838
+--- !u!114 &5463925050264211800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
+  m_GameObject: {fileID: 8201746739553045288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
+  m_Script: {fileID: 11500000, guid: 90ce421853b69c14499afcc8f8564087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 1
---- !u!114 &2312255054985368628
+  Radius: 2
+  item: {fileID: 11400000, guid: e25abbf92d77f0a46a661570fb655070, type: 2}
+  grabbable: 0
+--- !u!114 &7403183366174190543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
+  m_GameObject: {fileID: 8201746739553045288}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -164,40 +138,50 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1526924702
-      Data2: 1298523048
-      Data3: 188314496
-      Data4: 93998813
-    Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Rockfall
-      Hit SFX
+      Data1: 1242134101
+      Data2: 1112203383
+      Data3: -1492014918
+      Data4: 1765212251
+    Path: event:/SFX/Pickup SFX/pickup Hover SFX
   Event: 
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
-  TriggerOnce: 1
+  TriggerOnce: 0
   Preload: 0
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &3124210583473048350
+--- !u!114 &821291110787096540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555613936732255044}
+  m_GameObject: {fileID: 8201746739553045288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3e1012d8303ad468d9d51c18f8217e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Burning: 0
-  Wet: 0
-  Metal: 0
-  Frozen: 0
-  Windy: 0
-  Electric: 0
-  Earthy: 1
-  cantCheckProperties: []
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1929847694
+      Data2: 1132435191
+      Data3: 1669140890
+      Data4: 36573475
+    Path: event:/SFX/Pickup SFX/tornado Pickup SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

@@ -141,6 +141,8 @@ MonoBehaviour:
   Frozen: 0
   Windy: 0
   Electric: 0
+  planty: 1
+  Earthy: 0
   cantCheckProperties: []
 --- !u!114 &832166533927116119
 MonoBehaviour:
