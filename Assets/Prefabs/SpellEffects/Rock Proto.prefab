@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3280857041329360305}
   - component: {fileID: 2889820484721786791}
   - component: {fileID: 7322976285719098262}
+  - component: {fileID: 477052780593482345}
+  - component: {fileID: -8034164474446020287}
   m_Layer: 0
   m_Name: Rock Proto
   m_TagString: Untagged
@@ -96,6 +98,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 2552585954408567296, guid: d80000239a7868a4c9ecb2a3783ef3a6, type: 3}
+--- !u!114 &477052780593482345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8078547641934855171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 918149398
+      Data2: 1168674699
+      Data3: -819337034
+      Data4: 1890901682
+    Path: event:/SFX/Player SFX/player Attack SFX/Rockfall SFX
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-8034164474446020287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8078547641934855171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1526924702
+      Data2: 1298523048
+      Data3: 188314496
+      Data4: 93998813
+    Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Rockfall
+      Hit SFX
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &8174895190995496457
 PrefabInstance:
   m_ObjectHideFlags: 0
