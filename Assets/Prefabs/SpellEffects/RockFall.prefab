@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5820767547222919312}
   - component: {fileID: 4374575611057859788}
-  - component: {fileID: -4466330659920593405}
+  - component: {fileID: -1299383964571955487}
   m_Layer: 0
   m_Name: RockFall
   m_TagString: Untagged
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21afca331f3888046b7127cfa281f8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rock: {fileID: 555613936732255044, guid: a640dcd9bb9a2a144bf8c6011e0c35b4, type: 3}
---- !u!114 &-4466330659920593405
+  Rock: {fileID: 8078547641934855171, guid: 440da065dbf3e7d4e874416f5cd6a194, type: 3}
+--- !u!114 &-1299383964571955487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6736602841587780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
+  m_Script: {fileID: 11500000, guid: dd822e9d6b7cf4c45a7ec570d7f936c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1

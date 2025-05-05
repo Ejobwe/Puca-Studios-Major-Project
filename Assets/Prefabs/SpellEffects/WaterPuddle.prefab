@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2736398798877871967}
   - component: {fileID: 6212760679076179048}
   - component: {fileID: 3380339144671937343}
-  - component: {fileID: 5038638430043347149}
   - component: {fileID: 6003226291050618921}
   - component: {fileID: -5332737607733106618}
+  - component: {fileID: 4067400137142345539}
   m_Layer: 0
   m_Name: WaterPuddle
   m_TagString: Untagged
@@ -106,23 +106,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
+  m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &5038638430043347149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4964660499573932591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 3
 --- !u!114 &6003226291050618921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +126,15 @@ MonoBehaviour:
   Wet: 1
   Metal: 0
   Frozen: 0
+  Windy: 0
+  Electric: 0
+  Planty: 0
+  Earthy: 0
+  Damage: 0
   cantCheckProperties: []
+  Lifetime: 5
+  Extended: 0
+  Extension: 0
 --- !u!114 &-5332737607733106618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,3 +167,30 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!54 &4067400137142345539
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4964660499573932591}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

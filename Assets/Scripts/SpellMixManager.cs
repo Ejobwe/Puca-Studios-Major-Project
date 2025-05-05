@@ -17,19 +17,27 @@ public class SpellMixManager : MonoBehaviour
     
     public void SpellFuse(SpellProperty SP1, SpellProperty SP2)
     {
+        #region Burning/Burning
+
+        if (SP1.Burning && SP1.Wet == false && SP1.Frozen == false && SP1.Metal == false && SP1.Windy == false &&
+            SP1.Electric == false && SP1.Planty == false && SP2.Burning && SP2.Wet == false && SP2.Frozen == false &&
+            SP2.Metal == false && SP2.Windy == false && SP2.Electric == false && SP2.Planty == false)
+        {
+            return;
+        }
+        #endregion
         #region Burning/Wet
         if ((SP1.Burning || SP2.Burning) && (SP1.Wet || SP2.Wet))
         {
-            if (SP1.Wet == true)
+            if (SP1.Burning == true)
             {
                         //Vector3 temp = new Vector3();
                 // add shrinking effect 
-                Instantiate(Spellojects[0],new Vector3(SP1.transform.position.x, SP1.transform.position.y, SP1.transform.position.z), Quaternion.identity);
-            }
-            if (SP2.Wet == true)
-            {
-                Vector3 temp = new Vector3();
                 Instantiate(Spellojects[0],new Vector3(SP2.transform.position.x, SP2.transform.position.y, SP2.transform.position.z), Quaternion.identity);
+            }
+            if (SP2.Burning == true)
+            {
+                Instantiate(Spellojects[0],new Vector3(SP1.transform.position.x, SP1.transform.position.y, SP1.transform.position.z), Quaternion.identity);
             }
             DestroyAll(SP1.GameObject(),SP2.GameObject());
         }
@@ -48,8 +56,8 @@ public class SpellMixManager : MonoBehaviour
             DestroyAll(SP1.GameObject(),SP2.GameObject());
         }
         #endregion
-        #region Burning/Steel
-        if((SP1.Burning || SP2.Burning) && (SP1.Burning || SP2.Burning))
+        #region Burning/Metal
+        if((SP1.Burning || SP2.Burning) && (SP1.Metal || SP2.Metal))
             if (SP1.Burning == true)
             {
                 SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[0];
@@ -61,40 +69,228 @@ public class SpellMixManager : MonoBehaviour
         
 
         #endregion
-
         #region Burning/Windy
 
         if((SP1.Burning || SP2.Burning) && (SP1.Windy || SP2.Windy))
-            if (SP1.Burning)
+            if (SP1.Burning == true)
             {
+                Destroy(SP1.GameObject());
                 SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
+            }
+            if (SP2.Burning == true)
+            {
+                Destroy(SP2.GameObject());
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
+            }
+            if (SP1.Burning == true )
+            {
+                SP2.Burning = true;
+                SP2.Extension = 5;
+                SP2.Extended = true;
+                return;
+            }
+            if (SP2.Burning == true)
+            {
+                SP1.Burning = true;
+                SP1.Extension = 5;
+                SP1.Extended = true;
+                return;
+            }
+        #endregion
+        #region Burning/Electric
+
+        if ((SP1.Burning || SP2.Burning) && (SP1.Electric || SP2.Electric))
+        {
+            if (SP1.Burning == true)
+            {
                 SP2.Burning = true;
             }
-            if (SP2.Burning)
+            if (SP2.Burning == true)
             {
-                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
                 SP1.Burning = true;
             }
+        }
 
         #endregion
-        // Issue with interaction Below, return to solve later.   
+        #region Burning/Planty
+        if ((SP1.Burning || SP2.Burning) && (SP1.Planty || SP2.Planty))
+        {
+            if (SP1.Burning == true && SP1.Planty == false)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
+            }
+            if (SP2.Burning == true && SP2.Planty == false)
+            {
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
+            }
+            if (SP1.Burning == true && SP1.Planty == false)
+            {
+                SP2.Extension = 5;
+                SP2.Extended = true;
+                SP2.Planty = false;
+                SP2.Burning = true;
+                return;
+            }
+            if (SP2.Burning == true && SP2.Planty == false)
+            {
+                SP1.Extension = 5;
+                SP1.Extended = true;
+                SP1.Planty = false;
+                SP1.Burning = true;
+                return;
+            }
+        }
+        #endregion
+        #region Burning/Earthy
+        if ((SP1.Burning || SP2.Burning) && (SP1.Earthy || SP2.Earthy))
+            if (SP1.Burning == true)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[3];
+            }
+            if (SP2.Burning == true && SP2.Earthy == false)
+            {   
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[3];
+            }
+            if (SP1.Burning == true && SP1.Earthy == false)
+            {
+                SP2.Burning = true;
+                SP2.Extension = 5;
+                SP2.Extended = true;
+                return;
+            }
+            if (SP2.Burning == true && SP2.Earthy == false)
+            {
+                SP1.Burning = true;
+                SP1.Extension = 5;
+                SP1.Extended = true;
+                return;
+            }
+        #endregion
+        
         #region Wet/Frozen
         if((SP1.Frozen || SP2.Frozen) && (SP1.Wet || SP2.Wet))
         {
             if(SP1.Wet == true)
             {
+                
                 Debug.Log("yippie");
                 SP1.Wet = false;
                 SP1.Frozen = true;
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
             }
             if(SP2.Wet == true)
             {
                 Debug.Log("yippie");
                 SP2.Wet = false;
                 SP2.Frozen = true;
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
             }
         }
-        #endregion      
+        #endregion
+        #region Wet/Metal
+
+        if ((SP1.Wet || SP2.Wet) && (SP1.Metal || SP2.Metal))
+        {
+            if (SP1.Wet && SP1.Metal == false)
+            {
+                
+            }
+            if (SP1.Wet && SP1.Metal == false)
+            {
+                
+            }
+        }
+
+        #endregion
+        #region Wet/Windy
+
+        if ((SP1.Wet || SP2.Wet) && (SP1.Windy || SP2.Windy))
+            if (SP1.Wet && SP1.Windy == false)
+            {
+                
+            }
+            if (SP1.Wet && SP1.Windy == false)
+            {
+                
+            }
+
+        #endregion
+        #region Wet/Electric
+
+        if ((SP1.Wet || SP2.Wet) && (SP1.Electric || SP2.Electric))
+        {
+            if (SP1.Wet)
+            {
+                SP1.Electric = true;
+            }
+
+            if (SP1.Wet)
+            {
+                SP2.Electric = true;
+            }
+        }
+
+        #endregion
+        #region Wet/Planty
+
+        if ((SP1.Wet || SP2.Wet) && (SP2.Planty || SP2.Planty))
+        {
+            if(SP1.Wet)
+            {
+                Destroy(SP1.GameObject());
+                var temp = new Vector3();
+                temp = SP2.gameObject.transform.localScale;
+                temp.x += 3;
+                temp.y += 0.3f;
+                temp.z += 3;
+                SP2.gameObject.transform.localScale = temp;
+                return;
+            }
+            if(SP2.Wet)
+            {
+                Destroy(SP2.GameObject());
+                var temp = new Vector3();
+                temp = SP1.gameObject.transform.localScale;
+                temp.x += 3;
+                temp.y += 0.3f;
+                temp.z += 3;
+                SP1.gameObject.transform.localScale = temp;
+                return;
+            }
+
+        }
+
+
+
+        #endregion
+        #region Wet/Earthy
+
+        if ((SP1.Wet || SP2.Wet) && (SP1.Earthy || SP2.Earthy))
+        {
+            if (SP1.Wet && SP1.Earthy == false)
+            {
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[4];
+            }
+
+            if (SP2.Wet && SP2.Earthy == false)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[4];
+            }
+            if (SP1.Wet && SP1.Earthy == false)
+            {
+                SP1.Earthy = true;
+                return;
+            }
+            if (SP2.Wet && SP2.Earthy == false)
+            {
+                SP2.Earthy = true;
+                return;
+            }
+            
+        }
+
+        #endregion
+        
         #region Frozen/Steel
         if((SP1.Frozen || SP2.Frozen) && (SP1.Metal || SP2.Metal))
         {

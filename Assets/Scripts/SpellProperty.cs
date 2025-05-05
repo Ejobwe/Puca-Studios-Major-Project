@@ -13,11 +13,23 @@ public class SpellProperty : MonoBehaviour
     public bool Frozen;
     public bool Windy;
     public bool Electric;
-    public bool planty;
+    public bool Planty;
     public bool Earthy;
     public float Damage;
 
     public List<SpellProperty> cantCheckProperties = new List<SpellProperty>();
+    public float Lifetime;
+    public bool Extended;
+    public float Extension;
+    public bool Extending;
+    
+
+    void Start()
+    {
+        StartCoroutine(selfDestruct(Lifetime));
+    }
+
+
 
     void FixedUpdate()
     {
@@ -35,6 +47,30 @@ public class SpellProperty : MonoBehaviour
                 //SpellFuse(this, SpellProperty);
                 SpellProperty.cantCheckProperties.Add(this);
             }
+        }
+    }
+    
+    private IEnumerator selfDestruct(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        if (!Extended)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    private IEnumerator Extend(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Destroy(this.gameObject);
+    }
+    private void Update()
+    {
+        
+        if (Extended == true && Extending == false)
+        {
+            StartCoroutine(Extend(Extension));
+            Extending = true;
         }
     }
 }

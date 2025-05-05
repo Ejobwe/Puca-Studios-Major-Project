@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 897970025798353750}
   - component: {fileID: 44354302235987931}
   - component: {fileID: 1506587678989277209}
-  - component: {fileID: 3165901075902943840}
   - component: {fileID: 993353461270233569}
   - component: {fileID: -2966495627582768919}
   - component: {fileID: 8544848998916422330}
@@ -153,19 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc9c70cb8644f046862d8626e29b3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3165901075902943840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6754110207621152963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 0.1
 --- !u!114 &993353461270233569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,10 +170,14 @@ MonoBehaviour:
   Frozen: 0
   Windy: 0
   Electric: 1
-  planty: 0
+  Planty: 0
   Earthy: 0
   Damage: 0
   cantCheckProperties: []
+  Lifetime: 0.1
+  Extended: 0
+  Extension: 0
+  Extending: 0
 --- !u!114 &-2966495627582768919
 MonoBehaviour:
   m_ObjectHideFlags: 0

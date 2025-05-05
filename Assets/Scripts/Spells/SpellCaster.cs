@@ -129,7 +129,7 @@ public class SpellCaster : MonoBehaviour
     #region SummonIceWall
     private void SummonIceWall()
     {
-        Instantiate(Spells[CurrentSpell.Index], isometricAiming.Pos, Quaternion.Euler(Player.transform.localRotation.eulerAngles));
+        GameObject clone = Instantiate(Spells[CurrentSpell.Index], isometricAiming.Pos, Quaternion.Euler(Player.transform.localRotation.eulerAngles));
     }
     #endregion
     #region RollingSteelBall

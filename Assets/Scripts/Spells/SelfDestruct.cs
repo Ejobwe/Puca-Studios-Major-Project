@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class SelfDestruct : MonoBehaviour
 {
-    [SerializeField] private float timer = 2;
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(selfDestruct(timer));
-    }
+    [SerializeField] private GameObject child;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    private IEnumerator selfDestruct(float waitTime)
+
+    private void Update()
     {
-        yield return new WaitForSeconds(waitTime);
-        Destroy(this.gameObject);
+        if (child == null)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

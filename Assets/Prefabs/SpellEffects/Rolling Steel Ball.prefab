@@ -14,11 +14,9 @@ GameObject:
   - component: {fileID: 2818182411371695181}
   - component: {fileID: 883750779959547974}
   - component: {fileID: 5879249849641520067}
-  - component: {fileID: -1252763535261810018}
   - component: {fileID: 5383576031604799575}
   - component: {fileID: -5467297169325387192}
   - component: {fileID: -2351779777483766209}
-  - component: {fileID: 1341616811460566868}
   m_Layer: 0
   m_Name: Rolling Steel Ball
   m_TagString: Untagged
@@ -130,10 +128,14 @@ MonoBehaviour:
   Frozen: 0
   Windy: 0
   Electric: 0
-  planty: 0
+  Planty: 0
   Earthy: 0
   Damage: 0
   cantCheckProperties: []
+  Lifetime: 10
+  Extended: 0
+  Extension: 0
+  Extending: 0
 --- !u!54 &5879249849641520067
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -161,19 +163,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-1252763535261810018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038055896090821831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 10
 --- !u!114 &5383576031604799575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,15 +239,3 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &1341616811460566868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038055896090821831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3643c63e0409b4291809293b706d3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Puddle
   icon: {fileID: 21300000, guid: 8882125495ce71c428885eb610d6e9af, type: 3}
   Index: 1
-  Cooldown: 3
-  CanCast: 1
+  Cooldown: 0
+  CanCast: 0

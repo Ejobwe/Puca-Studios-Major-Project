@@ -18,10 +18,11 @@ public class LightningRenderer : MonoBehaviour
         spellCaster = player.GetComponent<SpellCaster>();
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
+        
+        lineRenderer.SetPosition(1, isometricAiming.Pos);
     }
     void Update()
     {
-        lineRenderer.SetPosition(1,player.transform.position);
-        lineRenderer.SetPosition(0, isometricAiming.Pos);
+        lineRenderer.SetPosition(0,player.transform.position);
     }
 }

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8931949099516858456}
   - component: {fileID: 4008710638548081205}
   - component: {fileID: 41866454337238402}
-  - component: {fileID: 8701366046029627374}
   - component: {fileID: 5302303791810402396}
   - component: {fileID: 7405539405621368157}
   - component: {fileID: 2069512367553294807}
@@ -151,19 +150,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8701366046029627374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9012806443288443818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 5
 --- !u!114 &5302303791810402396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +168,14 @@ MonoBehaviour:
   Frozen: 0
   Windy: 0
   Electric: 0
+  Planty: 0
+  Earthy: 0
+  Damage: 0
   cantCheckProperties: []
+  Lifetime: 3
+  Extended: 0
+  Extension: 0
+  Extending: 0
 --- !u!114 &7405539405621368157
 MonoBehaviour:
   m_ObjectHideFlags: 0
