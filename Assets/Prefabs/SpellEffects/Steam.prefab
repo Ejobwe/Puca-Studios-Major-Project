@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 755e28c71777f7347ac155e500a8227b, type: 2}
+  - {fileID: 2100000, guid: 79e62e8435c1f3b4692b7c7e008adcbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,6 +124,8 @@ MonoBehaviour:
   Wet: 0
   Metal: 0
   Frozen: 0
+  Windy: 0
+  Electric: 0
   cantCheckProperties: []
 --- !u!114 &-3995536761727717441
 MonoBehaviour:

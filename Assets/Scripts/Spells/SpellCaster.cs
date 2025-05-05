@@ -18,6 +18,7 @@ public class SpellCaster : MonoBehaviour
     [SerializeField] private GameObject SPObj;                                                                        //Please keep all equipment scriptable objects in the Inventory Spells folder.
     public Vector3 SpawnPoint;
     private IsometricAiming isometricAiming;
+    //private LineRenderer lineRenderer;
     private Vector3 Mpos;
     private float Speed = 10f;
     
@@ -63,6 +64,15 @@ public class SpellCaster : MonoBehaviour
                             break;
                         case 4:
                             Tornado();
+                            break;
+                        case 5:
+                            Thunderbolt();
+                            break;
+                        case 6:
+                            Rockfall();
+                            break;
+                        case 7:
+                            PlantGrowth();
                             break;
                         // new spells are added to the end of the list in order of their index number.
                     }
@@ -131,7 +141,6 @@ public class SpellCaster : MonoBehaviour
         clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * Speed);
     }
     #endregion
-
     #region Tornado
 
     private void Tornado()
@@ -141,7 +150,28 @@ public class SpellCaster : MonoBehaviour
         GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.Euler(Mpos));
         clone.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * Speed);
     }
+    #endregion
+    #region Thunderbolt
 
+    private void Thunderbolt()
+    {
+        SpawnPoint = SPObj.transform.position;
+        GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.Euler(Mpos));
+    }
+    
 
+    #endregion
+    #region Rockfall
+
+    private void Rockfall()
+    {
+        Instantiate(Spells[CurrentSpell.Index], isometricAiming.Pos, Quaternion.Euler(Player.transform.localRotation.eulerAngles));
+    }
+    #endregion
+    #region PlantGrowth
+    private void PlantGrowth()
+    {
+        Instantiate(Spells[CurrentSpell.Index], isometricAiming.Pos, Quaternion.Euler(Player.transform.localRotation.eulerAngles));
+    }
     #endregion
 }

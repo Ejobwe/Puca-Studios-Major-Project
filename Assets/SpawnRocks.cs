@@ -19,8 +19,9 @@ public class SpawnRocks : MonoBehaviour
 
     IEnumerator Rockspawning()
     {
-        Instantiate(Rock, this.transform.position, Quaternion.identity );
-        yield return new WaitForSeconds(0.5f);
+        var cloud = new Vector3(Random.Range(-2.0f, 2.0f), 5, Random.Range(-2.0f, 2.0f));
+        Instantiate(Rock, this.transform.position+cloud, Quaternion.identity );
+        yield return new WaitForSeconds(0.1f);
         StartCoroutine(Rockspawning());
         yield return null;
     }

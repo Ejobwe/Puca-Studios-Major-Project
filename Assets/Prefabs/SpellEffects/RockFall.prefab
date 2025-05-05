@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5820767547222919312}
   - component: {fileID: 4374575611057859788}
+  - component: {fileID: -4466330659920593405}
   m_Layer: 0
   m_Name: RockFall
   m_TagString: Untagged
@@ -45,3 +46,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rock: {fileID: 555613936732255044, guid: a640dcd9bb9a2a144bf8c6011e0c35b4, type: 3}
+--- !u!114 &-4466330659920593405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6736602841587780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed6d20982cbe2f4e8438d60ea5d3e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1
