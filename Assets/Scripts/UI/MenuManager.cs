@@ -13,19 +13,21 @@ public class MenuManager : MonoBehaviour
     [SerializeField] public List<GameObject> musicMenu;
     [SerializeField] private List<GameObject> pause;
 
+    [SerializeField] private MusicArea musicArea;
+
     void Awake()
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
         {
-            AudioManager.instance.SetMusicArea(MusicArea.Menu_Area);
+            AudioManager.instance.SetMusicArea(musicArea);
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(1))
         {
-            AudioManager.instance.SetMusicArea(MusicArea.Normal_Area);
+            AudioManager.instance.SetMusicArea(musicArea);
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(2))
         {
-            AudioManager.instance.SetMusicArea(MusicArea.Menu_Area);
+            AudioManager.instance.SetMusicArea(musicArea);
         }
         
         AudioManager.instance.SetGamePausedState(PausedGame.PLAYING);
