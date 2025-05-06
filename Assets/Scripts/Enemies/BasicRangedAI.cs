@@ -28,15 +28,16 @@ public class BasicRangedAI : MonoBehaviour
 
     [SerializeField] private float awayDistance;
     // Start is called before the first frame update
-    void onAwake()
+    void Awake()
     {
+        Rb = GetComponent<Rigidbody>();
+        enemy = GetComponent<NavMeshAgent>();
+        player = GameObject.FindWithTag("Player");
         enemyFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.eightLeggedEnemyFootsteps);
 
         UpdateSound();
 
-        enemy = GetComponent<NavMeshAgent>();
-        player = GameObject.FindWithTag("Player");
-        Rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -65,15 +66,15 @@ public class BasicRangedAI : MonoBehaviour
         //    stop = false;
         //}
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance > awayDistance && !stop && DistanceToPlayer < 30)
+        if (distance > awayDistance)
         {
             Move();
         }
 
-        else if (distance < awayDistance && !stop && number > 30)
+        else if (distance < awayDistance)
         {
             MoveAway();
-            if (Time.time > nextShotTime && !stop && number > 30)
+            if (Time.time > nextShotTime)
             { 
                 Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
                 AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyAttack, transform.position);

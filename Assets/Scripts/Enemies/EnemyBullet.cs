@@ -25,6 +25,7 @@ public class EnemyBullet : MonoBehaviour
         if(collision.tag == "Player")
         {
             collision.GetComponent<Player_Health>().takeDamage(damage);
+            Destroy(gameObject);
         }
         
     }

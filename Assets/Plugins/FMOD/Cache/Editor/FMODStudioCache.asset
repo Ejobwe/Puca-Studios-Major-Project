@@ -55,6 +55,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7469889196370892475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Rockfall SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Rockfall SFX
+  Guid:
+    Data1: 918149398
+    Data2: 1168674699
+    Data3: -819337034
+    Data4: 1890901682
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7180710229837308043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +159,35 @@ MonoBehaviour:
   - {fileID: 2480582485997872963}
   IsStream: 0
   Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6565978879951721778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Rockfall
+    Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Rockfall Hit
+    SFX
+  Guid:
+    Data1: 1526924702
+    Data2: 1298523048
+    Data3: 188314496
+    Data4: 93998813
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -551,6 +607,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-572667940214343568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/rockfall Pikcup SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/rockfall Pikcup SFX
+  Guid:
+    Data1: 152758216
+    Data2: 1202723965
+    Data3: 768438667
+    Data4: -1466612180
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5511
 --- !u!114 &-428736077186234266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,13 +774,48 @@ MonoBehaviour:
   - {fileID: -4178031157542050631}
   - {fileID: -6600688288117103259}
   - {fileID: -5377697211972522781}
+  - {fileID: 5830016533636003380}
+  - {fileID: -7469889196370892475}
+  - {fileID: 1327672385192927650}
+  - {fileID: -6565978879951721778}
+  - {fileID: -572667940214343568}
+  - {fileID: 454112797067991588}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1903925806909654580}
   StringsBanks:
   - {fileID: 8575044568419345392}
-  cacheTime: 638816961427839094
+  cacheTime: 638821367874447722
   cacheVersion: 131619
+--- !u!114 &454112797067991588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Plant Growth
+    Hit SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Player Attack Hit SFX/Plant Growth
+    Hit SFX
+  Guid:
+    Data1: 308585178
+    Data2: 1288638701
+    Data3: 1696486556
+    Data4: -1277682897
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &763794415786248545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,6 +898,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1327672385192927650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player SFX/player Attack SFX/Plant Growth SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player SFX/player Attack SFX/Plant Growth SFX
+  Guid:
+    Data1: -1936857771
+    Data2: 1212366011
+    Data3: 669125781
+    Data4: -1441396563
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1463049922401189822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,7 +940,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638816961427795961
+  lastModified: 638816651592990200
   FileSizes:
   - Name: Desktop
     Value: 533344
@@ -815,7 +960,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638816961427741578
+  lastModified: 638816651592969842
   FileSizes:
   - Name: Desktop
     Value: 3688
@@ -835,10 +980,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638816961427839094
+  lastModified: 638821367874447722
   FileSizes:
   - Name: Desktop
-    Value: 1566560
+    Value: 1812640
   Exists: 1
 --- !u!114 &2612138804608617805
 MonoBehaviour:
@@ -1067,7 +1212,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Ambience.bank"
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638816961427730969
+  lastModified: 638780015689103440
   FileSizes:
   - Name: Desktop
     Value: 1202
@@ -1126,6 +1271,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 240
+--- !u!114 &5830016533636003380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Pickup SFX/plant Pickup SFX
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Pickup SFX/plant Pickup SFX
+  Guid:
+    Data1: 1751888896
+    Data2: 1305231767
+    Data3: 605188491
+    Data4: 1830161840
+  Banks:
+  - {fileID: 2480582485997872963}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13008
 --- !u!114 &6971432211038710017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,10 +1423,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638816961427752225
+  lastModified: 638821367874397442
   FileSizes:
   - Name: Desktop
-    Value: 3264
+    Value: 3568
   Exists: 1
 --- !u!114 &9118404223260107049
 MonoBehaviour:

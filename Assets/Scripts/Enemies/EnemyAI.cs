@@ -9,8 +9,8 @@ using FMODUnity;
 public class EnemyAI : MonoBehaviour
 {
 
-    public float DistanceToPlayer;
-    public NavMeshAgent enemy;
+    private float DistanceToPlayer;
+    private NavMeshAgent enemy;
     public LayerMask border;
 
     public int damage;
@@ -18,9 +18,10 @@ public class EnemyAI : MonoBehaviour
 
     int number = 20;
 
-    public GameObject Player;
+    private GameObject Player;
 
     private Rigidbody Rb;
+    public Animator anim;
 
     public Transform enemyBottom;
 
@@ -29,17 +30,15 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float awayDistance;
 
     // Start is called before the first frame update
-    void onAwake()
+    void Awake()
     {
-        enemyFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.sixLeggedEnemyFootsteps);
-
-        UpdateSound();
-
-        
-
+        anim = GetComponentInChildren<Animator>();
         enemy = GetComponent<NavMeshAgent>();
         Player = GameObject.FindWithTag("Player");
         Rb = GetComponent<Rigidbody>();
+        enemyFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.sixLeggedEnemyFootsteps);
+
+        UpdateSound();
     }
 
     // Update is called once per frame
@@ -69,7 +68,7 @@ public class EnemyAI : MonoBehaviour
         //}
 
         
-        if (DistanceToPlayer > 3 && !stop && DistanceToPlayer < 30)
+        if (DistanceToPlayer > 3)
         {
             Move();
         }
@@ -127,7 +126,9 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator attack()
     {
-        yield return new WaitForSeconds(2.5f);
+        anim.SetBool("Attack", true);
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        anim.SetBool("Attack", false);
         if (DistanceToPlayer <= 3)
         {
             AudioManager.instance.PlayOneShot(FMODEvents.instance.meleeEnemyAttack, transform.position);
