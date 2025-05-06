@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7209757910957158264}
   - component: {fileID: -2823868387160779744}
   - component: {fileID: -3676902339866072599}
+  - component: {fileID: 984838032148045103}
   m_Layer: 0
   m_Name: Tornado
   m_TagString: Untagged
@@ -133,9 +134,10 @@ MonoBehaviour:
   Earthy: 0
   Damage: 0
   cantCheckProperties: []
-  Lifetime: 1
+  Lifetime: 5
   Extended: 0
   Extension: 0
+  Extending: 0
 --- !u!54 &7209757910957158264
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -226,3 +228,16 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &984838032148045103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022268652489412846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6afb30d0e6ece4a93350fbe509fdcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: 360

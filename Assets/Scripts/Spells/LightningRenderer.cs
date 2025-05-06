@@ -13,16 +13,34 @@ public class LightningRenderer : MonoBehaviour
     
     void Start()
     {
+        
         player = GameObject.Find("Player");
         isometricAiming = player.GetComponent<IsometricAiming>();
         spellCaster = player.GetComponent<SpellCaster>();
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         
-        lineRenderer.SetPosition(1, isometricAiming.Pos);
+        
+        lineRenderer.SetPosition(0, isometricAiming.Pos);
     }
     void Update()
     {
-        lineRenderer.SetPosition(0,player.transform.position);
+        lineRenderer.SetPosition(1,player.transform.position);
+        
+        GenerateMeshCollider(); 
+    }
+
+    public void GenerateMeshCollider()
+    {
+        MeshCollider collider = GetComponent<MeshCollider>();
+
+        if (collider == null)
+        {
+            collider = gameObject.AddComponent<MeshCollider>();
+        }
+
+        Mesh mesh = new Mesh();
+        lineRenderer.BakeMesh(mesh, Camera.main,true);
+        collider.sharedMesh = mesh;
     }
 }

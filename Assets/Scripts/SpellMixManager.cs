@@ -1,10 +1,13 @@
 //using System;
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 public class SpellMixManager : MonoBehaviour
@@ -14,6 +17,7 @@ public class SpellMixManager : MonoBehaviour
     [SerializeField] private List<Material> NewMaterials = new List<Material>();
     private int oldcount;
     public static SpellMixManager instance;
+    
     
     public void SpellFuse(SpellProperty SP1, SpellProperty SP2)
     {
@@ -26,6 +30,7 @@ public class SpellMixManager : MonoBehaviour
             return;
         }
         #endregion
+        
         #region Burning/Wet
         if ((SP1.Burning || SP2.Burning) && (SP1.Wet || SP2.Wet))
         {
@@ -72,12 +77,12 @@ public class SpellMixManager : MonoBehaviour
         #region Burning/Windy
 
         if((SP1.Burning || SP2.Burning) && (SP1.Windy || SP2.Windy))
-            if (SP1.Burning == true)
+            if (SP1.Burning && SP1.Windy == false)
             {
                 Destroy(SP1.GameObject());
                 SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
             }
-            if (SP2.Burning == true)
+            if (SP2.Burning && SP2.Windy == false)
             {
                 Destroy(SP2.GameObject());
                 SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[1];
@@ -291,7 +296,7 @@ public class SpellMixManager : MonoBehaviour
 
         #endregion
         
-        #region Frozen/Steel
+        #region Frozen/Metal
         if((SP1.Frozen || SP2.Frozen) && (SP1.Metal || SP2.Metal))
         {
             if(SP1.Frozen == true)
@@ -316,6 +321,160 @@ public class SpellMixManager : MonoBehaviour
             }
         }
         #endregion
+        #region Frozen/Windy
+
+        if ((SP1.Frozen || SP2.Frozen) && (SP1.Windy || SP2.Windy))
+        {
+            if (SP1.Frozen & SP1.Windy == false)
+            {
+                
+            }
+
+            if (SP2.Frozen && SP2.Windy == false)
+            {
+                
+            }
+        }
+        #endregion
+        #region Frozen/Electric
+        if ((SP1.Frozen || SP2.Frozen) && (SP1.Electric || SP2.Electric))
+        {
+            if (SP1.Frozen & SP1.Electric == false)
+            {
+                
+            }
+
+            if (SP2.Frozen && SP2.Electric == false)
+            {
+                
+            }
+        }
+        
+
+        #endregion
+        #region Frozen/Planty
+        if ((SP1.Frozen || SP2.Frozen) && (SP1.Planty || SP2.Planty))
+        {
+            if (SP1.Frozen & SP1.Planty == false)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP2.Planty = false;
+                SP2.Frozen = true;
+            }
+
+            if (SP2.Frozen && SP2.Planty == false)
+            {
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP1.Planty = false;
+                SP1.Frozen = true;
+            }
+        }
+
+        #endregion
+        #region Frozen/Earthy
+        if ((SP1.Frozen || SP2.Frozen) && (SP1.Earthy || SP2.Earthy))
+        {
+            if (SP1.Frozen & SP1.Earthy == false)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP2.Earthy = false;
+                SP2.Frozen = true;
+            }
+
+            if (SP2.Frozen && SP2.Earthy == false)
+            {
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP1.Planty = false;
+                SP1.Frozen = true;
+            }
+        }
+        
+
+        #endregion
+
+        #region Metal/Windy
+
+        if ((SP1.Metal || SP2.Metal) && (SP1.Windy || SP2.Windy))
+        {
+         TornadoScript tornadoScript;
+            if (SP1.Metal && SP1.Windy == false)
+            {
+                tornadoScript = SP2.gameObject.GetComponent<TornadoScript>();
+                tornadoScript.Debris.Add(SP1.GameObject());
+            }
+            if (SP2.Metal && SP2.Windy == false)
+            {
+                tornadoScript = SP1.gameObject.GetComponent<TornadoScript>();
+                tornadoScript.Debris.Add(SP2.GameObject());
+            }
+        }
+
+        #endregion
+        #region Metal/Electric
+
+        
+
+        #endregion
+        #region Metal/Planty
+
+        
+
+        #endregion
+        #region Metal/Earthy
+
+        
+
+        #endregion
+
+        #region Windy/Electric
+
+        if ((SP1.Windy || SP2.Windy) && (SP1.Electric || SP2.Electric))
+        {
+            if (SP1.Windy && SP1.Electric == false)
+            {
+                SP1.Electric = true;
+                return;
+            }
+            if (SP2.Windy && SP2.Electric == false)
+            {
+                SP2.Electric = true;
+                return;
+            }
+                
+        }
+
+        #endregion
+        #region Windy/Planty
+
+        
+
+        #endregion
+
+        #region Windy/Earthy
+        if ((SP1.Earthy || SP2.Earthy) && (SP1.Windy || SP2.Windy))
+        {
+            TornadoScript tornadoScript;
+            if (SP1.Earthy && SP1.Windy == false)
+            {
+                tornadoScript = SP2.gameObject.GetComponent<TornadoScript>();
+                tornadoScript.Debris.Add(SP1.GameObject());
+                SP1.Extension = 5;
+                SP1.Extended = true;
+                return;
+            }
+            if (SP2.Earthy && SP2.Windy == false)
+            {
+                tornadoScript = SP1.gameObject.GetComponent<TornadoScript>();
+                tornadoScript.Debris.Add(SP2.GameObject());
+                SP2.Extension = 5;
+                SP2.Extended = true;
+                return;
+            }
+        }
+        
+
+        #endregion
+        
     }
     private void DestroyAll(GameObject S1, GameObject S2)
     {

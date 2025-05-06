@@ -128,7 +128,7 @@ MonoBehaviour:
   Earthy: 1
   Damage: 0
   cantCheckProperties: []
-  Lifetime: 1.1
+  Lifetime: 1.5
   Extended: 0
   Extension: 0
   Extending: 0

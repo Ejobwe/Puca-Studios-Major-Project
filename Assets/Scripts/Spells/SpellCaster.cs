@@ -155,8 +155,9 @@ public class SpellCaster : MonoBehaviour
 
     private void Thunderbolt()
     {
-        SpawnPoint = SPObj.transform.position;
-        GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.Euler(Mpos));
+        //SpawnPoint = SPObj.transform.position;
+        SpawnPoint = Player.transform.position;
+        GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.identity);
     }
     
 
