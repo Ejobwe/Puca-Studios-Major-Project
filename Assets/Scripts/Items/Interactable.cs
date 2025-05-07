@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    public bool startPickup;
     public float Radius = 2f;
     [SerializeField] private Item item;
     [SerializeField] private bool grabbable;
+
+    public GameObject tutorialArrow;
 
     [SerializeField] private GameObject pickupUI;
 
@@ -20,6 +23,15 @@ public class Interactable : MonoBehaviour
 
     private void Start()
     {
+        if (startPickup && tutorialArrow != null)
+        {
+            tutorialArrow.SetActive(false);
+        }
+        else if (!startPickup && tutorialArrow != null)
+        {
+            tutorialArrow = null;
+        }
+
         if (pickupUI != null)
             pickupUI.transform.GetChild(0).gameObject.SetActive(false);
     }
@@ -63,6 +75,15 @@ public class Interactable : MonoBehaviour
         bool PickedUp = Inventory.instance.Add(item);
         if (PickedUp)
         {
+            if (startPickup && tutorialArrow != null)
+            {
+                tutorialArrow.SetActive(true);
+            }
+            else
+            {
+                tutorialArrow.SetActive(false);
+            }
+
             pickupUI.transform.GetChild(0).gameObject.SetActive(false);
             Destroy(this.gameObject);
             Debug.Log("Collecting this" + item.name);
