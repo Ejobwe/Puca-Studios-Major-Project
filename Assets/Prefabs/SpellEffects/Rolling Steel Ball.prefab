@@ -130,7 +130,7 @@ MonoBehaviour:
   Electric: 0
   Planty: 0
   Earthy: 0
-  Damage: 0
+  Damage: 5
   cantCheckProperties: []
   Lifetime: 10
   Extended: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493a202b29e89ad48aba5245d6667534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 0
 --- !u!114 &-5467297169325387192
 MonoBehaviour:
   m_ObjectHideFlags: 0
