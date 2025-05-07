@@ -227,11 +227,13 @@ public class SpellMixManager : MonoBehaviour
             if (SP1.Wet)
             {
                 SP1.Electric = true;
+                print("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
             }
 
             if (SP1.Wet)
             {
                 SP2.Electric = true;
+                print("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
             }
         }
 
