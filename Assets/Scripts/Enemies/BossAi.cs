@@ -33,6 +33,7 @@ public class BossAi : MonoBehaviour
         transform.LookAt(new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, this.transform.position.y, GameObject.FindGameObjectWithTag("Player").transform.position.z));
         //StartCoroutine(Wait());
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(1).length);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyAttack, transform.position);
         anim.SetBool("Attack", false);
         StartCoroutine(Cooldown());
 
