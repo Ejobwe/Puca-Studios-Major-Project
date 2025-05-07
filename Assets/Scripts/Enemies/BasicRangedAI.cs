@@ -21,6 +21,7 @@ public class BasicRangedAI : MonoBehaviour
     public int number = 20;
 
     private Rigidbody Rb;
+    private Animator anim;
 
     public Transform enemyBottom;
 
@@ -34,6 +35,7 @@ public class BasicRangedAI : MonoBehaviour
         enemy = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
         enemyFootsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.eightLeggedEnemyFootsteps);
+        anim = GetComponentInChildren<Animator>();
 
         UpdateSound();
 
@@ -71,7 +73,7 @@ public class BasicRangedAI : MonoBehaviour
             Move();
         }
 
-        else if (distance < awayDistance)
+        else if (distance < awayDistance-2)
         {
             MoveAway();
             if (Time.time > nextShotTime)
@@ -79,6 +81,15 @@ public class BasicRangedAI : MonoBehaviour
                 Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
                 AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyAttack, transform.position);
                 nextShotTime = Time.time + timeBetweenShots;
+            }
+        }
+        else if (distance < awayDistance)
+        {
+            
+            if (Time.time > nextShotTime)
+            {
+                StartCoroutine(attack());
+                
             }
         }
 
@@ -95,6 +106,16 @@ public class BasicRangedAI : MonoBehaviour
         Vector3 dirToPlayer = transform.position - player.transform.position;
         Vector3 newPos = transform.position + dirToPlayer;
         enemy.SetDestination(newPos);
+    }
+    IEnumerator attack()
+    {
+        anim.SetBool("Attack", true);
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        anim.SetBool("Attack", false);
+        Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyAttack, transform.position);
+        nextShotTime = Time.time + timeBetweenShots;
+
     }
 
     private void FixedUpdate()

@@ -785,7 +785,7 @@ MonoBehaviour:
   - {fileID: 1903925806909654580}
   StringsBanks:
   - {fileID: 8575044568419345392}
-  cacheTime: 638821367874447722
+  cacheTime: 638822323607906332
   cacheVersion: 131619
 --- !u!114 &454112797067991588
 MonoBehaviour:
@@ -980,10 +980,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638821367874447722
+  lastModified: 638822323607906332
   FileSizes:
   - Name: Desktop
-    Value: 1812640
+    Value: 1812768
   Exists: 1
 --- !u!114 &2612138804608617805
 MonoBehaviour:

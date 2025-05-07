@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossAi : MonoBehaviour
 {
-    public Animator moves;
+    private Animator anim;
 
     private Quaternion origin;
 
@@ -12,6 +12,7 @@ public class BossAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         attacking = false;
         origin = gameObject.transform.rotation;
     }
@@ -22,41 +23,46 @@ public class BossAi : MonoBehaviour
         if (attacking == false)
         {
             attacking = true;
+            anim.SetBool("Attack", true);
             StartCoroutine(Attack());
         }
     }
 
     IEnumerator Attack()
     {
-        int i = Random.Range(1, 3);
-        gameObject.transform.rotation = origin;
-        yield return new WaitForSeconds(3);
-
-        if(i == 1)
-            {
-            StartCoroutine(Swing());
-            }
-        if(i == 2)
-        {
-            StartCoroutine(Slam());
-        }
-    }
-
-    IEnumerator Swing()
-    {
-        moves.SetBool("Swing",true);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyAttack, transform.position);
-        yield return new WaitForSeconds(1);
-        moves.SetBool("Swing", false);
-        attacking = false;
-    }
-    IEnumerator Slam()
-    {
-        moves.SetBool("Slam", true);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyAttack, transform.position);
         transform.LookAt(new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, this.transform.position.y, GameObject.FindGameObjectWithTag("Player").transform.position.z));
-        yield return new WaitForSeconds(1);
-        moves.SetBool("Slam", false);
-        attacking = false;
+        //StartCoroutine(Wait());
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(1).length);
+        anim.SetBool("Attack", false);
+        StartCoroutine(Cooldown());
+
+
     }
+    IEnumerator Cooldown()
+    {
+        
+        yield return new WaitForSeconds(2);
+
+        attacking = false;
+
+    }
+    
+
+    //IEnumerator Swing()
+    //{
+    //    moves.SetBool("Swing",true);
+    //    AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyAttack, transform.position);
+    //    yield return new WaitForSeconds(1);
+    //    moves.SetBool("Swing", false);
+    //    attacking = false;
+    //}
+    //IEnumerator Slam()
+    //{
+    //    moves.SetBool("Slam", true);
+    //    AudioManager.instance.PlayOneShot(FMODEvents.instance.bossEnemyAttack, transform.position);
+    //    transform.LookAt(new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, this.transform.position.y, GameObject.FindGameObjectWithTag("Player").transform.position.z));
+    //    yield return new WaitForSeconds(1);
+    //    moves.SetBool("Slam", false);
+    //    attacking = false;
+    //}
 }
