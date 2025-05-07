@@ -40,7 +40,11 @@ public class LightningRenderer : MonoBehaviour
         }
 
         Mesh mesh = new Mesh();
-        lineRenderer.BakeMesh(mesh, Camera.main,true);
+        
+        collider.transform.localPosition = lineRenderer.transform.localPosition;
+        //collider.transform.position = lineRenderer.transform.position;
+        lineRenderer.BakeMesh(mesh,true);
         collider.sharedMesh = mesh;
+        
     }
 }
