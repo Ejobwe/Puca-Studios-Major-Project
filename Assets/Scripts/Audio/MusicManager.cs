@@ -10,7 +10,13 @@ public class MusicManager : MonoBehaviour
 
     private void Start()
     {
-        music = RuntimeManager.CreateInstance("event:/Music/Gameplay Music");
-        music.start();
+        PLAYBACK_STATE playbackState;
+        music.getPlaybackState(out playbackState);
+
+        if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+        {
+            music = RuntimeManager.CreateInstance("event:/Music/Game Music");
+            music.start();
+        }   
     }
 }

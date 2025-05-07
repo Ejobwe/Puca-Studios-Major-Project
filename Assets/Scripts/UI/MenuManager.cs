@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] public List<GameObject> musicMenu;
     [SerializeField] private List<GameObject> pause;
 
-    [SerializeField] private MusicArea musicArea;
+    [SerializeField] private MusicArea area;
 
     void Awake()
     {
@@ -36,13 +36,15 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.instance.SetMusicArea(musicArea);
+        AudioManager.instance.SetMusicArea(area);
 
         AudioManager.instance.SetGamePausedState(PausedGame.PLAYING);
     }
 
     void Update()
     {
+        AudioManager.instance.SetMusicArea(area);
+
         if (Input.GetKeyDown(KeyCode.Escape) && pause != null)
         {
             Pause();
@@ -53,8 +55,10 @@ public class MenuManager : MonoBehaviour
     {
         if (!paused && pause != null)
         {
-            pause[0].SetActive(true);
-            pause[1].SetActive(true);
+            for (int i = 0; i < pause.Count; i++)
+            {
+                pause[i].SetActive(true);
+            }
             settings.SetActive(false);
             AudioManager.instance.SetGamePausedState(PausedGame.PAUSED);
             paused = true;
@@ -62,8 +66,10 @@ public class MenuManager : MonoBehaviour
         else if (paused && pause != null)
         {
             settings.SetActive(false);
-            pause[0].SetActive(false);
-            pause[1].SetActive(false);
+            for (int i = 0; i < pause.Count; i++)
+            {
+                pause[i].SetActive(false);
+            }
             AudioManager.instance.SetGamePausedState(PausedGame.PLAYING);
             paused = false;
         }
