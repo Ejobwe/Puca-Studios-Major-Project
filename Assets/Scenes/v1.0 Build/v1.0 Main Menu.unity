@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1693,6 +1693,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3674613174189326642, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
   m_PrefabInstance: {fileID: 7649980780080887065}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1920761991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920761992}
+  m_Layer: 0
+  m_Name: Pause Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920761992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920761991}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 140.85666, y: 39.28024, z: -167.0077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1939774624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,8 +1897,8 @@ MonoBehaviour:
   - {fileID: 1768134798}
   - {fileID: 1999604821}
   - {fileID: 1603442119}
-  pause:
-  - {fileID: 0}
+  pause: []
+  musicArea: 0
 --- !u!1 &2047657747 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5594681077040939198, guid: b988cd7e31531384f8d4e5aff0d08912, type: 3}
@@ -2450,3 +2481,4 @@ SceneRoots:
   - {fileID: 1960989147}
   - {fileID: 495248080}
   - {fileID: 1939774625}
+  - {fileID: 1920761992}

@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateSound()
     {
-//        playerFootsteps.set3DAttributes(RuntimeUtils.To3DAttributes(playerBottom.position));
+        playerFootsteps.set3DAttributes(RuntimeUtils.To3DAttributes(playerBottom.position));
 
         if (Rb.velocity.x != 0f && !sliding && canMove)
         {

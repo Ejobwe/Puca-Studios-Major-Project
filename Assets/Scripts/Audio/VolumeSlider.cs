@@ -18,7 +18,7 @@ public class VolumeSlider : MonoBehaviour
 
     private Slider volumeSlider;
 
-    private void Awake()
+    private void Start()
     {
         volumeSlider = this.GetComponentInChildren<Slider>();
 
