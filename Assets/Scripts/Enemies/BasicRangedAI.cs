@@ -76,12 +76,7 @@ public class BasicRangedAI : MonoBehaviour
         else if (distance < awayDistance-2)
         {
             MoveAway();
-            if (Time.time > nextShotTime)
-            { 
-                Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
-                AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyAttack, transform.position);
-                nextShotTime = Time.time + timeBetweenShots;
-            }
+            
         }
         else if (distance < awayDistance)
         {
