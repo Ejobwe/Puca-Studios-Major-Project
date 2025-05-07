@@ -48,21 +48,28 @@ public class Interactable : MonoBehaviour
         if (other.tag == "Player")
         {
             //Debug.Log("oi");
-            pickupUI.transform.GetChild(0).gameObject.SetActive(true);
+            if (pickupUI != null)
+            {
+                pickupUI.transform.GetChild(0).gameObject.SetActive(true);
+            }
             grabbable = true;
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
-            //Debug.Log("io");
-            pickupUI.transform.GetChild(0).gameObject.SetActive(false);
+            if (pickupUI != null)
+            {
+                pickupUI.transform.GetChild(0).gameObject.SetActive(false);
+            }
+
             grabbable = false;
         }
     }
 
-   void Update()
+    void Update()
     {
         if (grabbable && Input.GetKeyDown(KeyCode.E))
         {
@@ -79,12 +86,12 @@ public class Interactable : MonoBehaviour
             {
                 tutorialArrow.SetActive(true);
             }
-            else
+            
+            if (pickupUI != null)
             {
-                tutorialArrow.SetActive(false);
+                pickupUI.transform.GetChild(0).gameObject.SetActive(false);
             }
 
-            pickupUI.transform.GetChild(0).gameObject.SetActive(false);
             Destroy(this.gameObject);
             Debug.Log("Collecting this" + item.name);
             item.CanCast = true;

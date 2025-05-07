@@ -132,12 +132,15 @@ MonoBehaviour:
   Electric: 0
   Planty: 0
   Earthy: 0
-  Damage: 0
   cantCheckProperties: []
   Lifetime: 5
   Extended: 0
   Extension: 0
   Extending: 0
+  EH: {fileID: 0}
+  Damage: 1
+  DOT: 0
+  breakOnContact: 0
 --- !u!54 &7209757910957158264
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -241,3 +244,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: 360
+  Debris: []

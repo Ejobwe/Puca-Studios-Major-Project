@@ -15,13 +15,17 @@ public class SpellProperty : MonoBehaviour
     public bool Electric;
     public bool Planty;
     public bool Earthy;
-    public int Damage;
 
     public List<SpellProperty> cantCheckProperties = new List<SpellProperty>();
     public float Lifetime;
     public bool Extended;
     public float Extension;
     public bool Extending;
+    [SerializeField] private Enemy_Health EH;
+    public int Damage;
+    public bool DOT;
+    public bool breakOnContact;
+    private bool Forgiveness;
     
 
     void Start()
@@ -50,8 +54,16 @@ public class SpellProperty : MonoBehaviour
         }
         if (other.tag == "Enemy")
         {
+            if (DOT)
+            {
+                // figure out how to make enemies take tic damage
+            }
             other.GetComponent<Enemy_Health>().takeDamage(Damage);
-            Destroy(this.gameObject);
+            if (breakOnContact)
+            {
+                Destroy(this.gameObject);
+            }
+            
         }
     }
     

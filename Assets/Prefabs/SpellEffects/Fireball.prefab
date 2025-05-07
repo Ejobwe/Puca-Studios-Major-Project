@@ -170,12 +170,15 @@ MonoBehaviour:
   Electric: 0
   Planty: 0
   Earthy: 0
-  Damage: 0
   cantCheckProperties: []
   Lifetime: 3
   Extended: 0
   Extension: 0
   Extending: 0
+  EH: {fileID: 0}
+  Damage: 2
+  DOT: 0
+  breakOnContact: 1
 --- !u!114 &7405539405621368157
 MonoBehaviour:
   m_ObjectHideFlags: 0

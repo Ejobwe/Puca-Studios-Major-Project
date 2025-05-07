@@ -66,10 +66,12 @@ public class SpellMixManager : MonoBehaviour
             if (SP1.Burning == true)
             {
                 SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[0];
+                SP2.Damage += 1;
             }
         if (SP2.Burning == true)
         {
             SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[0];
+            SP1.Damage += 1;
         }
         
 
@@ -92,6 +94,7 @@ public class SpellMixManager : MonoBehaviour
                 SP2.Burning = true;
                 SP2.Extension = 5;
                 SP2.Extended = true;
+                SP2.Damage += 2;
                 return;
             }
             if (SP2.Burning == true)
@@ -99,6 +102,7 @@ public class SpellMixManager : MonoBehaviour
                 SP1.Burning = true;
                 SP1.Extension = 5;
                 SP1.Extended = true;
+                SP1.Damage += 2;
                 return;
             }
         #endregion
@@ -134,6 +138,7 @@ public class SpellMixManager : MonoBehaviour
                 SP2.Extended = true;
                 SP2.Planty = false;
                 SP2.Burning = true;
+                SP2.Damage += 2;
                 return;
             }
             if (SP2.Burning == true && SP2.Planty == false)
@@ -142,6 +147,7 @@ public class SpellMixManager : MonoBehaviour
                 SP1.Extended = true;
                 SP1.Planty = false;
                 SP1.Burning = true;
+                SP1.Damage += 1;
                 return;
             }
         }
@@ -161,6 +167,7 @@ public class SpellMixManager : MonoBehaviour
                 SP2.Burning = true;
                 SP2.Extension = 5;
                 SP2.Extended = true;
+                SP2.Damage += 1;
                 return;
             }
             if (SP2.Burning == true && SP2.Earthy == false)
@@ -168,6 +175,7 @@ public class SpellMixManager : MonoBehaviour
                 SP1.Burning = true;
                 SP1.Extension = 5;
                 SP1.Extended = true;
+                SP1.Damage += 1;
                 return;
             }
         #endregion
@@ -182,6 +190,7 @@ public class SpellMixManager : MonoBehaviour
                 SP1.Wet = false;
                 SP1.Frozen = true;
                 SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP1.Damage += 1;
             }
             if(SP2.Wet == true)
             {
@@ -189,6 +198,7 @@ public class SpellMixManager : MonoBehaviour
                 SP2.Wet = false;
                 SP2.Frozen = true;
                 SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP2.Damage += 1;
             }
         }
         #endregion
@@ -227,13 +237,13 @@ public class SpellMixManager : MonoBehaviour
             if (SP1.Wet)
             {
                 SP1.Electric = true;
-                print("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+                SP1.Damage += 3;
             }
 
             if (SP1.Wet)
             {
                 SP2.Electric = true;
-                print("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+                SP2.Damage += 3;
             }
         }
 
@@ -251,6 +261,7 @@ public class SpellMixManager : MonoBehaviour
                 temp.y += 0.3f;
                 temp.z += 3;
                 SP2.gameObject.transform.localScale = temp;
+                SP2.Damage += 2;
                 return;
             }
             if(SP2.Wet)
@@ -262,6 +273,7 @@ public class SpellMixManager : MonoBehaviour
                 temp.y += 0.3f;
                 temp.z += 3;
                 SP1.gameObject.transform.localScale = temp;
+                SP1.Damage += 2;
                 return;
             }
 
@@ -362,6 +374,7 @@ public class SpellMixManager : MonoBehaviour
                 SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
                 SP2.Planty = false;
                 SP2.Frozen = true;
+                SP2.Damage += 1;
             }
 
             if (SP2.Frozen && SP2.Planty == false)
@@ -369,6 +382,28 @@ public class SpellMixManager : MonoBehaviour
                 SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
                 SP1.Planty = false;
                 SP1.Frozen = true;
+                SP1.Damage += 1;
+            }
+        }
+
+        #endregion
+        #region Frozen/Planty
+        if ((SP1.Frozen || SP2.Frozen) && (SP1.Planty || SP2.Planty))
+        {
+            if (SP1.Frozen & SP1.Planty == false)
+            {
+                SP2.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP2.Planty = false;
+                SP2.Frozen = true;
+                SP2.Damage += 1;
+            }
+
+            if (SP2.Frozen && SP2.Planty == false)
+            {
+                SP1.GameObject().GetComponent<Renderer>().material = NewMaterials[2];
+                SP1.Planty = false;
+                SP1.Frozen = true;
+                SP1.Damage += 1;
             }
         }
 
