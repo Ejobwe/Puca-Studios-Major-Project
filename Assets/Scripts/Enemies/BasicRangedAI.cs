@@ -107,9 +107,14 @@ public class BasicRangedAI : MonoBehaviour
         anim.SetBool("Attack", true);
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
         anim.SetBool("Attack", false);
-        Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyAttack, transform.position);
-        nextShotTime = Time.time + timeBetweenShots;
+        if (Time.time > nextShotTime)
+        {
+            Instantiate(bullet, BulletPlace.transform.position, BulletPlace.transform.rotation);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.rangedEnemyAttack, transform.position);
+            nextShotTime = Time.time + timeBetweenShots;
+
+        }
+        
 
     }
 

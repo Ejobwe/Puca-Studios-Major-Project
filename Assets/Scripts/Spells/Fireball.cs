@@ -23,11 +23,11 @@ public class Fireball : MonoBehaviour
 
     [SerializeField] private int damage;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.collider.tag == "Enemy")
+        if(other.tag == "Enemy")
         {
-            other.collider.GetComponent<Enemy_Health>().takeDamage(damage);
+            other.GetComponent<Enemy_Health>().takeDamage(damage);
             Destroy(this.gameObject);
         }
         

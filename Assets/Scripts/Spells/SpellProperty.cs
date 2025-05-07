@@ -15,7 +15,7 @@ public class SpellProperty : MonoBehaviour
     public bool Electric;
     public bool Planty;
     public bool Earthy;
-    public float Damage;
+    public int Damage;
 
     public List<SpellProperty> cantCheckProperties = new List<SpellProperty>();
     public float Lifetime;
@@ -47,6 +47,11 @@ public class SpellProperty : MonoBehaviour
                 //SpellFuse(this, SpellProperty);
                 SpellProperty.cantCheckProperties.Add(this);
             }
+        }
+        if (other.tag == "Enemy")
+        {
+            other.GetComponent<Enemy_Health>().takeDamage(Damage);
+            Destroy(this.gameObject);
         }
     }
     

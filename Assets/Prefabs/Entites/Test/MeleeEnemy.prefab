@@ -691,7 +691,6 @@ MonoBehaviour:
     m_Bits: 128
   damage: 1
   stop: 0
-  anim: {fileID: 0}
   enemyBottom: {fileID: 593850049207871316}
   awayDistance: 1
 --- !u!114 &-8331714121368509834
@@ -729,8 +728,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.964138, y: 1.6885924, z: 2.9797235}
-  m_Center: {x: 0.0014457703, y: -0.15570378, z: -0.0220716}
+  m_Size: {x: 2.964138, y: 6.992053, z: 2.9797235}
+  m_Center: {x: 0.0014457703, y: 2.4960265, z: -0.0220716}
 --- !u!1 &5730858706255482919
 GameObject:
   m_ObjectHideFlags: 0
