@@ -16,8 +16,6 @@ public class EnemyAI : MonoBehaviour
     public int damage;
     public bool stop;
 
-    int number = 20;
-
     private GameObject Player;
 
     private Rigidbody Rb;
