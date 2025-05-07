@@ -12,6 +12,7 @@ TagManager:
   - Ice
   - RoomCheck
   - Club
+  - pickupUI
   layers:
   - Default
   - TransparentFX

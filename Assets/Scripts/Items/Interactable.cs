@@ -8,6 +8,22 @@ public class Interactable : MonoBehaviour
     [SerializeField] private Item item;
     [SerializeField] private bool grabbable;
 
+    [SerializeField] private GameObject pickupUI;
+
+    private void Awake()
+    {
+        if (pickupUI == null)
+            pickupUI = GameObject.FindWithTag("pickupUI");
+        else
+            Debug.Log("Missing Pickup UI Game Object");
+    }
+
+    private void Start()
+    {
+        if (pickupUI != null)
+            pickupUI.transform.GetChild(0).gameObject.SetActive(false);
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.magenta;
@@ -20,6 +36,7 @@ public class Interactable : MonoBehaviour
         if (other.tag == "Player")
         {
             //Debug.Log("oi");
+            pickupUI.transform.GetChild(0).gameObject.SetActive(true);
             grabbable = true;
         }
     }
@@ -28,6 +45,7 @@ public class Interactable : MonoBehaviour
         if (other.tag == "Player")
         {
             //Debug.Log("io");
+            pickupUI.transform.GetChild(0).gameObject.SetActive(false);
             grabbable = false;
         }
     }
@@ -39,11 +57,13 @@ public class Interactable : MonoBehaviour
             PickUp();
         }
     }
+
     private void PickUp()
     {
         bool PickedUp = Inventory.instance.Add(item);
         if (PickedUp)
         {
+            pickupUI.transform.GetChild(0).gameObject.SetActive(false);
             Destroy(this.gameObject);
             Debug.Log("Collecting this" + item.name);
             item.CanCast = true;
