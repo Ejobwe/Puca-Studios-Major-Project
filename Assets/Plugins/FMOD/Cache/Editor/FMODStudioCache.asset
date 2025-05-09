@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8496474352083571077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MenuArea Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MenuArea Music
+  Guid:
+    Data1: 1719209456
+    Data2: 1139794651
+    Data3: 371080346
+    Data4: -755754513
+  Banks:
+  - {fileID: 1463049922401189822}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16500
 --- !u!114 &-7970303237598784771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,61 +220,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6348352743743301391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Game Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Game Music
-  Guid:
-    Data1: -2019831982
-    Data2: 1250177706
-    Data3: -1676847730
-    Data4: -1990015886
-  Banks:
-  - {fileID: 1463049922401189822}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6304192788542292363}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-6304192788542292363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Game Music/Area
-  m_EditorClassIdentifier: 
-  Name: Area
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2288529256
-    data2: 888590846
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - MenuArea
-  - NormalArea
-  - BossArea
-  Exists: 1
 --- !u!114 &-5708113491211428804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,7 +713,6 @@ MonoBehaviour:
   - {fileID: 2980801171948895624}
   - {fileID: 2809797956923593312}
   - {fileID: -7970303237598784771}
-  - {fileID: -6348352743743301391}
   - {fileID: -2192054868497687204}
   - {fileID: -275474301653194937}
   - {fileID: -5708113491211428804}
@@ -780,13 +751,43 @@ MonoBehaviour:
   - {fileID: -6565978879951721778}
   - {fileID: -572667940214343568}
   - {fileID: 454112797067991588}
+  - {fileID: 210905735692972033}
+  - {fileID: 8552832251935374033}
+  - {fileID: -8496474352083571077}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1903925806909654580}
   StringsBanks:
   - {fileID: 8575044568419345392}
-  cacheTime: 638822323607906332
+  cacheTime: 638823859387280030
   cacheVersion: 131619
+--- !u!114 &210905735692972033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/NormalArea Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/NormalArea Music
+  Guid:
+    Data1: 1122087802
+    Data2: 1139762235
+    Data3: 1040352436
+    Data4: -842347964
+  Banks:
+  - {fileID: 1463049922401189822}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18343
 --- !u!114 &454112797067991588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,10 +941,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Music.bank"
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638816651592990200
+  lastModified: 638823859387132684
   FileSizes:
   - Name: Desktop
-    Value: 533344
+    Value: 531168
   Exists: 1
 --- !u!114 &1903925806909654580
 MonoBehaviour:
@@ -960,7 +961,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638816651592969842
+  lastModified: 638823859386920698
   FileSizes:
   - Name: Desktop
     Value: 3688
@@ -980,10 +981,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/SFX.bank"
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638822323607906332
+  lastModified: 638823859387280030
   FileSizes:
   - Name: Desktop
-    Value: 1812768
+    Value: 1812640
   Exists: 1
 --- !u!114 &2612138804608617805
 MonoBehaviour:
@@ -1212,7 +1213,7 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Ambience.bank"
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638780015689103440
+  lastModified: 638805343940391209
   FileSizes:
   - Name: Desktop
     Value: 1202
@@ -1408,6 +1409,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8552832251935374033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BossArea Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BossArea Music
+  Guid:
+    Data1: 342990008
+    Data2: 1188573009
+    Data3: 150423728
+    Data4: -29515721
+  Banks:
+  - {fileID: 1463049922401189822}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17200
 --- !u!114 &8575044568419345392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,10 +1451,10 @@ MonoBehaviour:
   Path: "Assets/FMOD/P\xFAca Game Sound Project FMOD/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638821367874397442
+  lastModified: 638823859387012031
   FileSizes:
   - Name: Desktop
-    Value: 3568
+    Value: 3642
   Exists: 1
 --- !u!114 &9118404223260107049
 MonoBehaviour:
