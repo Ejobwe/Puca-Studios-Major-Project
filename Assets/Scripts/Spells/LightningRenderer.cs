@@ -20,14 +20,14 @@ public class LightningRenderer : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         
-        
+         
         lineRenderer.SetPosition(0, isometricAiming.Pos);
     }
     void Update()
     {
         lineRenderer.SetPosition(1,player.transform.position);
         
-        GenerateMeshCollider(); 
+        GenerateMeshCollider();
     }
 
     public void GenerateMeshCollider()
@@ -41,9 +41,9 @@ public class LightningRenderer : MonoBehaviour
 
         Mesh mesh = new Mesh();
         
-        collider.transform.localPosition = lineRenderer.transform.localPosition;
+        //collider.transform.localPosition = lineRenderer.transform.localPosition;
         //collider.transform.position = lineRenderer.transform.position;
-        lineRenderer.BakeMesh(mesh, Camera.main, true);
+        lineRenderer.BakeMesh(mesh, true);
         collider.sharedMesh = mesh;
         
     }

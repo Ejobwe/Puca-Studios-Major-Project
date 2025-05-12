@@ -157,7 +157,7 @@ public class SpellCaster : MonoBehaviour
     {
         //SpawnPoint = SPObj.transform.position;
         SpawnPoint = Player.transform.position;
-        GameObject clone = Instantiate(Spells[CurrentSpell.Index], SpawnPoint, Quaternion.identity);
+        GameObject clone = Instantiate(Spells[CurrentSpell.Index], new Vector3(0,0,0), Quaternion.identity);
     }
     
 

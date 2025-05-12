@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 993353461270233569}
   - component: {fileID: -2966495627582768919}
   - component: {fileID: 8544848998916422330}
+  - component: {fileID: 4639304670139797149}
   m_Layer: 0
   m_Name: Lightning
   m_TagString: Untagged
@@ -172,12 +173,15 @@ MonoBehaviour:
   Electric: 1
   Planty: 0
   Earthy: 0
-  Damage: 0
   cantCheckProperties: []
   Lifetime: 100
   Extended: 0
   Extension: 0
   Extending: 0
+  EH: {fileID: 0}
+  Damage: 0
+  DOT: 0
+  breakOnContact: 0
 --- !u!114 &-2966495627582768919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,3 +245,25 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!64 &4639304670139797149
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754110207621152963}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
