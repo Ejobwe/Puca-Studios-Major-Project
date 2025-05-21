@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Vine Growth
   icon: {fileID: 21300000, guid: 0b3f04fcfc43e1c49a7aca0d678ae135, type: 3}
   Index: 7
-  Cooldown: 3
+  Cooldown: 1.5
   CanCast: 1
