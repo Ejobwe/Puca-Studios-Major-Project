@@ -2283,6 +2283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thunderbolt pickup
       objectReference: {fileID: 0}
+    - target: {fileID: 1605952642152624957, guid: afc613aad903d9d4187a6c5369df63e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
